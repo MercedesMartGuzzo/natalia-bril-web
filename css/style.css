@@ -40,10 +40,10 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background-color: #ececec;
-     position: sticky;
-    top: 0; 
+    position: sticky;
+    top: 0;
     padding-bottom: 1rem;
-   
+
 }
 
 
@@ -92,6 +92,10 @@ header {
 }
 
 
+.img-container {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 550px) {
 
     .abrir-menu,
@@ -99,12 +103,12 @@ header {
         display: block;
         border: 0;
         font-size: 1.25rem;
-        background-color: transparent; 
+        background-color: transparent;
         cursor: pointer;
     }
 
     .logo {
-        width: 6rem;
+        width: 7rem;
         margin-bottom: 0;
     }
 
@@ -128,16 +132,20 @@ header {
         gap: 1rem;
         position: absolute;
         z-index: 1000;
-        width: 100vw; /* Asegúrate de que el ancho sea 100% del viewport */
-        height: 200vh; /* Asegúrate de que el alto sea 100% del viewport */
+        width: 100vw;
+        height: 100vh; 
         top: 0;
         right: 0;
         bottom: 0;
-         background-color:/*  #1c1c1c;  */rgba(0, 0, 0, .5);
+        background-color:
+            /*  #1c1c1c;  */
+            rgba(0, 0, 0, .5);
         padding: 2rem;
         padding-top: 1.5rem;
+        padding-right: 1rem;
+        transition: background-color .3s, color .3s;
         /*   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);  */
-    } 
+    }
 
     .nav.visible {
         opacity: 1;
@@ -147,14 +155,17 @@ header {
     .nav-list {
         flex-direction: column;
         align-items: end;
+        font-size: 1.4rem;
     }
 
     .nav-list li a {
-        color:  #ecececec;
+        color: #ecececec;
     }
-.redes{
-    margin-right: 0;
-}
+
+    .redes {
+        margin-right: 0;
+    }
+
     /* seccion bio */
     .bio {
         margin-top: 1rem;
@@ -175,25 +186,80 @@ header {
         text-align: start;
         padding: 1rem;
         justify-content: start;
+
+    }
+    .bio-eng{
+        display: flex;
+        text-align: start;
+        padding: .5rem;
+        padding-top: .5rem;
+        justify-content: start;
+        font-size: .9rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        border-top: 1px solid rosybrown;
+    }
+    .bio-foto{
+     
+      border-radius: 10px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .portada {
+        margin-bottom: 3rem;
+    }
+
     .bio {
         margin: 1rem;
         width: 90vw;
+        border-top: 2px solid rosybrown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bio-encabezado {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.3rem;
+        justify-content: center;
+
     }
 
     .bio-titulo {
         font-size: 5rem;
         font-weight: 300;
         color: rosybrown;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .bio-foto {
+        border-radius: 10px;
+      
     }
 
     .bio-parrafo {
         display: flex;
         text-align: start;
         padding: .5rem;
+        padding-top: 0;
         justify-content: center;
+        padding-left: 1rem;
     }
-} 
+    .bio-eng{
+        display: flex;
+        text-align: start;
+        padding: .5rem;
+        padding-top: .5rem;
+        justify-content: center;
+        padding-left: 1rem;
+        font-size: .9rem;
+        margin-top: 1rem;
+        border-top: 1px solid rosybrown;
+    }
+}
