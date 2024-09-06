@@ -33,23 +33,28 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: #ececec;
-position: sticky;
-top:0;
+     position: sticky;
+    top: 0; 
+    padding-bottom: 1rem;
+   
 }
 
 
 .logo {
     /*   max-width: 5rem;  */
-    font-size: 1.5rem;
+
     margin-bottom: .2rem;
     color: rosybrown;
-  
+    width: 12vw;
+    margin-left: 1rem;
+
 }
 
 
@@ -63,6 +68,7 @@ top:0;
     align-items: end;
     gap: .5rem;
     margin-bottom: 0;
+    margin-right: 1rem;
 }
 
 .nav-list {
@@ -75,7 +81,9 @@ top:0;
 
 .nav-list li a {
     text-decoration: none;
-    color:/*  #1c1c1c; */rgb(181, 123, 123)
+    color:
+        /*  #1c1c1c; */
+        rgb(181, 123, 123)
 }
 
 .abrir-menu,
@@ -91,19 +99,22 @@ top:0;
         display: block;
         border: 0;
         font-size: 1.25rem;
-        background-color: transparent;
+        background-color: transparent; 
         cursor: pointer;
     }
 
     .logo {
-        font-size: 1rem;
-        
+        width: 6rem;
+        margin-bottom: 0;
     }
 
     .abrir-menu {
-        color: /* #1c1c1c;
-    } */rosybrown;
+        color:
+            /* #1c1c1c;
+    } */
+            rosybrown;
     }
+
     .cerrar-menu {
         color: #ececec;
     }
@@ -116,13 +127,17 @@ top:0;
         align-items: end;
         gap: 1rem;
         position: absolute;
+        z-index: 1000;
+        width: 100vw; /* Asegúrate de que el ancho sea 100% del viewport */
+        height: 200vh; /* Asegúrate de que el alto sea 100% del viewport */
         top: 0;
         right: 0;
         bottom: 0;
-        background-color:  #1c1c1c; 
+         background-color:/*  #1c1c1c;  */rgba(0, 0, 0, .5);
         padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
+        padding-top: 1.5rem;
+        /*   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);  */
+    } 
 
     .nav.visible {
         opacity: 1;
@@ -135,22 +150,27 @@ top:0;
     }
 
     .nav-list li a {
-        color: #ecececec; 
+        color:  #ecececec;
     }
+.redes{
+    margin-right: 0;
+}
     /* seccion bio */
-    .bio{
+    .bio {
         margin-top: 1rem;
         width: 90vw;
     }
-    .bio-titulo{
-        color:rosybrown;
+
+    .bio-titulo {
+        color: rosybrown;
         font-size: 2.5rem;
         display: flex;
         justify-content: start;
-        margin-left: 1rem ;
+        margin-left: 1rem;
         font-weight: 400;
     }
-    .bio-parrafo{
+
+    .bio-parrafo {
         display: flex;
         text-align: start;
         padding: 1rem;
@@ -158,21 +178,22 @@ top:0;
     }
 }
 
-
-@media screen and (min-width: 1200px){
-    .bio{
+@media screen and (min-width: 1200px) {
+    .bio {
         margin: 1rem;
         width: 90vw;
     }
-    .bio-titulo{
+
+    .bio-titulo {
         font-size: 5rem;
         font-weight: 300;
         color: rosybrown;
     }
-    .bio-parrafo{
+
+    .bio-parrafo {
         display: flex;
         text-align: start;
         padding: .5rem;
-        justify-content:center ;
+        justify-content: center;
     }
-}
+} 
