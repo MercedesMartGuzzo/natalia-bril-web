@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans JP", sans-serif;
-
+    font-family: "Josefin Sans", sans-serif, "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -37,23 +36,23 @@ body {
 header {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     padding: 1rem;
     background-color: #ececec;
     position: sticky;
     top: 0;
-    padding-bottom: 1rem;
-
+    border-bottom: 1px solid rosybrown;
 }
 
 
 .logo {
     /*   max-width: 5rem;  */
-
     margin-bottom: .2rem;
     color: rosybrown;
-    width: 12vw;
+    width: 16vw;
     margin-left: 1rem;
+    padding-top: .3rem;
 
 }
 
@@ -66,24 +65,40 @@ header {
     text-align: center;
     justify-content: center;
     align-items: end;
-    gap: .5rem;
-    margin-bottom: 0;
+    gap: 1.1rem;
+    margin-bottom: .3rem;
     margin-right: 1rem;
+
+}
+
+.redes a:hover {
+    color: rosybrown;
+    transition: color .3s;
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: .3rem;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contact {
+    margin-right: 7vw;
 }
 
 .nav-list li a {
     text-decoration: none;
-    color:
-        /*  #1c1c1c; */
-        rgb(181, 123, 123)
+    color: rgb(54, 26, 54);
+}
+
+.nav-list li a:hover {
+    color: rosybrown;
+    transition: color .3s;
 }
 
 .abrir-menu,
@@ -94,6 +109,14 @@ header {
 
 .img-container {
     max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 550px) {
@@ -113,10 +136,7 @@ header {
     }
 
     .abrir-menu {
-        color:
-            /* #1c1c1c;
-    } */
-            rosybrown;
+        color: rosybrown;
     }
 
     .cerrar-menu {
@@ -133,64 +153,82 @@ header {
         position: absolute;
         z-index: 1000;
         width: 100vw;
-        height: 100vh; 
+        height: 100vh;
         top: 0;
         right: 0;
         bottom: 0;
-        background-color:
-            /*  #1c1c1c;  */
-            rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .5);
         padding: 2rem;
         padding-top: 1.5rem;
         padding-right: 1rem;
-        transition: background-color .3s, color .3s;
-        /*   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);  */
+        transition: background-color 2s, color 2s;
     }
 
     .nav.visible {
         opacity: 1;
         visibility: visible;
+
     }
 
     .nav-list {
         flex-direction: column;
         align-items: end;
         font-size: 1.4rem;
+        gap: 2rem;
+
     }
 
     .nav-list li a {
         color: #ecececec;
+        font-family: "Josefin Sans", sans-serif;
     }
 
     .redes {
         margin-right: 0;
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+   .nav-list li a:hover, .redes:hover{
+        color:rgb(54, 26, 54);
+        transition: color .3s;
+    }
+    .contact {
+        margin-right: 0;
     }
 
     /* seccion bio */
-    .bio {
+    .bio, .discografia {
         margin-top: 1rem;
         width: 90vw;
+        border-top: 2px solid rosybrown;
+        padding-top: 1rem;
     }
 
-    .bio-titulo {
-        color: rosybrown;
+    .bio-titulo, .discografia-titulo {
+        color: rgb(54, 26, 54);
         font-size: 2.5rem;
         display: flex;
         justify-content: start;
-        margin-left: 1rem;
+      /*   margin-left: 1rem; */
         font-weight: 400;
+        font-family: "Josefin Sans", sans-serif;
     }
+
+
 
     .bio-parrafo {
         display: flex;
-        text-align: start;
-        padding: 1rem;
-        justify-content: start;
-
+         text-align: justify; 
+        padding: 1rem; 
+        justify-content: center;
+        align-items: center;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
     }
-    .bio-eng{
+
+    .bio-eng {
         display: flex;
-        text-align: start;
+        text-align:justify;
         padding: .5rem;
         padding-top: .5rem;
         justify-content: start;
@@ -198,18 +236,26 @@ header {
         margin-top: 1rem;
         margin-bottom: .5rem;
         border-top: 1px solid rosybrown;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
     }
-    .bio-foto{
-     
-      border-radius: 10px;
+
+    .bio-foto {
+        border-radius: 10px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    header {
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    }
+
     .portada {
         margin-bottom: 3rem;
     }
 
+    /* SECCION BIO */
     .bio {
         margin: 1rem;
         width: 90vw;
@@ -218,42 +264,45 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-top: 1rem;
     }
 
     .bio-encabezado {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.3rem;
+        gap: 1.5rem;
         justify-content: center;
-
     }
 
     .bio-titulo {
         font-size: 5rem;
         font-weight: 300;
-        color: rosybrown;
+        color: rgb(54, 26, 54);
         margin-bottom: 1rem;
         display: flex;
         justify-self: start;
         align-self: start;
+        font-family: "Josefin Sans", sans-serif;
     }
 
     .bio-foto {
         border-radius: 10px;
-      
     }
 
     .bio-parrafo {
         display: flex;
-        text-align: start;
+        text-align: justify;
         padding: .5rem;
         padding-top: 0;
         justify-content: center;
         padding-left: 1rem;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
     }
-    .bio-eng{
+
+    .bio-eng {
         display: flex;
-        text-align: start;
+        text-align: justify;
         padding: .5rem;
         padding-top: .5rem;
         justify-content: center;
@@ -261,5 +310,7 @@ header {
         font-size: .9rem;
         margin-top: 1rem;
         border-top: 1px solid rosybrown;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
     }
 }
