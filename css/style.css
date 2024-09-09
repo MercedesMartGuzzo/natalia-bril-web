@@ -43,67 +43,14 @@ header {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rosybrown;
+    z-index: 999;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
 
-.logo {
-    /*   max-width: 5rem;  */
-    margin-bottom: .2rem;
-    color: rosybrown;
-    width: 16vw;
-    margin-left: 1rem;
-    padding-top: .3rem;
-
-}
-
-
-
-.redes {
-    margin-left: 1rem;
-    font-size: 1rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: end;
-    gap: 1.1rem;
-    margin-bottom: .3rem;
-    margin-right: 1rem;
-
-}
-
-.redes a:hover {
-    color: rosybrown;
-    transition: color .3s;
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-    margin-top: .3rem;
-    margin-bottom: 0;
-    font-size: 1rem;
-    align-items: center;
-    font-family: "Noto Sans JP", sans-serif;
-}
-
-.contact {
-    margin-right: 7vw;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: rgb(54, 26, 54);
-}
-
-.nav-list li a:hover {
-    color: rosybrown;
-    transition: color .3s;
-}
-
-.abrir-menu,
-.cerrar-menu {
-    display: none;
 }
 
 
@@ -113,139 +60,323 @@ header {
 
 section {
     scroll-margin-top: 6rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .active {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 550px) {
+/* NAV MOBILE */
 
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .logo {
-        width: 7rem;
-        margin-bottom: 0;
-    }
-
-    .abrir-menu {
-        color: rosybrown;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        z-index: 1000;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, .5);
-        padding: 2rem;
-        padding-top: 1.5rem;
-        padding-right: 1rem;
-        transition: background-color 2s, color 2s;
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-        font-size: 1.4rem;
-        gap: 2rem;
-
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-        font-family: "Josefin Sans", sans-serif;
-    }
-
-    .redes {
-        margin-right: 0;
-        font-size: 1.4rem;
-        margin-top: 0;
-    }
-   .nav-list li a:hover, .redes:hover{
-        color:rgb(54, 26, 54);
-        transition: color .3s;
-    }
-    .contact {
-        margin-right: 0;
-    }
-
-    /* seccion bio */
-    .bio, .discografia {
-        margin-top: 1rem;
-        width: 90vw;
-        border-top: 2px solid rosybrown;
-        padding-top: 1rem;
-    }
-
-    .bio-titulo, .discografia-titulo {
-        color: rgb(54, 26, 54);
-        font-size: 2.5rem;
-        display: flex;
-        justify-content: start;
-      /*   margin-left: 1rem; */
-        font-weight: 400;
-        font-family: "Josefin Sans", sans-serif;
-    }
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 
+/* Estilos móviles (sin media query) */
+.logo {
+    width: 7rem;
+    margin-bottom: 0;
+    padding-top: .3rem;
+    color: rosybrown;
+    margin-left: 1rem;
+}
 
-    .bio-parrafo {
-        display: flex;
-         text-align: justify; 
-        padding: 1rem; 
-        justify-content: center;
-        align-items: center;
-        padding-inline: .3rem;
-        font-family: "Noto Sans JP", sans-serif;
-    }
+.redes {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1.1rem;
+    margin-bottom: .3rem;
+    margin-right: 1rem;
+}
 
-    .bio-eng {
-        display: flex;
-        text-align:justify;
-        padding: .5rem;
-        padding-top: .5rem;
-        justify-content: start;
-        font-size: .9rem;
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-        border-top: 1px solid rosybrown;
-        padding-inline: .3rem;
-        font-family: "Noto Sans JP", sans-serif;
-    }
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    margin-top: .3rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
 
-    .bio-foto {
-        border-radius: 10px;
-    }
+.nav-list li a {
+    color: #ececec;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    color: rgb(54, 26, 54);
+    transition: color .3s;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(54, 26, 54);
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2rem;
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+    max-height: 100vh;
+}
+
+.contact {
+    margin-right: 0;
+}
+
+
+/* seccion bio */
+.bio,
+.discografia {
+    margin-top: 1rem;
+    width: 90vw;
+    border-top: 2px solid rosybrown;
+    padding-top: 1rem;
+}
+
+.bio-titulo,
+.discografia-titulo {
+    color: rgb(54, 26, 54);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: start;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bio-parrafo {
+    display: flex;
+    text-align: justify;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-inline: .3rem;
+    font-family: "Noto Sans JP", sans-serif;
+    border-bottom: 1px solid rgb(54, 26, 54);
+    
+}
+
+
+.bio-eng {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.english.open .bio-eng {
+    max-height: 500px;
+}
+.titulo-ingles{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color:rgb(54, 26, 54);
+    margin-top: .5rem;
+}
+.bio-eng {
+    display: flex;
+    text-align: justify;
+    /*  padding: .5rem; */
+    /*   padding-top: .5rem; */
+    justify-content: start;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    /*     border-top: 1px solid rosybrown; */
+    padding-inline: .3rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.bio-foto {
+    border-radius: 10px;
+}
+
+/* SECCION DISCOGRAFIA */
+.discos-grilla {
+    margin-top: 1rem;
+    border: 1px solid rgb(54, 26, 54);
+    padding: .5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.discos-grilla img {
+    border-radius: 10px;
+}
+
+.participaciones-titulo {
+    color: rgb(54, 26, 54);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+/* slider */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    /*  max-width: 800px; */
+
+    margin: auto;
+    overflow: hidden;
+    /* Esto asegura que el slider no se salga del contenedor */
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* Asegura que los slides estén en fila */
+    overflow: hidden;
+    /* Opcional, pero asegúrate de que el overflow esté controlado */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.prev {
+    left: 12px;
+}
+
+.next {
+    right: 12px;
+}
+
+
+.slider-container:hover .prev,
+.slider-container:hover .next {
+    opacity: 1;
 }
 
 @media screen and (min-width: 1200px) {
+
+    .logo {
+        width: 16vw;
+        margin-left: 1rem;
+        padding-top: .3rem;
+    }
+
+    .redes {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 1.1rem;
+        margin-bottom: .3rem;
+        margin-right: 1rem;
+    }
+
+    .nav {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        position: static;
+        /* Elimina el `position: absolute` */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        z-index: 999;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-top: .3rem;
+        font-size: 1rem;
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+    .nav-list li a {
+        color: rgb(54, 26, 54);
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: none;
+        /* Ocultar menú hamburguesa en escritorio */
+    }
+
+    .contact {
+        margin-right: 7vw;
+    }
+
+
     header {
         padding-bottom: .5rem;
         padding-top: .5rem;
@@ -253,11 +384,12 @@ section {
 
     .portada {
         margin-bottom: 3rem;
+
     }
 
     /* SECCION BIO */
-    .bio {
-        margin: 1rem;
+    .bio,
+    .discografia {
         width: 90vw;
         border-top: 2px solid rosybrown;
         display: flex;
@@ -267,14 +399,18 @@ section {
         padding-top: 1rem;
     }
 
+
     .bio-encabezado {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
         justify-content: center;
+        align-content: start;
+
     }
 
-    .bio-titulo {
+    .bio-titulo,
+    .discografia-titulo {
         font-size: 5rem;
         font-weight: 300;
         color: rgb(54, 26, 54);
@@ -298,19 +434,44 @@ section {
         padding-left: 1rem;
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
+        border-bottom: 1px solid rgb(54, 26, 54);
+    }
+
+    .titulo-ingles {
+        color: rgb(54, 26, 54);
+        margin-top: .5rem;
+        font-size: 2rem;
+        font-weight: 400;
     }
 
     .bio-eng {
         display: flex;
         text-align: justify;
-        padding: .5rem;
-        padding-top: .5rem;
+        /*     padding: .5rem;
+        padding-top: .5rem; */
         justify-content: center;
         padding-left: 1rem;
         font-size: .9rem;
         margin-top: 1rem;
-        border-top: 1px solid rosybrown;
+        /*  border-top: 1px solid rosybrown; */
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
+
     }
+
+    .bio-eng {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    /* .english.open .bio-eng {
+        max-height: 500px; 
+    } */
+
+    .slider-container {
+        width: 350px;
+        padding-top: .5rem;
+    }
+
 }
