@@ -41,12 +41,13 @@ header {
     text-align: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #ececec;
-    position: sticky;
+    background-color:/*  #ececec; */transparent;
+    position:sticky;
     top: 0;
     border-bottom: 1px solid rosybrown;
     z-index: 999;
     backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 .container {
@@ -62,7 +63,7 @@ header {
 }
 
 section {
-    scroll-margin-top: 6.2rem;
+    scroll-margin-top: 6rem;
 
 }
 
@@ -105,7 +106,13 @@ html {
 }
 
 .nav-link {
-    color: rgb(54, 26, 54);
+    color: white;
+}
+
+.nav-link:hover{
+    color: rosybrown;
+    transition: color .3s;
+    font-style: italic;
 }
 
 .nav-list {
@@ -123,8 +130,9 @@ html {
 
 
 .nav-list li a:hover {
-    color: rgb(54, 26, 54);
+    color: rosybrown;
     transition: color .3s;
+    font-style: italic;
 }
 
 .abrir-menu,
@@ -247,7 +255,8 @@ html {
 }
 
 .hoy-titulo h4,
-.otra-titulo h4,.escuadron-titulo h4 {
+.otra-titulo h4,
+.escuadron-titulo h4 {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -256,7 +265,8 @@ html {
 }
 
 .hoy-parrafo,
-.otra-parrafo, .escuadron-parrafo {
+.otra-parrafo,
+.escuadron-parrafo {
     display: flex;
     text-align: justify;
     margin-top: .5rem;
@@ -264,7 +274,7 @@ html {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.participaciones-titulo{
+.participaciones-titulo {
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 200;
@@ -272,6 +282,8 @@ html {
     margin-bottom: .5rem;
     padding-top: .5rem;
     font-family: "Josefine sans", sans-serif;
+    margin-left: .5rem; 
+
 }
 
 /* slider */
@@ -338,6 +350,14 @@ html {
 
 @media screen and (min-width: 1200px) {
 
+    section {
+        scroll-margin-top: 6.3rem;
+
+    }
+
+    .nav-link {
+        color: rgb(54, 26, 54)
+    }
     .logo {
         width: 16vw;
         margin-left: 1rem;
@@ -360,6 +380,7 @@ html {
         visibility: visible;
         display: flex;
         flex-direction: row;
+        justify-content: center; 
         align-items: center;
         gap: 2rem;
         position: static;
@@ -490,27 +511,34 @@ html {
 
     /* DISCOGRAFIA */
     .hoy,
-    .otra , .escuadron{
+    .otra,
+    .escuadron {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
         margin-bottom: 3rem;
+        background-color: rgba(240, 233, 233, 0.932);
+        padding: .7rem;
+        border-radius: 10px;
     }
 
-   .hoy{
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-   }
+    .hoy {
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+
     .hoy-titulo h4,
-    .otra-titulo h4 ,.escuadron-titulo h4{
+    .otra-titulo h4,
+    .escuadron-titulo h4 {
         font-size: 1.5rem;
         margin-top: 0;
     }
+
     .participaciones-titulo {
         display: flex;
-       font-size: 2rem;
-       font-weight: 100;
-       font-family: "Josefine sans", sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        font-family: "Josefine sans", sans-serif;
         justify-self: start;
         align-self: start;
     }
