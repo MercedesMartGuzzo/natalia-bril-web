@@ -6,8 +6,8 @@
 }
 
 a {
+    color: #ececec;
     text-decoration: none;
-    color: black;
 }
 
 img {
@@ -16,6 +16,8 @@ img {
 
 .active {
     text-decoration: underline;
+    ;
+
 }
 
 .container {
@@ -44,6 +46,7 @@ header {
     top: 0;
     border-bottom: 1px solid rosybrown;
     z-index: 999;
+    backdrop-filter: blur(10px);
 }
 
 .container {
@@ -59,7 +62,7 @@ header {
 }
 
 section {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 6.2rem;
 
 }
 
@@ -67,9 +70,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.active {
-    text-decoration: underline;
-}
 
 /* NAV MOBILE */
 
@@ -95,11 +95,17 @@ html {
 .redes {
     font-size: 1.4rem;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: end;
     gap: 1.1rem;
-    margin-bottom: .3rem;
-    margin-right: 1rem;
+    /* margin-bottom: .3rem; */
+    /* margin-right: 1rem; */
+    margin-top: .5rem;
+
+}
+
+.nav-link {
+    color: rgb(54, 26, 54);
 }
 
 .nav-list {
@@ -114,10 +120,7 @@ html {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.nav-list li a {
-    color: #ececec;
-    text-decoration: none;
-}
+
 
 .nav-list li a:hover {
     color: rgb(54, 26, 54);
@@ -194,7 +197,8 @@ html {
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
     border-bottom: 1px solid rgb(54, 26, 54);
-    
+
+
 }
 
 
@@ -204,25 +208,25 @@ html {
     transition: max-height 0.5s ease;
 }
 
- .english.open .bio-eng {
+.english.open .bio-eng {
     max-height: 1500px;
-} 
-.titulo-ingles{
+
+}
+
+.titulo-ingles {
     font-size: 1.8rem;
     font-weight: 400;
-    color:rgb(54, 26, 54);
+    color: rgb(54, 26, 54);
     margin-top: .5rem;
 }
+
 .bio-eng {
     display: flex;
     text-align: justify;
-    /*  padding: .5rem; */
-    /*   padding-top: .5rem; */
     justify-content: start;
     font-size: .9rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
-    /*     border-top: 1px solid rosybrown; */
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -234,9 +238,7 @@ html {
 /* SECCION DISCOGRAFIA */
 .discos-grilla {
     margin-top: 1rem;
-    border: 1px solid rgb(54, 26, 54);
     padding: .5rem;
-    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
@@ -244,13 +246,32 @@ html {
     border-radius: 10px;
 }
 
-.participaciones-titulo {
+.hoy-titulo h4,
+.otra-titulo h4,.escuadron-titulo h4 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: rgb(54, 26, 54);
+    font-weight: 300;
+    font-family: "Josefine sans", sans-serif;
+}
+
+.hoy-parrafo,
+.otra-parrafo, .escuadron-parrafo {
+    display: flex;
+    text-align: justify;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.participaciones-titulo{
     color: rgb(54, 26, 54);
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 200;
     margin-top: 1rem;
     margin-bottom: .5rem;
     padding-top: .5rem;
+    font-family: "Josefine sans", sans-serif;
 }
 
 /* slider */
@@ -258,20 +279,16 @@ html {
 .slider-container {
     position: relative;
     width: 100%;
-    /*  max-width: 800px; */
 
     margin: auto;
     overflow: hidden;
-    /* Esto asegura que el slider no se salga del contenedor */
 }
 
 .slider {
     position: relative;
     width: 100%;
     display: flex;
-    /* Asegura que los slides estén en fila */
     overflow: hidden;
-    /* Opcional, pero asegúrate de que el overflow esté controlado */
 }
 
 .slides {
@@ -330,12 +347,13 @@ html {
     .redes {
         font-size: 1rem;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: end;
         gap: 1.1rem;
         margin-bottom: .3rem;
         margin-right: 1rem;
     }
+
 
     .nav {
         opacity: 1;
@@ -345,19 +363,19 @@ html {
         align-items: center;
         gap: 2rem;
         position: static;
-        /* Elimina el `position: absolute` */
         width: auto;
         height: auto;
         background-color: transparent;
         padding: 0;
         z-index: 999;
+
     }
 
     .nav-list {
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 2rem;
-        margin-top: .3rem;
         font-size: 1rem;
         font-family: "Noto Sans JP", sans-serif;
     }
@@ -369,7 +387,6 @@ html {
     .abrir-menu,
     .cerrar-menu {
         display: none;
-        /* Ocultar menú hamburguesa en escritorio */
     }
 
     .contact {
@@ -447,13 +464,10 @@ html {
     .bio-eng {
         display: flex;
         text-align: justify;
-        /*     padding: .5rem;
-        padding-top: .5rem; */
         justify-content: center;
         padding-left: 1rem;
         font-size: .9rem;
         margin-top: 1rem;
-        /*  border-top: 1px solid rosybrown; */
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
 
@@ -474,4 +488,30 @@ html {
         padding-top: .5rem;
     }
 
+    /* DISCOGRAFIA */
+    .hoy,
+    .otra , .escuadron{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+   .hoy{
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+   }
+    .hoy-titulo h4,
+    .otra-titulo h4 ,.escuadron-titulo h4{
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .participaciones-titulo {
+        display: flex;
+       font-size: 2rem;
+       font-weight: 100;
+       font-family: "Josefine sans", sans-serif;
+        justify-self: start;
+        align-self: start;
+    }
 }
