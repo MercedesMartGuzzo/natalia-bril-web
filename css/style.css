@@ -47,7 +47,7 @@ header {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rosybrown;
-    z-index: 999;
+    z-index: 1000;
     backdrop-filter: blur(10px);
     /*  width: 100%; */
 }
@@ -102,12 +102,31 @@ html {
 
 .nav-link {
     color: white;
+    transition: color .2s, 1s ease;
 }
 
 .nav-link:hover {
     color: rosybrown;
-    transition: color .3s;
+
     font-style: italic;
+    transform: scale(1.1);
+}
+
+
+.s:hover {
+    color: darkgreen;
+}
+
+.y:hover {
+    color: red;
+}
+
+.ig:hover {
+    color: purple
+}
+
+.f:hover {
+    color: blue;
 }
 
 .nav-list {
@@ -434,6 +453,11 @@ html {
 }
 
 /* SECCION PRENSA */
+.diarios {
+    border-bottom: 1px solid rosybrown;
+    /* font-weight:lighter; */
+}
+
 .nota {
     margin-bottom: 1rem;
 }
@@ -454,8 +478,13 @@ html {
     margin-top: 1rem;
     width: 100%;
     position: relative;
-}
 
+}
+.img-wrapper{
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(54, 26, 54);
+}
 .contacto-titulo {
     position: absolute;
     top: 40vw;
@@ -469,7 +498,7 @@ html {
     position: absolute;
     bottom: 6vw;
     z-index: 999;
-    right: 3vw;
+    right: 4vw;
 }
 
 .resalta {
@@ -479,24 +508,96 @@ html {
 
 }
 
+
 .redes2 {
     position: absolute;
     z-index: 999;
-    top: 50vw;
-    right: 11.5vw;
+    top: 51vw;
+    right: 9vw;
     color: rgb(54, 26, 54);
     font-size: 1.2rem;
     display: flex;
     justify-content: end;
     align-items: end;
-    gap: 1rem;
+    gap: 1.3rem;
     /* margin-bottom: .3rem; */
     /* margin-right: 1rem; */
     margin-top: .5rem;
+
 }
 
-.nav-link {
+.nav-link1 {
     color: rgb(54, 26, 54);
+    transition: color .2s, 1s ease;
+}
+
+.nav-link1:hover {
+    transform: scale(1.1);
+}
+
+.s:hover {
+    color: darkgreen;
+}
+
+.y:hover {
+    color: red;
+}
+
+.ig:hover {
+    color: purple
+}
+
+.f:hover {
+    color: blue;
+}
+
+.w:hover {
+    color: green;
+}
+
+.m:hover {
+    color: #ececec;
+}
+
+/* FOOTER MOBILE */
+.footer {
+    background-color: rgb(54, 26, 54);
+    color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*   .footer-titulo{
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+        font-weight: 300;
+    } */
+.logo-footer {
+    width: 10rem;
+    margin-top: 1.2rem;
+    transition: 1s ease;
+
+}
+
+.logo-footer:hover {
+
+    transform: scale(1.1);
+}
+
+.footer-parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.copi {
+    margin-bottom: 1.2rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -744,7 +845,7 @@ html {
 
     .diarios {
         color: rgb(54, 26, 54);
-        font-weight: 100;
+        font-weight: lighter;
         font-family: "Josefine sans", sans-serif;
         font-size: 3rem;
         justify-content: start;
@@ -783,26 +884,29 @@ html {
         max-width: 100%;
         /* Ajustará la altura */
     }
-.contacto-titulo{
-    font-size: 5rem;
-    font-weight: 300;
-    color: rgb(54, 26, 54);
-    margin-bottom: 1rem;
-    font-family: "Josefin Sans", sans-serif;
-    letter-spacing: .3rem;
-   top :25vw;
-    position: absolute;
 
-}
-.redes2{
-    font-size: 1.5rem;
-    gap: 1.6rem;
-    top:33vw;
-    right: 13vw;
-}
-   .contacto-parrafo{
-    font-size: 1.5rem;
-    right: 8.2vw;
-    bottom: 4vw;
-   } 
+    .contacto-titulo {
+        font-size: 5rem;
+        font-weight: 300;
+        color: rgb(54, 26, 54);
+        margin-bottom: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        letter-spacing: .3rem;
+        top: 25vw;
+        position: absolute;
+
+    }
+
+    .redes2 {
+        font-size: 1.5rem;
+        gap: 1.6rem;
+        top: 33vw;
+        right: 13vw;
+    }
+
+    .contacto-parrafo {
+        font-size: 1.5rem;
+        right: 8.2vw;
+        bottom: 4vw;
+    }
 }
