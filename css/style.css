@@ -254,9 +254,10 @@ html {
 
 .titulo-ingles {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
     color: rgb(54, 26, 54);
     margin-top: .5rem;
+ 
 }
 
 .bio-eng {
@@ -288,17 +289,19 @@ html {
 .hoy-titulo h4,
 .otra-titulo h4,
 .escuadron-titulo h4,
-.diarios {
+.diarios h4 {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
     font-weight: 300;
-    font-family: "Josefine sans", sans-serif;
+    font-family: "Josefin sans", sans-serif;
 }
 
-.diarios {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+.diarios h4 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: rgb(54, 26, 54);
+
 }
 
 .hoy-parrafo,
@@ -314,11 +317,11 @@ html {
 .participaciones-titulo {
     color: rgb(54, 26, 54);
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 1rem;
     margin-bottom: .5rem;
     padding-top: .5rem;
-    font-family: "Josefine sans", sans-serif;
+    font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 
 }
@@ -480,25 +483,27 @@ html {
     position: relative;
 
 }
-.img-wrapper{
+
+.img-wrapper {
     height: auto;
     overflow: hidden;
     background-color: rgb(54, 26, 54);
 }
+
 .contacto-titulo {
     position: absolute;
-    top: 40vw;
+    top: 37vw;
     /*   top:2vw; */
-    right: 4vw;
+    right: 2vw;
     z-index: 999;
     letter-spacing: .2rem;
 }
 
 .contacto-parrafo {
     position: absolute;
-    bottom: 6vw;
+    bottom: 4vw;
     z-index: 999;
-    right: 4vw;
+    right: 3vw;
 }
 
 .resalta {
@@ -512,14 +517,14 @@ html {
 .redes2 {
     position: absolute;
     z-index: 999;
-    top: 51vw;
-    right: 9vw;
+    top: 50vw;
+    right: 11vw;
     color: rgb(54, 26, 54);
     font-size: 1.2rem;
     display: flex;
     justify-content: end;
     align-items: end;
-    gap: 1.3rem;
+    gap: 1rem;
     /* margin-bottom: .3rem; */
     /* margin-right: 1rem; */
     margin-top: .5rem;
@@ -568,8 +573,8 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /*   .footer-titulo{
@@ -581,6 +586,7 @@ html {
     width: 10rem;
     margin-top: 1.2rem;
     transition: 1s ease;
+    
 
 }
 
@@ -593,11 +599,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.2rem;
+    margin-top: 1.3rem;
 }
 
 .copi {
     margin-bottom: 1.2rem;
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -736,7 +743,7 @@ html {
         color: rgb(54, 26, 54);
         margin-top: .5rem;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .bio-eng {
@@ -793,11 +800,10 @@ html {
 
     .participaciones-titulo {
         display: flex;
-        font-size: 2rem;
-        font-weight: 100;
-        font-family: "Josefine sans", sans-serif;
+        font-size: 3rem;
         justify-self: start;
         align-self: start;
+     
     }
 
     /* SECCION VIDEOS */
@@ -843,10 +849,10 @@ html {
 
     /* SECCION PRENSA */
 
-    .diarios {
+    .diarios h4 {
         color: rgb(54, 26, 54);
-        font-weight: lighter;
-        font-family: "Josefine sans", sans-serif;
+        font-weight: 300;
+        font-family: "Josefin sans", sans-serif;
         font-size: 3rem;
         justify-content: start;
         align-self: start;
@@ -901,12 +907,28 @@ html {
         font-size: 1.5rem;
         gap: 1.6rem;
         top: 33vw;
-        right: 13vw;
+        right: 11vw;
     }
 
     .contacto-parrafo {
         font-size: 1.5rem;
-        right: 8.2vw;
+        right: 6.6vw;
         bottom: 4vw;
+    }
+
+    /* FOOTER */
+    .logo-footer {
+        width: 14rem;
+    }
+
+    .footer-parrafo {
+        font-size: 1.5rem;
+        margin-top: 1.3rem;
+    }
+
+    .copi {
+        font-size: 1.3rem;
+        margin-top: 2.3rem;
+        margin-bottom:1.3rem;
     }
 }
