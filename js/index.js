@@ -2,7 +2,7 @@
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-
+const menuItems = document.querySelectorAll(".nav a");
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
@@ -11,20 +11,27 @@ abrir.addEventListener("click", () => {
 });
 
 cerrar.addEventListener("click", () => {
+    // Removemos la clase visible para iniciar la transición de cierre del menú
     nav.classList.remove("visible");
-    abrir.style.display = "block";
-    cerrar.style.display = "none";
+
+    // Usamos setTimeout para retrasar la desaparición del botón de cerrar
+    // hasta que termine la animación de la barra de navegación
+    setTimeout(() => {
+        cerrar.style.display = "none";
+        abrir.style.display = "block";
+    }, 1000); // El tiempo debe coincidir con la duración de la transición en el CSS (1s)
 });
 
 
-/* const menuLinks = document.querySelectorAll(".nav-list li a");
-menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        nav.classList.remove("visible");
-        abrir.style.display = "block";
-        cerrar.style.display = "none";
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+            nav.classList.remove("visible");
+            abrir.style.display = "block";
+            cerrar.style.display = "none";
+        }
     });
-}); */
+}); 
 
 
 /* SLIDER DE FOTOS */
@@ -94,26 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos que deseas animar
     const elements = document.querySelectorAll('.fade-in');
-    
+
     // Crear el observer
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
     }, {
-      threshold: 0.1 // 10% del elemento visible
+        threshold: 0.1 // 10% del elemento visible
     });
-    
+
     // Observar todos los elementos seleccionados
     elements.forEach(element => {
-      observer.observe(element);
+        observer.observe(element);
     });
-  });
-  
+});
+
 
 

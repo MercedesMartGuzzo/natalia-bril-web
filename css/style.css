@@ -41,15 +41,12 @@ header {
     text-align: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color:
-        /*  #ececec; */
-        transparent;
+    background-color: transparent;
     position: sticky;
     top: 0;
     border-bottom: 1px solid rosybrown;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    /*  width: 100%; */
 }
 
 
@@ -69,14 +66,14 @@ html {
 
 
 /* NAV MOBILE */
-.abrir-menu,
+/* .abrir-menu,
 .cerrar-menu {
     display: block;
     border: 0;
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
-}
+} */
 
 
 /* Estilos móviles (sin media query) */
@@ -94,8 +91,6 @@ html {
     justify-content: end;
     align-items: end;
     gap: 1.1rem;
-    /* margin-bottom: .3rem; */
-    /* margin-right: 1rem; */
     margin-top: .5rem;
 
 }
@@ -159,6 +154,13 @@ html {
     color: rgb(54, 26, 54);
 }
 
+.cerrar-menu {
+    display: flex;
+    align-self: end;
+    color: #ececec;
+    margin-bottom: 1.2rem;
+}
+
 .nav {
     opacity: 0;
     visibility: hidden;
@@ -176,39 +178,33 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     padding: 2rem;
-    transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
-
+    padding-right: 1rem;
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out, visibility 0s 1s;
 }
 
 .nav.visible {
     opacity: 1;
     visibility: visible;
     max-height: 100vh;
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
 }
 
 .contact {
     margin-right: 0;
 }
-/* Animación básica para cualquier elemento que quieras animar */
+
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
+    /* transform: translateY(20px);  */
     transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .fade-in.show {
+}
+
+.fade-in.show {
     opacity: 1;
-    transform: translateY(0);
-  }
-  
-/* .abrir-menu{
-    color: rgb(54, 26, 54);
-} */
-/* .cerrar-menu{
-    display: flex;
-    align-self: end;
-    color:#ececec;
-} */
+    /*   transform: translateY(0); */
+}
+
+
 
 /* seccion bio */
 .bio,
@@ -245,8 +241,10 @@ html {
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
-    
+    padding-bottom: 0;
+    padding-top: 0;
 }
+
 .bio-parrafo1 {
     display: flex;
     text-align: justify;
@@ -256,6 +254,7 @@ html {
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
     border-bottom: 1px solid rgb(54, 26, 54);
+    padding-top: 0;
 
 }
 
@@ -761,8 +760,9 @@ html {
         padding-left: 1rem;
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
-       padding-bottom: 0;
+        padding-bottom: 0;
     }
+
     .bio-parrafo1 {
         display: flex;
         text-align: justify;
@@ -774,6 +774,7 @@ html {
         font-family: "Noto Sans JP", sans-serif;
         border-bottom: 1px solid rgb(54, 26, 54);
     }
+
     .titulo-ingles {
         color: rgb(54, 26, 54);
         margin-top: .5rem;
