@@ -189,7 +189,18 @@ html {
 .contact {
     margin-right: 0;
 }
-
+/* Animación básica para cualquier elemento que quieras animar */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 /* .abrir-menu{
     color: rgb(54, 26, 54);
 } */
@@ -234,11 +245,19 @@ html {
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
+    
+}
+.bio-parrafo1 {
+    display: flex;
+    text-align: justify;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-inline: .3rem;
+    font-family: "Noto Sans JP", sans-serif;
     border-bottom: 1px solid rgb(54, 26, 54);
 
-
 }
-
 
 .bio-eng {
     max-height: 0;
@@ -742,9 +761,19 @@ html {
         padding-left: 1rem;
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
+       padding-bottom: 0;
+    }
+    .bio-parrafo1 {
+        display: flex;
+        text-align: justify;
+        padding: .5rem;
+        padding-top: 0;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
         border-bottom: 1px solid rgb(54, 26, 54);
     }
-
     .titulo-ingles {
         color: rgb(54, 26, 54);
         margin-top: .5rem;
@@ -903,7 +932,6 @@ html {
         letter-spacing: .3rem;
         top: 54%;
         position: absolute;
-
     }
 
     .redes2 {
@@ -911,12 +939,14 @@ html {
         gap: 1.6rem;
         top: 71%;
         right: 11%;
+
     }
 
     .contacto-parrafo {
         font-size: 1.5rem;
         right: 6.5%;
         bottom: 8.5%;
+
     }
 
     /* FOOTER */
