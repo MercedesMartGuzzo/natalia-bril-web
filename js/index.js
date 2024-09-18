@@ -1,4 +1,4 @@
-
+ 
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -23,15 +23,20 @@ cerrar.addEventListener("click", () => {
 });
 
 
+
 menuItems.forEach(item => {
     item.addEventListener("click", () => {
-        if (window.innerWidth < 768) {
-            nav.classList.remove("visible");
-            abrir.style.display = "block";
-            cerrar.style.display = "none";
-        }
+
+        nav.classList.remove("visible");
+        abrir.style.display = "block";
+        cerrar.style.display = "none";
     });
-}); 
+});  
+
+
+
+
+
 
 
 /* SLIDER DE FOTOS */

@@ -39,8 +39,11 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: /* space-between; */end;
-    padding:  1rem; 
+    justify-content:
+        /* space-between; */
+        end;
+    padding: 1rem;
+    padding-top: 1.5rem;
     background-color: transparent;
     position:
         /*   sticky;   */
@@ -48,7 +51,7 @@ header {
     top: 0;
     /* border-bottom: 1px solid rosybrown; */
     z-index: 1000;
-   /*  backdrop-filter: blur(10px); */
+    /*  backdrop-filter: blur(10px); */
     width: 100%;
 
 
@@ -57,7 +60,7 @@ header {
 .portada {
     position: relative;
     z-index: 1;
-    height: 100vh;
+     height: 100vh; 
     object-fit: cover;
 }
 
@@ -66,8 +69,7 @@ header {
 }
 
 section {
-    scroll-margin-top: 6rem;
-
+    scroll-margin-top: 1rem;
 }
 
 html {
@@ -88,35 +90,43 @@ html {
 
 /* Estilos móviles (sin media query) */
 .logo {
-    width: 16rem;/* 7rem */
+    width:
+        /* 16rem; */
+        65vw;
+    /* 7rem */
     margin-bottom: 0;
     padding-top: .3rem;
     color: rosybrown;
     margin-left: 1rem;
-  
+
 }
-.logo-desktop{
+
+/* 
+.logo-desktop {
     display: none;
-}
-  .portada-titulo{
+}  */
+
+.portada-titulo {
     position: absolute;
     bottom: 3%;
     z-index: 1000;
     right: 7%;
-  }
+}
+
 .redes {
     font-size: 1.4rem;
     display: flex;
     justify-content: end;
     align-items: end;
     gap: 1.1rem;
-    margin-top: .5rem;
+    margin-top: 2.2rem;
 
 }
 
 .nav-link {
     color: white;
     transition: color .2s, 1s ease;
+    
 }
 
 .nav-link:hover {
@@ -148,8 +158,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 2rem;
-    margin-top: .3rem;
+    gap: 3.5rem;
+    /*  margin-top: .3rem; */
     margin-bottom: 0;
     font-size: 1.4rem;
     font-family: "Noto Sans JP", sans-serif;
@@ -167,19 +177,26 @@ html {
 .cerrar-menu {
     display: block;
     border: 0;
-    font-size: /* 1.25rem; */2rem;
+    font-size:
+        /* 1.25rem; */
+        2rem;
     background-color: transparent;
     cursor: pointer;
-    color:rosybrown;
-
-}
-.abrir-menu,
-.cerrar-menu {
     display: flex;
     align-self: end;
     /* color: #ececec; */
     margin-bottom: 1.2rem;
+
 }
+
+.abrir-menu {
+    color: #cfa6a6;
+}
+
+.cerrar-menu {
+    color: #ececec;
+}
+
 
 .nav {
     opacity: 0;
@@ -326,7 +343,8 @@ html {
 .hoy-titulo h4,
 .otra-titulo h4,
 .escuadron-titulo h4,
-.diarios h4 {
+.diarios h4,
+.cuchi-titulo h4 {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -343,7 +361,8 @@ html {
 
 .hoy-parrafo,
 .otra-parrafo,
-.escuadron-parrafo {
+.escuadron-parrafo,
+.cuchi-parrafo {
     display: flex;
     text-align: justify;
     margin-top: .5rem;
@@ -608,6 +627,8 @@ html {
     color: #ececec;
 }
 
+
+
 /* FOOTER MOBILE */
 .footer {
     background-color: rgb(54, 26, 54);
@@ -654,31 +675,35 @@ html {
 @media screen and (min-width: 1200px) {
 
     section {
-        scroll-margin-top: 7.2rem;
-
+        scroll-margin-top: 1rem;
     }
 
-    .nav-link {
-        color: rosybrown;
-        font-size: 1.3rem;
+    header {
+        padding-right: 2.5rem;
     }
 
-    .logo-desktop {
+    .portada {
+        height: auto;
+        margin-bottom: .3rem;
+    }
+
+    .portada-titulo {
+        bottom: 35%;
+        right: 3%;
+    }
+
+
+    .logo {
         width: 320px;
         margin-left: 1rem;
         padding-top: .3rem;
-        display: inherit;
     }
-.logo{
-    display: none;
-}
-    .portada {
-        height: auto;
+
+    .nav-link {
+        color: #ececec;
+        font-size: 1.3rem;
     }
-.portada-titulo{
-    bottom: 35%;
-    right: 3%;
-}
+
     .redes {
         font-size: 1rem;
         display: flex;
@@ -686,11 +711,19 @@ html {
         align-items: end;
         gap: 1.1rem;
         margin-bottom: .3rem;
-        margin-right: 1rem;
+        /*  margin-right: 1rem; */
+        margin-top: 1.5rem;
     }
 
-
     .nav {
+        padding-right: 2.5rem;
+    }
+
+    .nav-list {
+        gap: 3rem;
+    }
+
+    /*     .nav {
         opacity: 1;
         visibility: visible;
         display: flex;
@@ -705,42 +738,43 @@ html {
         padding: 0;
         z-index: 999;
 
+    } */
+    /*   .nav { */
+    /* Mantener el menú oculto por defecto también en desktop */
+    /*         display: none;
     }
 
-    .nav-list {
-        flex-direction: row;
+.nav.visible{
+display: block;
+}
+.cerrar-menu{
+    display: flex;
+    align-self: end;
+} */
+    /*   .nav-list {
+    /*     flex-direction: row;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: center; */
+    /*     gap: 2rem;
         font-size: 1.5rem;
-        font-family: "Noto Sans JP", sans-serif;
-    }
+        font-family: "Noto Sans JP", sans-serif */
+    ;
 
-    .nav-list li a {
-        color: rosybrown;
-       
-    }
 
-    .abrir-menu,
+    /* .nav-list li a {
+        color: #ececec/
+
+    } */
+
+    /*   .abrir-menu,
     .cerrar-menu {
         display: none;
     }
-
-    .contact {
+ */
+    /*   .contact {
         margin-right: 7vw;
     }
-
-
-    header {
-     padding: 2rem;
-        justify-content: center;
-        padding-top: 2.5rem;
-    }
-
-    .portada {
-        margin-bottom: 3rem;
-
-    }
+ */
 
     /* SECCION BIO */
 
@@ -845,7 +879,8 @@ html {
     /* DISCOGRAFIA */
     .hoy,
     .otra,
-    .escuadron {
+    .escuadron,
+    .cuchi {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
@@ -862,7 +897,8 @@ html {
 
     .hoy-titulo h4,
     .otra-titulo h4,
-    .escuadron-titulo h4 {
+    .escuadron-titulo h4,
+    .cuchi-titulo h4 {
         font-size: 1.5rem;
         margin-top: 0;
     }
@@ -997,5 +1033,35 @@ html {
         font-size: 1.3rem;
         margin-top: 2.3rem;
         margin-bottom: 1.3rem;
+    }
+}
+
+/* SECCION DOCENCIA MOBLE */
+
+.portada-docencia{
+    color: rgb(54, 26, 54);
+    font-size: 11vw;
+    display: flex;
+    justify-content: start;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;  
+    position: absolute;
+    z-index: 1000;
+    bottom: 10%;
+    right: 2%;
+    letter-spacing: .2rem;
+}
+@media screen and (min-width: 1200px){
+    .portada-docencia{
+        font-size: 5rem;
+        font-weight: 300;
+        color: rgb(54, 26, 54);
+        margin-bottom: 1rem;
+        display: flex;
+        justify-self: start;
+        align-self: start;
+        font-family: "Josefin Sans", sans-serif;
+        bottom: 35%;
+        letter-spacing: .3rem;
     }
 }
