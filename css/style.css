@@ -60,7 +60,7 @@ header {
 .portada {
     position: relative;
     z-index: 1;
-     height: 100vh; 
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -126,7 +126,7 @@ html {
 .nav-link {
     color: white;
     transition: color .2s, 1s ease;
-    
+
 }
 
 .nav-link:hover {
@@ -669,8 +669,9 @@ html {
 
 .copi {
     margin-bottom: 1.2rem;
-
 }
+
+
 
 @media screen and (min-width: 1200px) {
 
@@ -1037,31 +1038,79 @@ display: block;
 }
 
 /* SECCION DOCENCIA MOBLE */
+ .portada-d {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    object-fit: cover;
+} 
 
-.portada-docencia{
-    color:wheat;
+.portada-docencia {
+    color: wheat;
     font-size: 11vw;
     display: flex;
     justify-content: start;
     font-weight: 400;
-    font-family: "Josefin Sans", sans-serif;  
+    font-family: "Josefin Sans", sans-serif;
     position: absolute;
     z-index: 1000;
     bottom: 10%;
     right: 2%;
     letter-spacing: .2rem;
 }
-@media screen and (min-width: 1200px){
-    .portada-docencia{
+
+/* FOOTER DOCENCIA MOBILE */
+
+.footer2 {
+    background-color: rgb(54, 26, 54);
+    color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.redes-footer {
+    font-size: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1.1rem;
+    margin-top: 1.5rem;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .portada-docencia {
         font-size: 5rem;
         font-weight: 300;
-    color: wheat;
+        color: wheat;
         margin-bottom: 1rem;
         display: flex;
         justify-self: start;
         align-self: start;
         font-family: "Josefin Sans", sans-serif;
-        bottom: 35%;
+        bottom: 25%;
         letter-spacing: .3rem;
     }
+
+    /* FOOTER DOCENCIA */
+    .redes-footer {
+        margin-top: 2rem;
+
+    }
+    .portada-d{
+        object-fit: cover;
+        height: 750px;
+        width: 100%;
+        object-position:center;
+    }
+  .portada-doc{
+       max-height: 750px;
+       width: 100%;
+       object-position:center;
+    } 
 }
