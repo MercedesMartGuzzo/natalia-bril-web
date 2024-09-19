@@ -108,7 +108,7 @@ html {
 
 .portada-titulo {
     position: absolute;
-    bottom: 6%;
+    bottom: 8%;
     z-index: 1000;
     right: 7%;
 }
@@ -1039,7 +1039,7 @@ display: block;
 /* SECCION DOCENCIA MOBLE */
 
 .portada-docencia{
-    color:/*  rgb(250, 181, 7); *//* rgb(179, 245, 240); *//* rgb(202, 57, 57); */wheat;
+    color:wheat;
     font-size: 11vw;
     display: flex;
     justify-content: start;
@@ -1055,7 +1055,7 @@ display: block;
     .portada-docencia{
         font-size: 5rem;
         font-weight: 300;
-    color:  /* rgb(235, 173, 16); */ /* /rgb(224, 245, 179); *//* rgb(202, 57, 57); */wheat;
+    color: wheat;
         margin-bottom: 1rem;
         display: flex;
         justify-self: start;

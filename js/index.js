@@ -1,4 +1,4 @@
- 
+/*  
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -31,8 +31,39 @@ menuItems.forEach(item => {
         abrir.style.display = "block";
         cerrar.style.display = "none";
     });
-});  
+});   */
 
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+const menuItems = document.querySelectorAll(".nav a");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+    abrir.style.display = "none";
+    cerrar.style.display = "block";
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+    
+    setTimeout(() => {
+        cerrar.style.display = "none";
+        abrir.style.display = "block";
+    }, 1000); // Coincide con la duración de la transición en el CSS
+});
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        nav.classList.remove("visible");
+
+        // Usamos un setTimeout para sincronizar la desaparición del botón de cerrar con el menú
+        setTimeout(() => {
+            cerrar.style.display = "none";
+            abrir.style.display = "block";
+        }, 1000); // Coincide con la duración de la transición
+    });
+});
 
 
 
