@@ -1,37 +1,3 @@
-/*  
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
-const menuItems = document.querySelectorAll(".nav a");
-
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-    abrir.style.display = "none";
-    cerrar.style.display = "block";
-});
-
-cerrar.addEventListener("click", () => {
-    // Removemos la clase visible para iniciar la transición de cierre del menú
-    nav.classList.remove("visible");
-
-    // Usamos setTimeout para retrasar la desaparición del botón de cerrar
-    // hasta que termine la animación de la barra de navegación
-    setTimeout(() => {
-        cerrar.style.display = "none";
-        abrir.style.display = "block";
-    }, 1000); // El tiempo debe coincidir con la duración de la transición en el CSS (1s)
-});
-
-
-
-menuItems.forEach(item => {
-    item.addEventListener("click", () => {
-
-        nav.classList.remove("visible");
-        abrir.style.display = "block";
-        cerrar.style.display = "none";
-    });
-});   */
 
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
@@ -46,7 +12,7 @@ abrir.addEventListener("click", () => {
 
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
-    
+
     setTimeout(() => {
         cerrar.style.display = "none";
         abrir.style.display = "block";
@@ -72,8 +38,8 @@ menuItems.forEach(item => {
 
 /* SLIDER DE FOTOS */
 
-// script.js
-const prevButton = document.querySelector('.prev');
+
+ const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
@@ -101,11 +67,11 @@ nextButton.addEventListener('click', () => {
     showSlide(currentIndex + 1);
 });
 
-// Opcional: Cambiar automáticamente las imágenes cada 5 segundos
-setInterval(() => {
-    showSlide(currentIndex + 1);
-}, 5000);
 
+ setInterval(() => {
+    showSlide(currentIndex + 1);
+}, 5000);  
+/* 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     const paragraphs = document.querySelectorAll('.english');
@@ -135,8 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
-
+}); 
+ */
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona todos los elementos que deseas animar
     const elements = document.querySelectorAll('.fade-in');
@@ -156,7 +122,19 @@ document.addEventListener('DOMContentLoaded', function () {
     elements.forEach(element => {
         observer.observe(element);
     });
-});
+}); 
 
 
+/* EFECTO PARALLAX */
+const portadaImg = document.querySelector("#portada-img");
+/*  const portadaTitulo = document.querySelector("#portada-titulo");  */
+
+
+window.addEventListener("scroll", () => {
+    let scroll = window.scrollY;
+
+    portadaImg.style.top = scroll * .2 + "px";
+    /*    portadaTitulo.style.bottom =-scroll + "px";   */
+
+})      
 

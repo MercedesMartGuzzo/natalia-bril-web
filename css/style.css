@@ -54,14 +54,6 @@ header {
     /*  backdrop-filter: blur(10px); */
     width: 100%;
 
-
-}
-
-.portada {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    object-fit: cover;
 }
 
 .img-container {
@@ -78,22 +70,9 @@ html {
 
 
 /* NAV MOBILE */
-/* .abrir-menu,
-.cerrar-menu {
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-} */
 
-
-/* Estilos móviles (sin media query) */
 .logo {
-    width:
-        /* 16rem; */
-        65vw;
-    /* 7rem */
+    width: 65vw;
     margin-bottom: 0;
     padding-top: .3rem;
     color: rosybrown;
@@ -101,18 +80,34 @@ html {
 
 }
 
-/* 
-.logo-desktop {
-    display: none;
-}  */
+
+.portada {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.portada-img {
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    bottom: 0;
+}
 
 .portada-titulo {
     position: absolute;
-    bottom: 8%;
+    bottom: 4%;
     z-index: 1000;
     right: 7%;
 }
-
+.btn-eng{
+    margin-top: 1.7rem;
+   
+}
+.bi-translate{
+    font-size: 1.4rem;
+}
 .redes {
     font-size: 1.4rem;
     display: flex;
@@ -247,7 +242,8 @@ html {
 .bio,
 .discografia,
 .videos,
-.prensa {
+.prensa,
+.docencia {
     margin-top: 1rem;
     width: 90vw;
     border-top: 2px solid rosybrown;
@@ -270,7 +266,9 @@ html {
     font-family: "Josefin Sans", sans-serif;
 }
 
-.bio-parrafo {
+.bio-parrafo,
+.clases-parrafo,
+.audio-parrafo {
     display: flex;
     text-align: justify;
     padding: 1rem;
@@ -370,7 +368,11 @@ html {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.participaciones-titulo {
+.participaciones-titulo,
+.clases-canto,
+.clases-audio,
+.canto-contenido,
+.audio-contenido {
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -683,16 +685,20 @@ html {
         padding-right: 2.5rem;
     }
 
-    .portada {
-        height: auto;
-        margin-bottom: .3rem;
-    }
-
     .portada-titulo {
-        bottom: 35%;
+        bottom: 2%;
         right: 3%;
     }
 
+    .portada-img {
+        position: absolute;
+        width: 100%;
+        object-position: center;
+    }
+
+    .portada {
+        height: 100vh;
+    }
 
     .logo {
         width: 320px;
@@ -711,71 +717,24 @@ html {
         justify-content: end;
         align-items: end;
         gap: 1.1rem;
-        margin-bottom: .3rem;
-        /*  margin-right: 1rem; */
-        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1.3rem;
     }
-
+.btn-eng{
+    margin-top: .3rem;  
+}
+.bi-translate{
+    font-size: 1.3rem;
+    margin-right: 0;
+}
     .nav {
         padding-right: 2.5rem;
     }
 
     .nav-list {
-        gap: 3rem;
+        gap: 2.3rem;
     }
 
-    /*     .nav {
-        opacity: 1;
-        visibility: visible;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        position: static;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        padding: 0;
-        z-index: 999;
-
-    } */
-    /*   .nav { */
-    /* Mantener el menú oculto por defecto también en desktop */
-    /*         display: none;
-    }
-
-.nav.visible{
-display: block;
-}
-.cerrar-menu{
-    display: flex;
-    align-self: end;
-} */
-    /*   .nav-list {
-    /*     flex-direction: row;
-        align-items: center;
-        justify-content: center; */
-    /*     gap: 2rem;
-        font-size: 1.5rem;
-        font-family: "Noto Sans JP", sans-serif */
-    ;
-
-
-    /* .nav-list li a {
-        color: #ececec/
-
-    } */
-
-    /*   .abrir-menu,
-    .cerrar-menu {
-        display: none;
-    }
- */
-    /*   .contact {
-        margin-right: 7vw;
-    }
- */
 
     /* SECCION BIO */
 
@@ -1038,25 +997,53 @@ display: block;
 }
 
 /* SECCION DOCENCIA MOBLE */
- .portada-d {
+.docencia {
+    padding-top: 0;
+}
+
+.portada-d {
     position: relative;
     z-index: 1;
     height: 100vh;
+    overflow: hidden;
     object-fit: cover;
-} 
+}
+
+.clases-canto {
+    text-wrap: balance;
+}
+
+.d-img {
+    /*   position: absolute;
+    height: 100vh;
+    object-fit: cover; */
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    bottom: 0;
+
+}
 
 .portada-docencia {
     color: wheat;
     font-size: 11vw;
     display: flex;
+    /*  flex-direction: column;  */
     justify-content: start;
+    align-self: start;
     font-weight: 400;
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     z-index: 1000;
-    bottom: 10%;
+    bottom: 4%;
+    /*    letter-spacing: .2rem;   */
     right: 2%;
-    letter-spacing: .2rem;
+    text-wrap: balance;
+}
+
+.audio-parrafo,
+.clases-parrafo {
+    margin-bottom: 1rem;
 }
 
 /* FOOTER DOCENCIA MOBILE */
@@ -1093,8 +1080,29 @@ display: block;
         justify-self: start;
         align-self: start;
         font-family: "Josefin Sans", sans-serif;
-        bottom: 25%;
+        bottom: 4%;
         letter-spacing: .3rem;
+        flex-direction: row;
+        padding: 0;
+        right: 2%;
+    }
+
+    .portada-d {
+
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .d-img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        /*    top: 0;
+        left: 0;
+        bottom: 0; */
     }
 
     /* FOOTER DOCENCIA */
@@ -1102,15 +1110,4 @@ display: block;
         margin-top: 2rem;
 
     }
-    .portada-d{
-        object-fit: cover;
-        height: 750px;
-        width: 100%;
-        object-position:center;
-    }
-  .portada-doc{
-       max-height: 750px;
-       width: 100%;
-       object-position:center;
-    } 
 }
