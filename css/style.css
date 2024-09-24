@@ -288,12 +288,12 @@ html {
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
-    border-bottom: 1px solid rgb(54, 26, 54);
+ /*    border-bottom: 1px solid rgb(54, 26, 54); */
     padding-top: 0;
 
 }
 
-.bio-eng {
+/* .bio-eng {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
@@ -321,7 +321,7 @@ html {
     margin-bottom: .5rem;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
-}
+} */
 
 .bio-foto {
     border-radius: 10px;
@@ -799,9 +799,9 @@ html {
         padding-left: 1rem;
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
-        border-bottom: 1px solid rgb(54, 26, 54);
+     /*    border-bottom: 1px solid rgb(54, 26, 54); */
     }
-
+/* 
     .titulo-ingles {
         color: rgb(54, 26, 54);
         margin-top: .5rem;
@@ -819,13 +819,13 @@ html {
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
 
-    }
+    } */
 
-    .bio-eng {
+  /*   .bio-eng {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
-    }
+    } */
 
     /* .english.open .bio-eng {
         max-height: 500px; 
