@@ -1,4 +1,4 @@
-const userLang = navigator.language || navigator.userLanguage; 
+/* const userLang = navigator.language || navigator.userLanguage; 
 
 // determines if the user has a set theme
 function detectLanguage(){
@@ -21,4 +21,4 @@ const buttonLanguage = document.querySelector("#button-language");
 
 buttonLanguage.addEventListener("click", () => {
     localStorage.setItem('language', 'en');
-})
+}) */
