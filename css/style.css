@@ -97,7 +97,7 @@ html {
 
 .portada-titulo {
     position: absolute;
-    bottom: 4%;
+    bottom: 8%;
     z-index: 1000;
     right: 7%;
 }
@@ -1035,7 +1035,7 @@ html {
     font-family: "Josefin Sans", sans-serif;
     position: absolute;
     z-index: 1000;
-    bottom: 4%;
+    bottom: 8%;
     /*    letter-spacing: .2rem;   */
     right: 2%;
     text-wrap: balance;
