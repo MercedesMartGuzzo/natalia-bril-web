@@ -101,13 +101,16 @@ html {
     z-index: 1000;
     right: 7%;
 }
-.btn-eng{
+
+.btn-eng {
     margin-top: 1.7rem;
-   
+
 }
-.bi-translate{
+
+.bi-translate {
     font-size: 1.4rem;
 }
+
 .redes {
     font-size: 1.4rem;
     display: flex;
@@ -288,7 +291,7 @@ html {
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
- /*    border-bottom: 1px solid rgb(54, 26, 54); */
+    /*    border-bottom: 1px solid rgb(54, 26, 54); */
     padding-top: 0;
 
 }
@@ -342,7 +345,10 @@ html {
 .otra-titulo h4,
 .escuadron-titulo h4,
 .diarios h4,
-.cuchi-titulo h4 {
+.cuchi-titulo h4,
+.canto-contenido ,
+.canto-tango ,
+.audio-contenido  {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -370,9 +376,7 @@ html {
 
 .participaciones-titulo,
 .clases-canto,
-.clases-audio,
-.canto-contenido,
-.audio-contenido {
+.clases-audio {
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -720,13 +724,16 @@ html {
         margin-bottom: 1rem;
         margin-top: 1.3rem;
     }
-.btn-eng{
-    margin-top: .3rem;  
-}
-.bi-translate{
-    font-size: 1.3rem;
-    margin-right: 0;
-}
+
+    .btn-eng {
+        margin-top: .3rem;
+    }
+
+    .bi-translate {
+        font-size: 1.3rem;
+        margin-right: 0;
+    }
+
     .nav {
         padding-right: 2.5rem;
     }
@@ -799,9 +806,10 @@ html {
         padding-left: 1rem;
         padding-inline: .3rem;
         font-family: "Noto Sans JP", sans-serif;
-     /*    border-bottom: 1px solid rgb(54, 26, 54); */
+        /*    border-bottom: 1px solid rgb(54, 26, 54); */
     }
-/* 
+
+    /* 
     .titulo-ingles {
         color: rgb(54, 26, 54);
         margin-top: .5rem;
@@ -821,7 +829,7 @@ html {
 
     } */
 
-  /*   .bio-eng {
+    /*   .bio-eng {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
@@ -858,7 +866,10 @@ html {
     .hoy-titulo h4,
     .otra-titulo h4,
     .escuadron-titulo h4,
-    .cuchi-titulo h4 {
+    .cuchi-titulo h4,
+    .canto-contenido ,
+    .canto-tango ,
+    .audio-contenido {
         font-size: 1.5rem;
         margin-top: 0;
     }
@@ -1045,7 +1056,19 @@ html {
 .clases-parrafo {
     margin-bottom: 1rem;
 }
-
+.img-audio{
+    gap: 2rem;
+    display: grid;
+    margin-bottom: 1rem;
+}
+.canto-tango{
+    margin-top: 1rem;
+}
+.canto-contenido,.audio-contenido, .canto-tango{
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
 /* FOOTER DOCENCIA MOBILE */
 
 .footer2 {
@@ -1071,6 +1094,7 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
+
     .portada-docencia {
         font-size: 5rem;
         font-weight: 300;
@@ -1105,6 +1129,21 @@ html {
         bottom: 0; */
     }
 
+    .grilla-clases {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .canto-contenido,.audio-contenido, .canto-tango{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        padding-left: .5rem;
+        margin-bottom: 1rem;
+    }
+.canto-tango{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 2rem;

@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, {
-        threshold: 0.1 // 10% del elemento visible
+        threshold: 0.05// 10% del elemento visible
     });
 
     // Observar todos los elementos seleccionados
