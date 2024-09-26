@@ -230,16 +230,26 @@ html {
 
 .fade-in {
     opacity: 0;
-    /* transform: translateY(20px);  */
+ /*    transform: translateY(20px); */
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.show {
     opacity: 1;
-    /*   transform: translateY(0); */
+  /*   transform: translateY(0); */
 }
 
 
+.fade-in1 {
+   opacity: 0; 
+     transform: translateX(-100px); 
+    transition: transform 1s ease-out;
+}
+
+.fade-in1.show {
+    opacity: 1; 
+    transform: translateX(0); 
+}
 
 /* seccion bio */
 .bio,
@@ -346,9 +356,9 @@ html {
 .escuadron-titulo h4,
 .diarios h4,
 .cuchi-titulo h4,
-.canto-contenido ,
-.canto-tango ,
-.audio-contenido  {
+.canto-contenido,
+.canto-tango,
+.audio-contenido {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -646,6 +656,7 @@ html {
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    position: relative;
 }
 
 /*   .footer-titulo{
@@ -677,6 +688,14 @@ html {
     margin-bottom: 1.2rem;
 }
 
+.btn-footer {
+    position: fixed;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    bottom: 0;
+
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -840,7 +859,7 @@ html {
     } */
 
     .slider-container {
-        width: 280px;
+        width: 350px;
         padding-top: .5rem;
     }
 
@@ -867,8 +886,8 @@ html {
     .otra-titulo h4,
     .escuadron-titulo h4,
     .cuchi-titulo h4,
-    .canto-contenido ,
-    .canto-tango ,
+    .canto-contenido,
+    .canto-tango,
     .audio-contenido {
         font-size: 1.5rem;
         margin-top: 0;
@@ -1056,19 +1075,25 @@ html {
 .clases-parrafo {
     margin-bottom: 1rem;
 }
-.img-audio{
+
+.img-audio {
     gap: 2rem;
     display: grid;
     margin-bottom: 1rem;
 }
-.canto-tango{
+
+.canto-tango {
     margin-top: 1rem;
 }
-.canto-contenido,.audio-contenido, .canto-tango{
+
+.canto-contenido,
+.audio-contenido,
+.canto-tango {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
+
 /* FOOTER DOCENCIA MOBILE */
 
 .footer2 {
@@ -1134,16 +1159,21 @@ html {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-    .canto-contenido,.audio-contenido, .canto-tango{
+
+    .canto-contenido,
+    .audio-contenido,
+    .canto-tango {
         margin-top: 2rem;
         font-size: 1.6rem;
         padding-left: .5rem;
         margin-bottom: 1rem;
     }
-.canto-tango{
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
+
+    .canto-tango {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 2rem;
