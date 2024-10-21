@@ -354,7 +354,7 @@ html {
 .hoy-titulo h4,
 .otra-titulo h4,
 .escuadron-titulo h4,
-.diarios h4,
+.diarios h4, .radios h4,
 .cuchi-titulo h4,
 .canto-contenido,
 .canto-tango,
@@ -372,7 +372,9 @@ html {
     color: rgb(54, 26, 54);
 
 }
-
+.radios h4{
+    margin-top: 2rem;
+}
 .hoy-parrafo,
 .otra-parrafo,
 .escuadron-parrafo,
@@ -540,7 +542,7 @@ html {
 }
 
 /* SECCION PRENSA */
-.diarios {
+.diarios, .radios {
     border-bottom: 1px solid rosybrown;
     /* font-weight:lighter; */
 }
@@ -551,18 +553,19 @@ html {
 
 .grilla-prensa img {
     border: 1px solid rgb(54, 26, 54);
-
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(183, 162, 183);
 }
-
 .prensa-sub {
     color: rgb(54, 26, 54);
     margin-top: 1.5rem;
     margin-bottom: .3rem;
+    font-size: 1.3rem;
 }
 
 /* SECTION CONTACTO */
 .contacto {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     width: 100%;
     position: relative;
 
@@ -664,9 +667,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
-    padding-top: 1.5rem;
+    /*  padding-top: 1.5rem; */
     padding-bottom: 1.5rem;
     position: relative;
 }
@@ -678,26 +681,32 @@ html {
     } */
 .logo-footer {
     width: 10rem;
-    margin-top: 1.2rem;
+     margin-top: 1rem;
     transition: 1s ease;
-
-
-}
-
-.logo-footer:hover {
-
-    transform: scale(1.1);
+    margin-left: 1rem;
 }
 
 .footer-parrafo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.3rem;
+    /*   margin-top: 1.3rem;  */
 }
 
-.copi {
+/* .copi {
     margin-bottom: 1.2rem;
+} */
+
+.encabezado {
+    /*  margin-top: 1rem; */
+    margin-bottom: 1rem;
+}
+
+
+.copi {
+    font-size: .8rem;
+    margin-left: 1.2rem;
+    margin-top: .5rem;
 }
 
 .btn-footer {
@@ -710,6 +719,10 @@ html {
 }
 
 
+/* .encabezado{
+    margin-top: .5rem;
+    padding-left:0;
+} */
 @media screen and (min-width: 1200px) {
 
     section {
@@ -975,7 +988,7 @@ html {
 
     /* SECCION PRENSA */
 
-    .diarios h4 {
+    .diarios h4, .radios h4 {
         color: rgb(54, 26, 54);
         font-weight: 300;
         font-family: "Josefin sans", sans-serif;
@@ -1042,18 +1055,18 @@ html {
 
     /* FOOTER */
     .logo-footer {
-        width: 14rem;
+        width: 10rem;
     }
 
     .footer-parrafo {
-        font-size: 1.5rem;
-        margin-top: 1.3rem;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 
     .copi {
-        font-size: 1.3rem;
-        margin-top: 2.3rem;
-        margin-bottom: 1.3rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
     }
 }
 
