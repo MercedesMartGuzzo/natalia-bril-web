@@ -24,6 +24,7 @@ img {
     margin: 0 auto;
     max-width: 1200px;
     background-color: white;
+    overflow-x: hidden;
 }
 
 body {
@@ -251,6 +252,16 @@ html {
     transform: translateX(0);
 }
 
+.fade-in2 {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 1s ease-out;
+}
+
+.fade-in2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
 /* seccion bio */
 .bio,
 .discografia,
@@ -270,7 +281,7 @@ html {
 .bio-titulo,
 .discografia-titulo,
 .videos-titulo,
-.prensa-titulo {
+.prensa-titulo, .clases-cursos {
     color: rgb(54, 26, 54);
     font-size: 2.5rem;
     display: flex;
@@ -278,7 +289,9 @@ html {
     font-weight: 400;
     font-family: "Josefin Sans", sans-serif;
 }
-
+.clases-cursos{
+    margin-left: 3vw;
+}
 .bio-parrafo,
 .clases-parrafo,
 .audio-parrafo {
@@ -408,7 +421,7 @@ html {
 
 .participaciones-titulo,
 .clases-canto,
-.clases-audio ,.clases-cursos,.clases-canto{
+.clases-audio ,.clases-canto{
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -416,14 +429,17 @@ html {
     margin-bottom: .5rem;
     padding-top: .5rem;
     font-family: "Josefin sans", sans-serif;
-    margin-left: .5rem;
+    margin-left: .5rem;}
 
-}.clases-cursos{
+.clases-cursos{
     margin-top: 1.5rem;
-    border-top: 1px solid rosybrown ;
+   
+} 
+.clases-canto{
+    color: rgba(240, 233, 233, 0.932);
 }
 .clases-audio1{
-    color: rgb(54, 26, 54);
+    color: rgba(240, 233, 233, 0.932);
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
@@ -845,7 +861,7 @@ html {
     .bio-titulo,
     .discografia-titulo,
     .videos-titulo,
-    .prensa-titulo {
+    .prensa-titulo,.clases-cursos {
         font-size: 5rem;
         font-weight: 300;
         color: rgb(54, 26, 54);
@@ -1002,7 +1018,10 @@ html {
         padding-bottom: .5rem;
         margin-bottom: .5rem;
     }
-
+.grilla-clases{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
     .videos-btn {
         display: grid;
         justify-self: start;
@@ -1116,12 +1135,14 @@ html {
 }
 .btn-clases-cursos{
     background-color: rgb(178, 153, 178);
-    padding:5px;
+    padding:.5rem;
     padding-bottom: 1rem;
     border-radius: 5px; 
   margin-top: 1rem;
   box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
+
 }
+
 .portada-d {
     position: relative;
     z-index: 1;
@@ -1247,7 +1268,7 @@ html {
         bottom: 0; */
     }
 .btn-clases-cursos{
-    margin-top: 1.5rem;
+   margin-top: 0;
     padding: 1rem;
 }
     .grilla-clases {
@@ -1256,9 +1277,10 @@ html {
         gap: 2rem;
     }
 .clases-cursos{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+    border-top: 0;
+    margin-left: 4vw;
+} 
+
     .canto-contenido,
     .audio-contenido,
     .canto-tango {
