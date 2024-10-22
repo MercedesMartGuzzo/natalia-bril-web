@@ -354,8 +354,10 @@ html {
 .hoy-titulo h4,
 .otra-titulo h4,
 .escuadron-titulo h4,
-.diarios h4, .radios h4,
+.diarios h4,
+.radios h4,
 .cuchi-titulo h4,
+.delfi-titulo h4,
 .canto-contenido,
 .canto-tango,
 .audio-contenido {
@@ -372,13 +374,16 @@ html {
     color: rgb(54, 26, 54);
 
 }
-.radios h4{
+
+.radios h4 {
     margin-top: 2rem;
 }
+
 .hoy-parrafo,
 .otra-parrafo,
 .escuadron-parrafo,
-.cuchi-parrafo {
+.cuchi-parrafo,
+.delfi-parrafo, .link-nota {
     display: flex;
     text-align: justify;
     margin-top: .5rem;
@@ -386,10 +391,13 @@ html {
     font-family: "Noto Sans JP", sans-serif;
     padding-right: .5rem;
 }
-
+ .hoy-parrafo{
+    margin-bottom: .5rem;
+} 
 .escuadron-span,
 .cuchi-span,
-.otra-span {
+.otra-span,
+.delfi-span {
     display: flex;
     text-align: justify;
     margin-top: .5rem;
@@ -400,7 +408,7 @@ html {
 
 .participaciones-titulo,
 .clases-canto,
-.clases-audio {
+.clases-audio ,.clases-cursos,.clases-canto{
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -410,8 +418,29 @@ html {
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 
+}.clases-cursos{
+    margin-top: 1.5rem;
+    border-top: 1px solid rosybrown ;
 }
+.clases-audio1{
+    color: rgb(54, 26, 54);
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+   padding-right: 1rem;
+    font-family: "Josefin sans", sans-serif;
+    margin-left: .5rem;
+}
+.link-nota{
+    color: rgb(54, 26, 54);
+    margin-left: .2rem;
+}
+.link-nota:hover {
+    text-decoration: underline;
+  
 
+}
 /* slider */
 
 .slider-container {
@@ -542,7 +571,8 @@ html {
 }
 
 /* SECCION PRENSA */
-.diarios, .radios {
+.diarios,
+.radios {
     border-bottom: 1px solid rosybrown;
     /* font-weight:lighter; */
 }
@@ -556,6 +586,7 @@ html {
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgb(183, 162, 183);
 }
+
 .prensa-sub {
     color: rgb(54, 26, 54);
     margin-top: 1.5rem;
@@ -681,7 +712,7 @@ html {
     } */
 .logo-footer {
     width: 10rem;
-     margin-top: 1rem;
+    margin-top: 1rem;
     transition: 1s ease;
     margin-left: 1rem;
 }
@@ -892,7 +923,8 @@ html {
     .hoy,
     .otra,
     .escuadron,
-    .cuchi {
+    .cuchi,
+    .delfi {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
@@ -911,6 +943,7 @@ html {
     .otra-titulo h4,
     .escuadron-titulo h4,
     .cuchi-titulo h4,
+    .delfi-titulo h4,
     .canto-contenido,
     .canto-tango,
     .audio-contenido {
@@ -928,12 +961,15 @@ html {
     .hoy-parrafo,
     .otra-parrafo,
     .escuadron-parrafo,
-    .cuchi-parrafo {
+    .cuchi-parrafo,
+    .delfi-parrafo {
         font-size: .9rem;
         padding-inline: .3rem;
         padding-right: .5rem;
     }
-
+.otra-parrafo{
+    margin-bottom: .5rem;
+}
     .escuadron-titulo {
         text-wrap: balance;
     }
@@ -988,7 +1024,8 @@ html {
 
     /* SECCION PRENSA */
 
-    .diarios h4, .radios h4 {
+    .diarios h4,
+    .radios h4 {
         color: rgb(54, 26, 54);
         font-weight: 300;
         font-family: "Josefin sans", sans-serif;
@@ -1074,7 +1111,17 @@ html {
 .docencia {
     padding-top: 0;
 }
-
+.nati-cursos-desktop{
+    display: none;
+}
+.btn-clases-cursos{
+    background-color: rgb(178, 153, 178);
+    padding:5px;
+    padding-bottom: 1rem;
+    border-radius: 5px; 
+  margin-top: 1rem;
+  box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
+}
 .portada-d {
     position: relative;
     z-index: 1;
@@ -1179,7 +1226,9 @@ html {
         padding: 0;
         right: 2%;
     }
-
+.nati-cursos-desktop{
+    display: initial;
+}
     .portada-d {
 
         height: 100vh;
@@ -1197,13 +1246,19 @@ html {
         left: 0;
         bottom: 0; */
     }
-
+.btn-clases-cursos{
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
     .grilla-clases {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-
+.clases-cursos{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
     .canto-contenido,
     .audio-contenido,
     .canto-tango {
