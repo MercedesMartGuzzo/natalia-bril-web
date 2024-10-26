@@ -429,7 +429,7 @@ html {
 .participaciones-titulo,
 .clases-canto,
 .clases-audio,
-.clases-canto {
+.clases-canto1 {
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -439,7 +439,16 @@ html {
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 }
-
+.clases-canto{
+    color:rgba(240, 233, 233, 0.932);
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    padding-top: .5rem;
+    font-family: "Josefin sans", sans-serif;
+    margin-left: .5rem;
+}
 .clases-cursos {
     margin-top: 1.5rem;
 
@@ -1191,6 +1200,7 @@ transform: scale(1.1);
 
 .clases-canto {
     text-wrap: balance;
+    
 }
 
 .d-img {
@@ -1243,7 +1253,17 @@ transform: scale(1.1);
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
+.video-clases{
+    display: flex;
+    justify-content: center;
 
+}
+.video-clases iframe{
+    border-radius: 5px;
+}
+.wrapp-audio{
+    margin-bottom: 3rem;
+}
 /* FOOTER DOCENCIA MOBILE */
 
 .footer2 {
@@ -1284,8 +1304,21 @@ transform: scale(1.1);
         flex-direction: row;
         padding: 0;
         right: 2%;
+        
     }
-
+.wrapp-canto{
+    
+    margin-bottom: 5rem;
+}
+.wrapp-canto2{
+    background-color: rgb(178, 153, 178);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+.wrapp-audio{
+    margin-bottom: 5rem;
+}
     .nati-cursos-desktop {
         display: initial;
         border-radius: 5px;
@@ -1319,12 +1352,44 @@ transform: scale(1.1);
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-
-/*    .clases-cursos {
-        border-top: 0; 
-     
-    }  */
-
+.video-clases{
+    display: grid;
+    align-self: end;
+    
+}
+.video-clases iframe{
+    border-radius: 5px;
+}
+.tango-foto {
+    display: grid;
+    border-radius: 5px;
+    align-self: end;
+    justify-self: center;
+    width: 35vw;
+    height: 30vw;
+    object-fit: cover;
+    object-position: top;
+}
+.img-audio{
+    display: grid;
+    border-radius: 5px;
+    align-self: end;
+    justify-self: center;
+    width: 35vw;
+    height: 25vw;
+   
+}
+.img-audio1{
+    display: grid;
+    border-radius: 5px;
+    align-self: start;
+    justify-self: center;
+    width: 35vw;
+    height: 25vw;
+    gap:.5rem;
+    margin-top: 1rem;
+   
+}
     .canto-contenido,
     .audio-contenido,
     .canto-tango {
