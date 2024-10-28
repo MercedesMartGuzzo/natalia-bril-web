@@ -768,7 +768,6 @@ html {
 .logo-footer {
     width: 10rem;
     margin-top: 1rem;
-    transition: 1s ease;
     margin-left: 1rem;
 }
 
@@ -1292,7 +1291,7 @@ html {
     align-items: start;
     gap: 2rem;
     margin-top: 1rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
 
 }
@@ -1425,9 +1424,14 @@ html {
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
-    .copi{
+
+    .copi {
         margin-top: 1.3rem;
-       
+    }
+
+    .footer-parrafo {
+        margin-top: .5rem;
     }
 }
