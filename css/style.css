@@ -439,8 +439,9 @@ html {
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 }
-.clases-canto{
-    color:rgba(240, 233, 233, 0.932);
+
+.clases-canto {
+    color: rgba(240, 233, 233, 0.932);
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
@@ -449,6 +450,7 @@ html {
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 }
+
 .clases-cursos {
     margin-top: 1.5rem;
 
@@ -474,7 +476,7 @@ html {
 
 .link-nota:hover {
     text-decoration: underline;
-    
+
 }
 
 /* slider */
@@ -606,25 +608,28 @@ html {
     transform: scale(1.1);
 
 }
-.btn-clases{
+
+.btn-clases {
     padding: .5rem;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid rgb(54, 26, 54);
     border-radius: .5rem;
-    color:rgb(54, 26, 54);
+    color: rgb(54, 26, 54);
     margin-left: .5rem;
     font-size: 20px;
     margin-top: .5rem;
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer
 }
-.btn-clases:hover{
-color:rgba(240, 233, 233, 0.932);
-background-color:rgb(54, 26, 54);
-transform: scale(1.1);
+
+.btn-clases:hover {
+    color: rgba(240, 233, 233, 0.932);
+    background-color: rgb(54, 26, 54);
+    transform: scale(1.1);
 
 
 }
+
 /* SECCION PRENSA */
 .diarios,
 .radios {
@@ -755,16 +760,11 @@ transform: scale(1.1);
     justify-content: center;
     align-items: start;
     text-align: center;
-    /*  padding-top: 1.5rem; */
     padding-bottom: 1.5rem;
     position: relative;
 }
 
-/*   .footer-titulo{
-        margin-top: 1.5rem;
-        margin-bottom: .5rem;
-        font-weight: 300;
-    } */
+
 .logo-footer {
     width: 10rem;
     margin-top: 1rem;
@@ -776,15 +776,11 @@ transform: scale(1.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    /*   margin-top: 1.3rem;  */
 }
 
-/* .copi {
-    margin-bottom: 1.2rem;
-} */
+
 
 .encabezado {
-    /*  margin-top: 1rem; */
     margin-bottom: 1rem;
 }
 
@@ -804,11 +800,6 @@ transform: scale(1.1);
 
 }
 
-
-/* .encabezado{
-    margin-top: .5rem;
-    padding-left:0;
-} */
 @media screen and (min-width: 1200px) {
 
     section {
@@ -1200,7 +1191,7 @@ transform: scale(1.1);
 
 .clases-canto {
     text-wrap: balance;
-    
+
 }
 
 .d-img {
@@ -1253,17 +1244,33 @@ transform: scale(1.1);
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
-.video-clases{
+
+.video-clases {
     display: flex;
     justify-content: center;
 
 }
-.video-clases iframe{
+
+.video-clases iframe {
     border-radius: 5px;
 }
-.wrapp-audio{
+
+.wrapp-audio {
+    /*  border: 1px solid rgb(54, 26, 54);
+    border-radius: 5px;
+    padding: 10px; */
     margin-bottom: 3rem;
+
 }
+
+.wrapp-canto2 {
+    background-color: rgb(178, 153, 178);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 /* FOOTER DOCENCIA MOBILE */
 
 .footer2 {
@@ -1284,7 +1291,9 @@ transform: scale(1.1);
     justify-content: end;
     align-items: end;
     gap: 1.1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -1304,21 +1313,24 @@ transform: scale(1.1);
         flex-direction: row;
         padding: 0;
         right: 2%;
-        
+
     }
-.wrapp-canto{
-    
-    margin-bottom: 5rem;
-}
-.wrapp-canto2{
-    background-color: rgb(178, 153, 178);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5rem;
-}
-.wrapp-audio{
-    margin-bottom: 5rem;
-}
+
+    .wrapp-canto {
+
+        margin-bottom: 5rem;
+    }
+
+    .wrapp-canto2 {
+        background-color: rgb(178, 153, 178);
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+
+    .wrapp-audio {
+        margin-bottom: 5rem;
+    }
+
     .nati-cursos-desktop {
         display: initial;
         border-radius: 5px;
@@ -1352,44 +1364,50 @@ transform: scale(1.1);
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-.video-clases{
-    display: grid;
-    align-self: end;
-    
-}
-.video-clases iframe{
-    border-radius: 5px;
-}
-.tango-foto {
-    display: grid;
-    border-radius: 5px;
-    align-self: end;
-    justify-self: center;
-    width: 35vw;
-    height: 30vw;
-    object-fit: cover;
-    object-position: top;
-}
-.img-audio{
-    display: grid;
-    border-radius: 5px;
-    align-self: end;
-    justify-self: center;
-    width: 35vw;
-    height: 25vw;
-   
-}
-.img-audio1{
-    display: grid;
-    border-radius: 5px;
-    align-self: start;
-    justify-self: center;
-    width: 35vw;
-    height: 25vw;
-    gap:.5rem;
-    margin-top: 1rem;
-   
-}
+
+    .video-clases {
+        display: grid;
+        align-self: end;
+
+    }
+
+    .video-clases iframe {
+        border-radius: 5px;
+    }
+
+    .tango-foto {
+        display: grid;
+        border-radius: 5px;
+        align-self: end;
+        justify-self: center;
+        width: 35vw;
+        height: 30vw;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .img-audio {
+        display: grid;
+        border-radius: 5px;
+        align-self: end;
+        justify-self: center;
+        width: 35vw;
+        height: 25vw;
+
+    }
+
+    .img-audio1 {
+        display: grid;
+        border-radius: 5px;
+        align-self: start;
+        justify-self: center;
+        width: 35vw;
+        height: 25vw;
+        gap: .5rem;
+        margin-top: 1rem;
+
+    }
+
     .canto-contenido,
     .audio-contenido,
     .canto-tango {
@@ -1406,7 +1424,10 @@ transform: scale(1.1);
 
     /* FOOTER DOCENCIA */
     .redes-footer {
-        margin-top: 2rem;
-
+        margin-top: 1rem;
+    }
+    .copi{
+        margin-top: 1.3rem;
+       
     }
 }

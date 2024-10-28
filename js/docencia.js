@@ -51,3 +51,23 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+   // Selecciona todos los elementos que deseas animar
+   const elements = document.querySelectorAll('.fade-in2');
+
+   // Crear el observer
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+         }
+      });
+   }, {
+      threshold: 0.20// 10% del elemento visible
+   });
+
+   // Observar todos los elementos seleccionados
+   elements.forEach(element => {
+      observer.observe(element);
+   });
+});
