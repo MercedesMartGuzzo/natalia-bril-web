@@ -1273,7 +1273,7 @@ html {
 
 /* FOOTER DOCENCIA MOBILE */
 
-.footer2 {
+/* .footer2 {
     background-color: rgb(54, 26, 54);
     color: #ececec;
     display: flex;
@@ -1283,16 +1283,16 @@ html {
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-}
+} */
 
 .redes-footer {
     font-size: 1rem;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    gap: 1.1rem;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
 
 }
