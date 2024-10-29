@@ -374,7 +374,14 @@ html {
 .diarios h4,
 .radios h4,
 .cuchi-titulo h4,
-.delfi-titulo h4,
+.delfi-titulo h4 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: rgb(54, 26, 54);
+    font-weight: 300;
+    font-family: "Josefin sans", sans-serif;
+}
+
 .canto-contenido,
 .canto-tango,
 .audio-contenido {
@@ -429,7 +436,8 @@ html {
 .participaciones-titulo,
 .clases-canto,
 .clases-audio,
-.clases-canto1 {
+.clases-canto1,
+.testimonios {
     color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 300;
@@ -438,6 +446,13 @@ html {
     padding-top: .5rem;
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
+}
+
+.testimonios {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .clases-canto {
@@ -989,12 +1004,16 @@ html {
     .otra-titulo h4,
     .escuadron-titulo h4,
     .cuchi-titulo h4,
-    .delfi-titulo h4,
-    .canto-contenido,
-    .canto-tango,
-    .audio-contenido {
+    .delfi-titulo h4 {
         font-size: 1.5rem;
         margin-top: 0;
+    }
+
+    .canto-contenido h3,
+    .canto-tango h3,
+    .audio-contenido h3 {
+        margin-top: 0;
+        font-size: 2.5rem;
     }
 
     .participaciones-titulo {
@@ -1234,11 +1253,12 @@ html {
 
 .canto-tango {
     margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: rgba(240, 233, 233, 0.932);
 }
 
 .canto-contenido,
-.audio-contenido,
-.canto-tango {
+.audio-contenido {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -1269,6 +1289,95 @@ html {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+/* SWIPPER */
+.swiper {
+    width: 100%;
+    z-index: 0;
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+
+.swiper-slide {
+    background-color:rgba(240, 233, 233, 0.932);
+    padding: 1.5rem 2rem 2rem 2.4rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(228, 205, 205, 0.932);
+    transition: .2s;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (hover: hover) {
+    .swiper-slide:hover {
+        border-color:rgb(54, 26, 54);
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 45%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1rem;
+    color: rgb(54, 26, 54);
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(54, 26, 54);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(240, 233, 233, 0.932);
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.comment-icon {
+    font-size: .75rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color:rgb(178, 153, 178);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:black;
+}
+
+.comment-name {
+    font-size: .9rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.comment-type {
+    font-size: .8rem;
+    color: black;
+    margin-top: auto;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.comment-body {
+    font-size: .9rem;
+    line-height: 1.3;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.comment-type span {
+    display: block;
+    font-size: .8rem;
+    color:black;
+}
+
 
 /* FOOTER DOCENCIA MOBILE */
 
@@ -1411,24 +1520,46 @@ html {
     .audio-contenido,
     .canto-tango {
         margin-top: 2rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
         padding-left: .5rem;
         margin-bottom: 1rem;
     }
 
     .canto-tango {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .clases-canto1,
+    .clases-audio,
+    .testimonios {
+        color: rgb(54, 26, 54);
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        padding-top: .5rem;
+        font-family: "Josefin sans", sans-serif;
+        margin-left: .5rem;
+    }
+.testimonios{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+    .clases-audio,
+    .canto-contenido {
+        text-wrap: nowrap;
     }
 
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 1rem;
         margin-bottom: 1.5rem;
+        margin-left: 1rem;
     }
 
     .copi {
         margin-top: 1.3rem;
+        margin-left: 1rem;
     }
 
     .footer-parrafo {
