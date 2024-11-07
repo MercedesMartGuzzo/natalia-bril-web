@@ -94,6 +94,7 @@ html {
     height: 100vh;
     object-fit: cover;
     bottom: 0;
+
 }
 
 .portada-titulo {
@@ -438,7 +439,7 @@ html {
 .clases-audio,
 .clases-canto1,
 .testimonios {
-    color: rgb(54, 26, 54);
+    color: /* rgb(54, 26, 54) */whitesmoke;
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
@@ -1180,8 +1181,13 @@ html {
 }
 
 /* SECCION DOCENCIA INDEX MOBLE */
+.main-docencia{
+    background-color:/*  rgb(231, 231, 144) */ #7e3333;
+}
 .docencia {
     padding-top: 0;
+    background-color:/*  rgb(231, 231, 144) */ #7e3333;
+    border-top: none;
 }
 
 .nati-cursos-desktop {
@@ -1198,7 +1204,13 @@ html {
     box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
 
 }
-
+.alumnos{
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgb(54, 26, 54);
+}
 .portada-d {
     position: relative;
     z-index: 1;
@@ -1243,6 +1255,7 @@ html {
 .audio-parrafo,
 .clases-parrafo {
     margin-bottom: 1rem;
+    color: whitesmoke;
 }
 
 .img-audio {
@@ -1254,7 +1267,7 @@ html {
 .canto-tango {
     margin-top: 1rem;
     margin-bottom: .5rem;
-    color: rgba(240, 233, 233, 0.932);
+    color:/*  rgb(54, 26, 54); */whitesmoke;
 }
 
 .canto-contenido,
@@ -1262,6 +1275,7 @@ html {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+    color: whitesmoke;
 }
 
 .video-clases {
@@ -1279,15 +1293,15 @@ html {
     border-radius: 5px;
     padding: 10px; */
     margin-bottom: 3rem;
-
+    
 }
 
 .wrapp-canto2 {
-    background-color: rgb(178, 153, 178);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 2rem;
     margin-top: 2rem;
+   
 }
 
 .audio-fotos1 {
@@ -1442,7 +1456,8 @@ html {
     }
 
     .wrapp-canto2 {
-        background-color: rgb(178, 153, 178);
+       /*  background-color: rgb(178, 153, 178); */
+       background-color:/*  rgb(231, 231, 144) */#7e3333;
         margin-top: 0;
         margin-bottom: 5rem;
     }
@@ -1571,7 +1586,7 @@ html {
     .clases-canto1,
     .clases-audio,
     .testimonios {
-        color: rgb(54, 26, 54);
+        color: /* rgb(54, 26, 54) */whitesmoke;
         font-size: 2.5rem;
         font-weight: 300;
         margin-top: 1rem;
@@ -1584,6 +1599,7 @@ html {
     .testimonios {
         font-size: 3.5rem;
         margin-bottom: 3rem;
+        color:  rgb(54, 26, 54) ;
     }
 
     .clases-audio,
