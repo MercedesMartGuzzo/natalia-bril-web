@@ -276,6 +276,10 @@ html {
     padding-top: 1rem;
 }
 
+.docencia {
+    margin-top: 0;
+}
+
 .videos {
     border: 0;
 }
@@ -439,7 +443,9 @@ html {
 .clases-audio,
 .clases-canto1,
 .testimonios {
-    color: /* rgb(54, 26, 54) */whitesmoke;
+    color:
+        /* rgb(54, 26, 54) */
+        whitesmoke;
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
@@ -448,12 +454,18 @@ html {
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
 }
+.clases-audio,
+.participaciones-titulo,
+.testimonios {
+    color: rgb(54, 26, 54);
+}
 
 .testimonios {
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .clases-canto {
@@ -1181,13 +1193,15 @@ html {
 }
 
 /* SECCION DOCENCIA INDEX MOBLE */
-.main-docencia{
-    background-color:/*  rgb(231, 231, 144) */ #7e3333;
-}
+
 .docencia {
     padding-top: 0;
-    background-color:/*  rgb(231, 231, 144) */ #7e3333;
+    overflow: hidden;
     border-top: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .nati-cursos-desktop {
@@ -1204,25 +1218,29 @@ html {
     box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
 
 }
-.alumnos{
+
+.alumnos {
     padding: 1rem;
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 10px;
     border: 1px solid rgb(54, 26, 54);
+   /*  background-color: rosybrown; */
 }
+
 .portada-d {
     position: relative;
     z-index: 1;
     height: 100vh;
     overflow: hidden;
     object-fit: cover;
+
 }
 
-.clases-canto {
+ .clases-canto {
     text-wrap: balance;
 
-}
+} 
 
 .d-img {
     /*   position: absolute;
@@ -1231,13 +1249,14 @@ html {
     position: absolute;
     height: 100vh;
     object-fit: cover;
-    bottom: 0;
-
+    /* bottom: 0; */
+    margin-bottom: 0;
+    object-position: bottom;
 }
 
 .portada-docencia {
     color: wheat;
-    font-size: 11vw;
+    font-size: 2.5rem;
     display: flex;
     /*  flex-direction: column;  */
     justify-content: start;
@@ -1249,8 +1268,8 @@ html {
     bottom: 8%;
     /*    letter-spacing: .2rem;   */
     right: 2%;
-    text-wrap: balance;
-}
+    text-wrap: nowrap;
+} 
 
 .audio-parrafo,
 .clases-parrafo {
@@ -1267,11 +1286,12 @@ html {
 .canto-tango {
     margin-top: 1rem;
     margin-bottom: .5rem;
-    color:/*  rgb(54, 26, 54); */whitesmoke;
+    color:
+        /*  rgb(54, 26, 54); */
+        whitesmoke;
 }
 
-.canto-contenido,
-.audio-contenido {
+.canto-contenido {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -1281,11 +1301,19 @@ html {
 .video-clases {
     display: flex;
     justify-content: center;
+    width: 90vw;
 
 }
 
-.video-clases iframe {
+/* .video-clases iframe {
     border-radius: 5px;
+} */
+
+.wrapp-canto {
+    background-color: #33404f;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: .5rem;
 }
 
 .wrapp-audio {
@@ -1293,15 +1321,22 @@ html {
     border-radius: 5px;
     padding: 10px; */
     margin-bottom: 3rem;
-    
+   padding: .5rem;
+   background-color: rgb(178, 153, 178);
 }
 
 .wrapp-canto2 {
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-   
+    /*   margin-bottom: 2rem; */
+    /*    margin-top: 2rem; */
+    width: 100%;
+    background-color: #33404f;
+}
+
+.grilla-clases {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .audio-fotos1 {
@@ -1317,7 +1352,7 @@ html {
 
 /* SWIPPER */
 .swiper {
-    width: 100%;
+    width: 90vw;
     z-index: 0;
     padding-bottom: 2.5rem;
     margin-top: 2rem;
@@ -1345,12 +1380,13 @@ html {
 .swiper-button-prev {
     top: 45%;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
-   /*   font-size: 1rem;
+    /*   font-size: 1rem;
     color: rgb(54, 26, 54);  */
     display: none;
-} 
+}
 
 .swiper-pagination-bullet {
     background-color: rgb(54, 26, 54);
@@ -1447,23 +1483,42 @@ html {
         flex-direction: row;
         padding: 0;
         right: 2%;
-
+        text-wrap: nowrap;
     }
 
     .wrapp-canto {
-
-        margin-bottom: 5rem;
+        background-color: #33404f;
+        /*  margin-bottom: 5rem; */
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
     }
 
     .wrapp-canto2 {
-       /*  background-color: rgb(178, 153, 178); */
-       background-color:/*  rgb(231, 231, 144) */#7e3333;
+        /*  background-color: rgb(178, 153, 178); */
+        background-color:
+            /*  rgb(231, 231, 144) ** /#7e3333 */
+            #33404f;
         margin-top: 0;
-        margin-bottom: 5rem;
+        /*   margin-bottom: 5rem; */
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
     }
 
     .wrapp-audio {
-        margin-bottom: 5rem;
+        /*     margin-bottom: 5rem; */
+        background-color: rgb(178, 153, 178);
+        margin-top: 0;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .alumnos {
+        margin-top: 2rem;
     }
 
     .nati-cursos-desktop {
@@ -1483,7 +1538,7 @@ html {
         width: 100%;
         height: 100vh;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
         /*    top: 0;
         left: 0;
         bottom: 0; */
@@ -1498,12 +1553,14 @@ html {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        width: 100%;
     }
 
     .video-clases {
         display: grid;
         align-self: end;
-
+         width: 100%;
+         background-color:rgb(178, 153, 178);
     }
 
     .video-clases iframe {
@@ -1541,13 +1598,15 @@ html {
 
     }
 
-    .audio-fotos img  {
+    .audio-fotos img {
         height: 70vh;
     }
-    .audio-fotos1 img{
+
+    .audio-fotos1 img {
         height: 68vh;
         object-fit: cover;
     }
+
     .audio-fotos1 {
         display: grid;
         margin-top: .4rem;
@@ -1586,7 +1645,9 @@ html {
     .clases-canto1,
     .clases-audio,
     .testimonios {
-        color: /* rgb(54, 26, 54) */whitesmoke;
+        color:
+            /* rgb(54, 26, 54) */
+            whitesmoke;
         font-size: 2.5rem;
         font-weight: 300;
         margin-top: 1rem;
@@ -1595,24 +1656,28 @@ html {
         font-family: "Josefin sans", sans-serif;
         margin-left: .5rem;
     }
-
+.clases-audio{
+    color:rgb(54, 26, 54);
+}
     .testimonios {
         font-size: 3.5rem;
         margin-bottom: 3rem;
-        color:  rgb(54, 26, 54) ;
+        color: rgb(54, 26, 54);
     }
 
     .clases-audio,
     .canto-contenido {
         text-wrap: nowrap;
     }
+
     /* testimonios swiper */
     .swiper-button-next::after,
     .swiper-button-prev::after {
         font-size: 1rem;
         color: rgb(54, 26, 54);
-        display:inherit;
+        display: inherit;
     }
+
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 1rem;
