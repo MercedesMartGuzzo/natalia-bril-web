@@ -306,7 +306,7 @@ html {
 .audio-parrafo {
     display: flex;
     text-align: justify;
-    padding: 1rem;
+    padding: 1.2rem;
     justify-content: center;
     align-items: center;
     padding-inline: .3rem;
@@ -314,7 +314,11 @@ html {
     padding-bottom: 0;
     padding-top: 0;
 }
-
+.audio-parrafo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
 .bio-parrafo1 {
     display: flex;
     text-align: justify;
@@ -388,7 +392,6 @@ html {
 }
 
 .canto-contenido,
-.canto-tango,
 .audio-contenido {
     margin-top: 1rem;
     font-size: 1.8rem;
@@ -442,7 +445,7 @@ html {
 .clases-canto,
 .clases-audio,
 .clases-canto1,
-.testimonios {
+.testimonios,.canto-tango {
     color:
         /* rgb(54, 26, 54) */
         whitesmoke;
@@ -458,6 +461,9 @@ html {
 .participaciones-titulo,
 .testimonios {
     color: rgb(54, 26, 54);
+}
+.clases-canto1,.canto-tango{
+    color:wheat;
 }
 
 .testimonios {
@@ -1204,10 +1210,10 @@ html {
 
 }
 
-.nati-cursos-desktop {
+ .nati-cursos-desktop {
     display: none;
 
-}
+} 
 
 .btn-clases-cursos {
     background-color: rgb(178, 153, 178);
@@ -1224,8 +1230,10 @@ html {
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 10px;
-    border: 1px solid rgb(54, 26, 54);
+    border: 1px solid rgb(54, 26, 54); 
    /*  background-color: rosybrown; */
+   width: 90vw;
+   margin-top: 2rem;
 }
 
 .portada-d {
@@ -1274,9 +1282,15 @@ html {
 .audio-parrafo,
 .clases-parrafo {
     margin-bottom: 1rem;
-    color: whitesmoke;
+   
+    
 }
-
+.clases-parrafo{
+    color: wheat;
+}
+.audio-parrafo{
+    color: rgb(54, 26, 54);
+}
 .img-audio {
     gap: 2rem;
     display: grid;
@@ -1295,16 +1309,16 @@ html {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    color: whitesmoke;
+    color:wheat;
 }
 
-.video-clases {
+ .video-clases {
     display: flex;
     justify-content: center;
     width: 90vw;
 
 }
-
+ 
 /* .video-clases iframe {
     border-radius: 5px;
 } */
@@ -1313,7 +1327,7 @@ html {
     background-color: #33404f;
     margin-bottom: 0;
     margin-top: 0;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .wrapp-audio {
@@ -1321,22 +1335,24 @@ html {
     border-radius: 5px;
     padding: 10px; */
     margin-bottom: 3rem;
-   padding: .5rem;
+   padding: 1rem;
    background-color: rgb(178, 153, 178);
+   
 }
 
 .wrapp-canto2 {
     padding: 10px;
-    border-radius: 5px;
+ /*    border-radius: 5px; */
     /*   margin-bottom: 2rem; */
     /*    margin-top: 2rem; */
     width: 100%;
     background-color: #33404f;
+    padding-bottom: 1rem;
 }
 
 .grilla-clases {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;width: 100%;
 }
 
 .audio-fotos1 {
@@ -1352,10 +1368,11 @@ html {
 
 /* SWIPPER */
 .swiper {
-    width: 90vw;
+    width: 80vw;
     z-index: 0;
     padding-bottom: 2.5rem;
     margin-top: 2rem;
+    
 }
 
 .swiper-slide {
@@ -1490,9 +1507,9 @@ html {
         background-color: #33404f;
         /*  margin-bottom: 5rem; */
         padding-bottom: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2.5rem;
     }
 
     .wrapp-canto2 {
@@ -1503,9 +1520,9 @@ html {
         margin-top: 0;
         /*   margin-bottom: 5rem; */
         padding-bottom: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
+        padding-left: 2rem;
+        padding-right: 2rem;
+       
     }
 
     .wrapp-audio {
@@ -1513,8 +1530,8 @@ html {
         background-color: rgb(178, 153, 178);
         margin-top: 0;
         padding-bottom: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .alumnos {
@@ -1559,10 +1576,16 @@ html {
     .video-clases {
         display: grid;
         align-self: end;
+        
          width: 100%;
          background-color:rgb(178, 153, 178);
     }
-
+.video-tango{
+    background-color: #33404f;
+    display: grid;
+    align-self: end;
+     width: 100%;
+}
     .video-clases iframe {
         border-radius: 5px;
     }
@@ -1630,21 +1653,18 @@ html {
     } */
 
     .canto-contenido,
-    .audio-contenido,
-    .canto-tango {
+    .audio-contenido
+    {
         margin-top: 2rem;
         font-size: 2rem;
         padding-left: .5rem;
         margin-bottom: 1rem;
     }
 
-    .canto-tango {
-        margin-top: 1rem;
-    }
 
     .clases-canto1,
     .clases-audio,
-    .testimonios {
+    .testimonios,.canto-tango  {
         color:
             /* rgb(54, 26, 54) */
             whitesmoke;
@@ -1656,8 +1676,16 @@ html {
         font-family: "Josefin sans", sans-serif;
         margin-left: .5rem;
     }
+    
+    .canto-tango {
+        margin-top: 1rem;
+        color: wheat;
+    }
 .clases-audio{
     color:rgb(54, 26, 54);
+}
+.clases-canto1{
+    color: wheat;
 }
     .testimonios {
         font-size: 3.5rem;
