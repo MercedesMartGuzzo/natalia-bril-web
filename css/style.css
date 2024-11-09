@@ -1312,7 +1312,7 @@ html {
     color:wheat;
 }
 
- .video-clases {
+ .video-clases,.video-tango {
     display: flex;
     justify-content: center;
     width: 90vw;
@@ -1345,14 +1345,14 @@ html {
  /*    border-radius: 5px; */
     /*   margin-bottom: 2rem; */
     /*    margin-top: 2rem; */
-    width: 100%;
+    
     background-color: #33404f;
     padding-bottom: 1rem;
 }
 
 .grilla-clases {
     margin-top: 0;
-    margin-bottom: 0;width: 100%;
+    margin-bottom: 0;  
 }
 
 .audio-fotos1 {
@@ -1577,14 +1577,13 @@ html {
         display: grid;
         align-self: end;
         
-         width: 100%;
          background-color:rgb(178, 153, 178);
     }
 .video-tango{
     background-color: #33404f;
     display: grid;
     align-self: end;
-     width: 100%;
+     
 }
     .video-clases iframe {
         border-radius: 5px;
