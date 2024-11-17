@@ -280,7 +280,7 @@ html {
     border-top: 2px solid rosybrown;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    
+    padding: .5rem;
 }
 .docencia {
     margin-top: 0;
@@ -310,7 +310,7 @@ html {
 
 .bio-parrafo,
 .clases-parrafo,
-.audio-parrafo {
+.audio-parrafo,.clases-parrafo1 {
     display: flex;
     text-align: justify;
     padding: 1.2rem;
@@ -322,9 +322,8 @@ html {
     padding-top: 0;
 }
 
-.audio-parrafo {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.clases-parrafo1 {
+margin-bottom: 1rem;
 
 }
 
@@ -517,7 +516,7 @@ html {
     color:whitesmoke;
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: .5rem;
     padding-right: 1rem;
     font-family: "Josefin sans", sans-serif;
@@ -1311,8 +1310,8 @@ html {
     color:/*  wheat; */rgb(54, 26, 54);
 }
 
-.audio-parrafo {
-    color: rgb(54, 26, 54); 
+.audio-parrafo,.clases-parrafo1 {
+    color:/*  rgb(54, 26, 54);  */whitesmoke;
 }
 
 .img-audio {
