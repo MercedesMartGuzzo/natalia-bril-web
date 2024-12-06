@@ -69,6 +69,58 @@ html {
     scroll-behavior: smooth;
 }
 
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    background-color: #33404f;
+    color: var(--clr-text);
+    font-size: .8rem;
+    padding: .3rem .7rem;
+    border: 1px solid var(--clr-gray);
+    border-radius: .3rem;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(2rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: .1s;
+    width: max-content;
+    margin-top: .3rem;
+}
+
+[data-tooltip][data-tooltip-bottom]::after {
+    transform: translateX(-50%) translateY(-2rem);
+    bottom: unset;
+    top: 100%;
+}
+
+@media (hover: hover) {
+    [data-tooltip]:hover::after {
+        transform: translateX(-90%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+[data-tooltip][data-tooltip-left]::after {
+    bottom: unset;
+    left: unset;
+    transform: translateX(-2rem);
+    right: 100%;
+}
+
+@media (hover: hover) {
+    [data-tooltip][data-tooltip-left]:hover::after {
+        bottom: unset;
+        left: unset;
+        transform: translateX(0);
+        right: 100%;
+    }
+}
 
 /* NAV MOBILE */
 
@@ -91,10 +143,10 @@ html {
 
 .portada-img {
     position: absolute;
-    height: 100vh;
+    height: 100vh; 
     object-fit: cover;
     bottom: 0;
-
+ 
 }
 
 .portada-titulo {
@@ -275,13 +327,15 @@ html {
     border-top: 2px solid rosybrown;
     padding-top: 1rem;
 }
-.clasesycursos{
+
+.clasesycursos {
     width: 100%;
-    border-top: 2px solid rosybrown;
-    margin-top: 2rem;
+   /*   margin-top: 2rem;  */
     margin-bottom: 2rem;
-    padding: .5rem;
+  /*   padding: .5rem;
+    padding-top: 0; */
 }
+
 .docencia {
     margin-top: 0;
 }
@@ -303,14 +357,15 @@ html {
     font-family: "Josefin Sans", sans-serif;
 }
 
-  .clases-cursos {
+.clases-cursos {
     text-wrap: nowrap;
     padding-left: .4rem;
- } 
+}
 
 .bio-parrafo,
 .clases-parrafo,
-.audio-parrafo,.clases-parrafo1 {
+.audio-parrafo,
+.clases-parrafo1 {
     display: flex;
     text-align: justify;
     padding: 1.2rem;
@@ -323,7 +378,7 @@ html {
 }
 
 .clases-parrafo1 {
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -400,7 +455,8 @@ margin-bottom: 1rem;
 }
 
 .canto-contenido,
-.audio-contenido,.canto-tango {
+.audio-contenido,
+.canto-tango {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -467,22 +523,25 @@ margin-bottom: 1rem;
     margin-left: .5rem;
 }
 
-.clases-audio{
+.clases-audio {
     color: whitesmoke;
     font-weight: 400;
 }
-.audio-contenido{
+
+.audio-contenido {
     color: whitesmoke;
 }
+
 .participaciones-titulo,
 .testimonios {
     color: rgb(54, 26, 54);
     font-weight: 400;
 }
 
-.clases-canto1
- {
-    color:/*  wheat */rgb(54, 26, 54);
+.clases-canto1 {
+    color:
+        /*  wheat */
+        rgb(54, 26, 54);
     font-weight: 400;
 }
 
@@ -495,7 +554,7 @@ margin-bottom: 1rem;
 }
 
 .clases-canto {
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 2rem;
     font-weight: 400;
     margin-top: 1rem;
@@ -505,15 +564,15 @@ margin-bottom: 1rem;
     margin-left: .5rem;
 }
 
-.clases-cursos {
+ .clases-cursos {
     margin-top: 2rem;
 
-}
+} 
 
 
 
 .clases-audio1 {
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 2rem;
     font-weight: 400;
     margin-top: 2rem;
@@ -931,6 +990,10 @@ margin-bottom: 1rem;
         padding-top: 1rem;
     }
 
+    .clasesycursos {
+        border-top: 2px solid rosybrown;
+        margin-top: 2rem;
+    }
 
     .bio-encabezado {
         display: grid;
@@ -984,35 +1047,7 @@ margin-bottom: 1rem;
         /*    border-bottom: 1px solid rgb(54, 26, 54); */
     }
 
-    /* 
-    .titulo-ingles {
-        color: rgb(54, 26, 54);
-        margin-top: .5rem;
-        font-size: 2rem;
-        font-weight: 300;
-    }
 
-    .bio-eng {
-        display: flex;
-        text-align: justify;
-        justify-content: center;
-        padding-left: 1rem;
-        font-size: .9rem;
-        margin-top: 1rem;
-        padding-inline: .3rem;
-        font-family: "Noto Sans JP", sans-serif;
-
-    } */
-
-    /*   .bio-eng {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-    } */
-
-    /* .english.open .bio-eng {
-        max-height: 500px; 
-    } */
 
     .slider-container {
         width: 350px;
@@ -1138,7 +1173,7 @@ margin-bottom: 1rem;
     .diarios h4,
     .radios h4 {
         color: rgb(54, 26, 54);
-        font-weight:400;
+        font-weight: 400;
         font-family: "Josefin sans", sans-serif;
         font-size: 3rem;
         justify-content: start;
@@ -1241,6 +1276,9 @@ margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-radius: 5px;
     margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
     box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
 
 }
@@ -1252,7 +1290,7 @@ margin-bottom: 1rem;
     border-radius: 10px;
     border: 1px solid rgb(54, 26, 54);
     /*  background-color: rosybrown; */
-   width: 90vw; 
+    width: 90vw;
     margin-top: 2rem;
 }
 
@@ -1284,7 +1322,7 @@ margin-bottom: 1rem;
 
 .portada-docencia {
     color: whitesmoke;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     display: flex;
     /*  flex-direction: column;  */
     justify-content: start;
@@ -1294,9 +1332,9 @@ margin-bottom: 1rem;
     position: absolute;
     z-index: 1000;
     bottom: 8%;
-    /*    letter-spacing: .2rem;   */
     right: 2%;
     text-wrap: nowrap;
+
 }
 
 .audio-parrafo,
@@ -1307,11 +1345,16 @@ margin-bottom: 1rem;
 }
 
 .clases-parrafo {
-    color:/*  wheat; */rgb(54, 26, 54);
+    color:
+        /*  wheat; */
+        rgb(54, 26, 54);
 }
 
-.audio-parrafo,.clases-parrafo1 {
-    color:/*  rgb(54, 26, 54);  */whitesmoke;
+.audio-parrafo,
+.clases-parrafo1 {
+    color:
+        /*  rgb(54, 26, 54);  */
+        whitesmoke;
 }
 
 .img-audio {
@@ -1324,16 +1367,17 @@ margin-bottom: 1rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
 }
-  /*   color:
+
+/*   color:
         /*  rgb(54, 26, 54); */
-      /*   whitesmoke; */ 
+/*   whitesmoke; */
 
 
 .canto-contenido {
     padding-left: .5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
-  /*   color: wheat; */
+    /*   color: wheat; */
 }
 
 .video-clases,
@@ -1349,7 +1393,10 @@ margin-bottom: 1rem;
 } */
 
 .wrapp-canto {
-    background-color:/*  #33404f; */ rgb(178, 153, 178);
+
+    background-color:
+        /*  #33404f; */
+        rgb(178, 153, 178);
     margin-bottom: 0;
     margin-top: 0;
     padding: 1rem;
@@ -1361,7 +1408,9 @@ margin-bottom: 1rem;
     padding: 10px; */
     margin-bottom: 3rem;
     padding: 1rem;
-    background-color:/*  rgb(178, 153, 178) */#33404f;
+    background-color:
+        /*  rgb(178, 153, 178) */
+        #33404f;
 
 }
 
@@ -1371,7 +1420,9 @@ margin-bottom: 1rem;
     /*   margin-bottom: 2rem; */
     /*    margin-top: 2rem; */
 
-    background-color: /* #33404f */ rgb(178, 153, 178);
+    background-color:
+        /* #33404f */
+        rgb(178, 153, 178);
     padding-bottom: 1rem;
 }
 
@@ -1529,7 +1580,9 @@ margin-bottom: 1rem;
     }
 
     .wrapp-canto {
-        background-color:/*  #33404f */ rgb(178, 153, 178);
+        background-color:
+            /*  #33404f */
+            rgb(178, 153, 178);
         /*  margin-bottom: 5rem; */
         padding-bottom: 2rem;
         padding-left: 2rem;
@@ -1541,7 +1594,9 @@ margin-bottom: 1rem;
         /*  background-color: rgb(178, 153, 178); */
         background-color:
             /*  rgb(231, 231, 144) ** /#7e3333 */
-            rgb(178, 153, 178);  /*  #33404f */;
+            rgb(178, 153, 178);
+        /*  #33404f */
+        ;
         margin-top: 0;
         /*   margin-bottom: 5rem; */
         padding-bottom: 2rem;
@@ -1552,7 +1607,9 @@ margin-bottom: 1rem;
 
     .wrapp-audio {
         /*     margin-bottom: 5rem; */
-        background-color: /* rgb(178, 153, 178) */  #33404f ;
+        background-color:
+            /* rgb(178, 153, 178) */
+            #33404f;
         margin-top: 0;
         padding-bottom: 2rem;
         padding-left: 2rem;
@@ -1680,20 +1737,21 @@ margin-bottom: 1rem;
     } */
 
     .canto-contenido,
-    .audio-contenido, .canto-tango {
+    .audio-contenido,
+    .canto-tango {
         margin-top: 2rem;
         font-size: 2rem;
         padding-left: .5rem;
         margin-bottom: 1rem;
     }
 
-.audio-contenido{
-    color: whitesmoke;
-}
+    .audio-contenido {
+        color: whitesmoke;
+    }
+
     .clases-canto1,
     .clases-audio,
-    .testimonios
-   {
+    .testimonios {
         color:
             /* rgb(54, 26, 54) */
             whitesmoke;
@@ -1713,12 +1771,12 @@ margin-bottom: 1rem;
     }
 
     .clases-audio {
-        color:whitesmoke;
+        color: whitesmoke;
         font-weight: 400;
     }
 
     .clases-canto1 {
-        color:rgb(54, 26, 54);
+        color: rgb(54, 26, 54);
         font-weight: 400;
     }
 
@@ -1728,8 +1786,7 @@ margin-bottom: 1rem;
         color: rgb(54, 26, 54);
     }
 
-    .clases-audio,
-    .canto-contenido {
+    .clases-audio {
         text-wrap: nowrap;
     }
 
@@ -1740,9 +1797,11 @@ margin-bottom: 1rem;
         color: rgb(54, 26, 54);
         display: inherit;
     }
-.swiper{
-    width: 100%;
-}
+
+    .swiper {
+        width: 100%;
+    }
+
     /* FOOTER DOCENCIA */
     .redes-footer {
         margin-top: 1rem;
