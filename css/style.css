@@ -92,10 +92,10 @@ html {
 
 .portada-img {
     position: absolute;
-    height: 100vh; 
+    height: 100vh;
     object-fit: cover;
     bottom: 0;
- 
+
 }
 
 .portada-titulo {
@@ -279,9 +279,9 @@ html {
 
 .clasesycursos {
     width: 100%;
-   /*   margin-top: 2rem;  */
+    /*   margin-top: 2rem;  */
     margin-bottom: 2rem;
-  /*   padding: .5rem;
+    /*   padding: .5rem;
     padding-top: 0; */
 }
 
@@ -330,6 +330,34 @@ html {
     margin-bottom: 1rem;
 
 }
+.wrapp-intro{
+
+    padding: .5rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+   
+}  
+
+.intro-span{
+    color: rgb(54, 26, 54);
+    padding-right: .3rem;
+}
+/* .bi-check-all{
+    padding-right: .3rem;
+} */
+.introduccion {
+    color: black;
+    text-align: start;
+    padding: .5rem;
+    align-items: center;
+    padding-inline: .3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
 
 .bio-parrafo1 {
     display: flex;
@@ -343,36 +371,6 @@ html {
     padding-top: 0;
 
 }
-
-/* .bio-eng {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-}
-
-.english.open .bio-eng {
-    max-height: 1500px;
-
-}
-
-.titulo-ingles {
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: rgb(54, 26, 54);
-    margin-top: .5rem;
-
-}
-
-.bio-eng {
-    display: flex;
-    text-align: justify;
-    justify-content: start;
-    font-size: .9rem;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    padding-inline: .3rem;
-    font-family: "Noto Sans JP", sans-serif;
-} */
 
 .bio-foto {
     border-radius: 10px;
@@ -513,10 +511,10 @@ html {
     margin-left: .5rem;
 }
 
- .clases-cursos {
+.clases-cursos {
     margin-top: 2rem;
 
-} 
+}
 
 
 
@@ -524,11 +522,12 @@ html {
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: .5rem;
     padding-right: 1rem;
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
+    text-wrap:balance;
 }
 
 .link-nota {
@@ -870,10 +869,11 @@ html {
     header {
         padding-right: 2.5rem;
     }
+
     [data-tooltip] {
         position: relative;
     }
-    
+
     [data-tooltip]::after {
         content: attr(data-tooltip);
         background-color: #33404f;
@@ -892,13 +892,13 @@ html {
         width: max-content;
         margin-top: .3rem;
     }
-    
+
     [data-tooltip][data-tooltip-bottom]::after {
         transform: translateX(-50%) translateY(-2rem);
         bottom: unset;
         top: 100%;
     }
-    
+
     @media (hover: hover) {
         [data-tooltip]:hover::after {
             transform: translateX(-90%);
@@ -906,14 +906,14 @@ html {
             visibility: visible;
         }
     }
-    
+
     [data-tooltip][data-tooltip-left]::after {
         bottom: unset;
         left: unset;
         transform: translateX(-2rem);
         right: 100%;
     }
-    
+
     @media (hover: hover) {
         [data-tooltip][data-tooltip-left]:hover::after {
             bottom: unset;
@@ -922,6 +922,7 @@ html {
             right: 100%;
         }
     }
+
     .portada-titulo {
         bottom: 2%;
         right: 3%;
@@ -1144,10 +1145,12 @@ html {
         margin-bottom: .5rem;
     }
 
-    .grilla-clases {
+     .grilla-clases1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+        gap: 1rem;
+       
+    } 
 
     .videos-btn {
         display: grid;
@@ -1283,6 +1286,11 @@ html {
 
 }
 
+.video-clases video {
+    width: 100%;
+    height: auto;
+}
+
 .alumnos {
     padding: 1rem;
     padding-bottom: 1.5rem;
@@ -1401,15 +1409,17 @@ html {
     margin-top: 0;
     padding: 1rem;
 }
-.wrapp-canto video{
+
+.wrapp-canto video {
     width: 100%;
     height: auto;
 }
+
 .wrapp-audio {
     /*  border: 1px solid rgb(54, 26, 54);
     border-radius: 5px;
     padding: 10px; */
-    margin-bottom: 3rem;
+ /*    margin-bottom: 3rem; */
     padding: 1rem;
     background-color:
         /*  rgb(178, 153, 178) */
@@ -1609,7 +1619,7 @@ html {
     }
 
     .wrapp-audio {
-        /*     margin-bottom: 5rem; */
+       margin-bottom: 0;
         background-color:
             /* rgb(178, 153, 178) */
             #33404f;
@@ -1652,18 +1662,20 @@ html {
         padding: 1rem;
     }
 
-    .grilla-clases {
+    .btn-clases-cursos {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 2fr;
         gap: 2rem;
         width: 100%;
     }
 
+   
+
     .video-clases {
         display: grid;
-        align-self: end;
+        align-self: center;
         width: 100%;
-        background-color: #33404f;
+        /*    background-color: #33404f; */
     }
 
     .video-tango {
