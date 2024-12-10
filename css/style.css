@@ -325,7 +325,8 @@ html {
     padding-bottom: 0;
     padding-top: 0;
 }
- .audio-parrafo2 {
+
+.audio-parrafo2 {
     display: flex;
     text-align: justify;
     padding: 1.2rem;
@@ -341,22 +342,25 @@ html {
     color: #33404f;
     background-color: whitesmoke;
     font-size: 1.1rem;
-} 
+}
+
 .btn-clases2 {
     padding: .5rem;
-    background-color: transparent;
+    background-color: whitesmoke;
     border: 1px solid whitesmoke;
     border-radius: .5rem;
-    color: whitesmoke;
+    color: #33404f;
     margin-left: .5rem;
     font-size: 20px;
     margin-top: 1rem;
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer;
 }
-.btn-clases2:hover{
-    color:#33404f;
-    background-color: whitesmoke;;
+
+.btn-clases2:hover {
+    color: whitesmoke;
+    background-color:transparent;
+    
 }
 
 .clases-parrafo1 {
@@ -705,7 +709,7 @@ html {
 
 }
 
-.btn-clases {
+.btn-clases,.btn-clases3 {
     padding: .5rem;
     background-color: transparent;
     border: 1px solid rgb(54, 26, 54);
@@ -717,7 +721,14 @@ html {
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer
 }
-
+.btn-clases3 {
+    background-color: rgb(54, 26, 54);
+    color: whitesmoke;
+}
+.btn-clases3:hover{
+    color: rgb(54, 26, 54);
+    background-color: transparent;
+}
 .btn-clases:hover {
     color: rgba(240, 233, 233, 0.932);
     background-color: rgb(54, 26, 54);
@@ -1183,8 +1194,8 @@ html {
     .grilla-clases1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-padding-top: 1rem;
+        gap: 1.3rem;
+        padding-top: 1rem;
     }
 
     .videos-btn {
@@ -1423,69 +1434,60 @@ padding-top: 1rem;
     /*   color: wheat; */
 }
 
-.video-clases,
+/* .video-clases,
 .video-tango {
     display: flex;
     justify-content: center;
     width: 90vw;
 
-}
-
-/* .video-clases iframe {
-    border-radius: 5px;
 } */
 
-.wrapp-canto {
 
+
+.wrapp-canto {
     background-color:
         /*  #33404f; */
         rgb(178, 153, 178);
     margin-bottom: 0;
     margin-top: 0;
-  padding: 1rem;
-  
+    padding: 1rem;
 }
 
-.wrapp-canto video {
+.wrapp-canto video, .wrapp-canto2 video, .wrapp-audio video {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .wrapp-audio2 {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     background-color: #33404f;
- padding-bottom: 2rem; 
-gap:1rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
 }
+
 .wrapp-audio {
     margin-bottom: 0;
-    background-color:
-        /* rgb(178, 153, 178) */
-        #33404f;
+    background-color: #33404f;
     margin-top: 0;
-     padding-bottom: 2rem; 
+    padding: 1rem;
+}
+
+.wrapp-audio-fotos {
+    margin-bottom: 0;
+    background-color: #cfa6a6;
+    margin-top: 0;
+    padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.wrapp-audio-fotos{
-margin-bottom: 0;
-background-color:#cfa6a6;
-margin-top: 0;
-padding-bottom: 2rem;
-padding-left: 2rem;
-padding-right: 2rem;
-}
-.wrapp-canto2 {
-    padding: 10px;
-    /*    border-radius: 5px; */
-    /*   margin-bottom: 2rem; */
-    /*    margin-top: 2rem; */
 
-    background-color:
-        /* #33404f */
-        rgb(178, 153, 178);
+.wrapp-canto2 {
+    padding: 1rem;
+    background-color: rgb(178, 153, 178);
     padding-bottom: 1rem;
 }
 
@@ -1653,23 +1655,25 @@ padding-right: 2rem;
         padding-right: 2rem;
         padding-top: 2.5rem;
     }
-
+    .wrapp-canto video{
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
     .wrapp-canto2 {
-        /*  background-color: rgb(178, 153, 178); */
-        background-color:
-            /*  rgb(231, 231, 144) ** /#7e3333 */
-            rgb(178, 153, 178);
-        /*  #33404f */
-        ;
+        background-color: rgb(178, 153, 178);
         margin-top: 0;
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr 1fr;
         padding-bottom: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
-
+        gap: 1.3rem;
     }
-
+     .wrapp-canto2 video{
+        margin-top: 1rem;
+        border-radius: 10px;
+       
+     }
     .wrapp-audio {
         margin-bottom: 0;
         background-color:
@@ -1680,14 +1684,19 @@ padding-right: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
+.wrapp-audio video{
+ margin-top: 1rem;
+    border-radius: 10px;
+}
     .wrapp-audio-fotos {
         margin-bottom: 0;
-        background-color:#cfa6a6;
+        background-color: #cfa6a6;
         margin-top: 0;
         padding-bottom: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
     .wrapp-audio2 {
         margin-bottom: 0;
         background-color:
@@ -1698,52 +1707,56 @@ padding-right: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1.3rem;
     }
 
-    .audio-contacto{
+    .audio-contacto {
         padding-top: 1.5rem;
         display: grid;
         grid-column: span 2;
-      
+
     }
-    .audio-parrafo2{
-    display: grid;
-    grid-column: span 2;
-    text-align: justify;
-    padding: 1.2rem;
-    justify-content: center;
-    align-items: center;
-    padding-inline: .3rem;
-    font-family: "Noto Sans JP", sans-serif;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right:1rem ;
-    padding-top: .5rem;
-    border-radius: 5px;
-    color: #33404f;
-    background-color: whitesmoke;
-    font-size: 1.2rem;
-    box-shadow: 1px 1px 1px 1px #e2e8f0;
-}
-.btn-clases2 {
-    padding: .5rem;
-    background-color: transparent;
-    border: 1px solid whitesmoke;
-    border-radius: .5rem;
-    color: whitesmoke;
-    margin-left: .5rem;
-    font-size: 20px;
-    margin-top: 1rem;
-    transition: color .3s, background-color .3s, transform .3s;
-    cursor: pointer;
-   
-}
-.btn-clases2:hover{
-    color:#33404f;
-    background: whitesmoke;
-}
+
+    .audio-parrafo2 {
+        display: grid;
+        grid-column: span 2;
+        text-align: justify;
+        padding: 1.2rem;
+        justify-content: center;
+        align-items: center;
+        padding-inline: .3rem;
+        font-family: "Noto Sans JP", sans-serif;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .5rem;
+        border-radius: 5px;
+        color: #33404f;
+        background-color: whitesmoke;
+        font-size: 1.2rem;
+        box-shadow: 1px 1px 1px 1px #e2e8f0;
+    }
+
+    .btn-clases2 {
+        padding: .5rem;
+        background-color: whitesmoke;
+        border: 1px solid whitesmoke;
+        border-radius: .5rem;
+        color: #33404f;
+        margin-left: .5rem;
+        font-size: 20px;
+        margin-top: 1rem;
+        transition: color .3s, background-color .3s, transform .3s;
+        cursor: pointer;
+
+    }
+
+    .btn-clases2:hover {
+        background-color: transparent;
+        color: whitesmoke;
+    }
+
     .alumnos {
         margin-top: 2rem;
         width: 90vw;
