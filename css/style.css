@@ -270,7 +270,8 @@ html {
 .discografia,
 .videos,
 .prensa,
-.docencia,.clasesycursos {
+.docencia,
+.clasesycursos {
     margin-top: 1rem;
     width: 90vw;
     border-top: 2px solid rosybrown;
@@ -293,35 +294,39 @@ html {
     color: rgb(54, 26, 54);
     font-size: 2.5rem;
     display: flex;
-    justify-content:start;
+    justify-content: start;
     font-weight: 400;
     font-family: "Josefin Sans", sans-serif;
 }
-.clasesycursos{
+
+.clasesycursos {
     display: flex;
     flex-direction: column;
 }
+
 .clases-cursos {
-   font-size: 2.2rem; 
-   text-wrap: nowrap;
-   justify-content: start;
-} 
+    font-size: 2.2rem;
+    text-wrap: nowrap;
+    justify-content: start;
+}
 
 .bio-parrafo,
 .clases-parrafo,
-.audio-parrafo,
+.audio-parrafo,.audio-parrafo1,
 .clases-parrafo1 {
     display: flex;
     text-align: justify;
-  /*   padding: 1.2rem; */
+    /*   padding: 1.2rem; */
     justify-content: center;
     align-items: center;
-  /*   padding-inline: .3rem; */
+    /*   padding-inline: .3rem; */
     font-family: "Noto Sans JP", sans-serif;
     padding-bottom: 0;
     padding-top: 0;
 }
-
+.audio-parrafo1{
+    color: whitesmoke;
+}
 .audio-parrafo2 {
     display: flex;
     text-align: justify;
@@ -355,8 +360,8 @@ html {
 
 .btn-clases2:hover {
     color: whitesmoke;
-    background-color:transparent;
-    
+    background-color: transparent;
+    transform: scale(1.1);
 }
 
 .clases-parrafo1 {
@@ -366,7 +371,7 @@ html {
 
 .wrapp-intro {
     margin-top: 1rem;
-/* 
+    /* 
     padding: .5rem;
     padding-bottom: 1rem;
     border-radius: 5px;
@@ -379,7 +384,7 @@ html {
 
 .intro-span {
     color: rgb(54, 26, 54);
-   /*  padding-right: .3rem; */
+    /*  padding-right: .3rem; */
 }
 
 /* .bi-check-all{
@@ -438,8 +443,7 @@ html {
 }
 
 .canto-contenido,
-.audio-contenido
- {
+.audio-contenido {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: rgb(54, 26, 54);
@@ -493,15 +497,16 @@ html {
 .clases-canto,
 .clases-audio,
 .clases-canto1,
-.testimonios,.canto-tango {
-    color:  whitesmoke;
+.testimonios,
+.canto-tango {
+    color: whitesmoke;
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
     margin-bottom: .5rem;
     padding-top: .5rem;
     font-family: "Josefin sans", sans-serif;
-  /*   margin-left: .5rem; */
+    /*   margin-left: .5rem; */
 }
 
 .clases-audio {
@@ -519,7 +524,8 @@ html {
     font-weight: 400;
 }
 
-.clases-canto1, .canto-tango {
+.clases-canto1,
+.canto-tango {
     color:
         /*  wheat */
         rgb(54, 26, 54);
@@ -535,7 +541,7 @@ html {
 }
 
 .clases-canto {
-    color: whitesmoke;
+    color:rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 400;
     margin-top: 1rem;
@@ -550,7 +556,7 @@ html {
 
 
 .clases-audio1 {
-    color: whitesmoke;
+    color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 400;
     margin-top: 1.5rem;
@@ -701,33 +707,35 @@ html {
 
 }
 
-.btn-clases,.btn-clases3 {
+.btn-clases,
+.btn-clases3 {
     padding: .5rem;
-    background-color: transparent;
+    background-color: rgb(54, 26, 54);
     border: 1px solid rgb(54, 26, 54);
     border-radius: .5rem;
-    color: rgb(54, 26, 54);
+    color:whitesmoke;
     margin-left: .5rem;
     font-size: 20px;
     margin-top: .5rem;
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer
 }
+
 .btn-clases3 {
     background-color: rgb(54, 26, 54);
     color: whitesmoke;
 }
-.btn-clases3:hover{
+
+.btn-clases3:hover {
     color: rgb(54, 26, 54);
     background-color: transparent;
+    transform: scale(1.1);
 }
 
 .btn-clases:hover {
-    color: rgba(240, 233, 233, 0.932);
-    background-color: rgb(54, 26, 54);
+    color: rgb(54, 26, 54);
+    background-color: transparent;
     transform: scale(1.1);
-
-
 }
 
 /* SECCION PRENSA */
@@ -1091,14 +1099,18 @@ html {
         width: 350px;
         padding-top: .5rem;
     }
+
+    .intro-span{
+        font-size: 2rem;
+    }
     .wrapp-intro {
-        
         padding: .5rem;
+        padding-left:0 ;
         padding-bottom: 1rem;
-        border-radius: 5px; 
-        margin-left: .5rem;
+        border-radius: 5px;
+       /*  margin-left: .5rem; */
         margin-right: .5rem;
-        margin-bottom: .5rem; 
+        margin-bottom: .5rem;
     }
 
     /* DISCOGRAFIA */
@@ -1327,8 +1339,6 @@ html {
     margin-left: .5rem;
     margin-right: .5rem;
     margin-bottom: .5rem;
-    box-shadow: 1px 1px 1px 1px rgba(240, 233, 233, 0.932);
-
 }
 
 .video-clases video {
@@ -1403,7 +1413,7 @@ html {
 
 .audio-parrafo,
 .clases-parrafo1 {
-    color: whitesmoke;
+    color:rgb(54, 26, 54)
 }
 
 .img-audio {
@@ -1415,14 +1425,14 @@ html {
 .canto-tango {
     margin-top: 1rem;
     margin-bottom: .5rem;
-} 
+}
 
 
 .canto-contenido {
- /*    padding-left: .5rem; */
+    /*    padding-left: .5rem; */
     margin-bottom: 1rem;
     margin-top: 2rem;
-    
+
 }
 
 .wrapp-canto {
@@ -1432,7 +1442,9 @@ html {
     padding: 1rem;
 }
 
-.wrapp-canto video, .wrapp-canto2 video, .wrapp-audio video {
+.wrapp-canto video,
+.wrapp-canto2 video,
+.wrapp-audio video {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -1464,16 +1476,16 @@ html {
     padding-right: 2rem;
     font-display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:1rem;
+    gap: 1rem;
     padding: 10px;
-  }
-  
-  .wrapp-audio-fotos img {
+}
+
+.wrapp-audio-fotos img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
-  }
+}
 
 
 .wrapp-canto2 {
@@ -1485,6 +1497,7 @@ html {
 .grilla-clases {
     margin-top: 0;
     margin-bottom: 0;
+  
 }
 
 .audio-fotos1 {
@@ -1646,10 +1659,12 @@ html {
         padding-right: 2rem;
         padding-top: 2.5rem;
     }
-    .wrapp-canto video{
+
+    .wrapp-canto video {
         margin-top: 2rem;
         border-radius: 10px;
     }
+
     .wrapp-canto2 {
         background-color: rgba(240, 233, 233, 0.932);
         margin-top: 0;
@@ -1660,11 +1675,13 @@ html {
         padding-right: 2rem;
         gap: 1.3rem;
     }
-     .wrapp-canto2 video{
+
+    .wrapp-canto2 video {
         margin-top: 1rem;
         border-radius: 10px;
-       
-     }
+
+    }
+
     .wrapp-audio {
         margin-bottom: 0;
         background-color:
@@ -1675,13 +1692,15 @@ html {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-.wrapp-audio video{
- margin-top: 1rem;
-    border-radius: 10px;
-}
+
+    .wrapp-audio video {
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+
     .wrapp-audio-fotos {
         margin-bottom: 0;
-        background-color:  #c3adad; 
+        background-color: #c3adad;
         margin-top: 0;
         padding-bottom: 2rem;
         padding-left: 2rem;
@@ -1691,7 +1710,7 @@ html {
 
     .wrapp-audio2 {
         margin-bottom: 0;
-        background-color:  #586676;
+        background-color: #586676;
         padding-top: 2rem;
         padding-bottom: 3rem;
         padding-left: 2rem;
@@ -1776,19 +1795,25 @@ html {
     }
 
     .btn-clases-cursos {
-        margin-top: 0;
-        padding: 1rem;
-    }
-
-    .btn-clases-cursos {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 1rem;
         width: 100%;
     }
 
+.wrapp-grilla{
+    display: grid;
+    grid-column: span 2;
 
-
+}
+.wrapp-grilla p{
+    display: flex;
+    justify-content: start;
+    padding-left: .5rem;
+}
     .video-clases {
         display: grid;
         align-self: center;
@@ -1827,7 +1852,7 @@ html {
         height: 25vw;
 
     } */
-  /*   .audio-fotos {
+    /*   .audio-fotos {
         display: grid;
         width: 35vw;
         height: 35vw;
@@ -1838,7 +1863,7 @@ html {
         background-color: #c3adad;
     } */
 
-   /*  .audio-fotos img {
+    /*  .audio-fotos img {
         height: 70vh;
     }
 
@@ -1857,13 +1882,13 @@ html {
         border-radius: 5px;
     }
 
- 
+
 
     .canto-contenido,
     .audio-contenido {
         margin-top: 2rem;
         font-size: 2rem;
-     /*    padding-left: .5rem; */
+        /*    padding-left: .5rem; */
         margin-bottom: 1rem;
     }
 
@@ -1873,7 +1898,8 @@ html {
 
     .clases-canto1,
     .clases-audio,
-    .testimonios,.canto-tango {
+    .testimonios,
+    .canto-tango {
         color:
             /* rgb(54, 26, 54) */
             whitesmoke;
