@@ -312,26 +312,26 @@ html {
 
 .bio-parrafo,
 .clases-parrafo,
-.audio-parrafo,.audio-parrafo1,
+.audio-parrafo,
+.audio-parrafo1,
 .clases-parrafo1 {
     display: flex;
-    text-align: justify;
-    /*   padding: 1.2rem; */
-    justify-content: center;
-    align-items: center;
-    /*   padding-inline: .3rem; */
+    text-align: start;
+    justify-content: start;
     font-family: "Noto Sans JP", sans-serif;
     padding-bottom: 0;
     padding-top: 0;
 }
-.audio-parrafo1{
+
+.audio-parrafo1 {
     color: whitesmoke;
 }
+
 .audio-parrafo2 {
     display: flex;
-    text-align: justify;
+    text-align: start;
     padding: 1.2rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
@@ -351,7 +351,7 @@ html {
     border: 1px solid whitesmoke;
     border-radius: .5rem;
     color: #33404f;
-    margin-left: .5rem;
+    margin-left: .2rem;
     font-size: 20px;
     margin-top: 1rem;
     transition: color .3s, background-color .3s, transform .3s;
@@ -402,9 +402,9 @@ html {
 
 .bio-parrafo1 {
     display: flex;
-    text-align: justify;
+    text-align: start;
     padding: 1rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding-inline: .3rem;
     font-family: "Noto Sans JP", sans-serif;
@@ -470,11 +470,12 @@ html {
 .delfi-parrafo,
 .link-nota {
     display: flex;
-    text-align: justify;
+    text-align: start;
     margin-top: .5rem;
     margin-bottom: 1.5rem;
     font-family: "Noto Sans JP", sans-serif;
     padding-right: .5rem;
+
 }
 
 .hoy-parrafo {
@@ -486,7 +487,7 @@ html {
 .otra-span,
 .delfi-span {
     display: flex;
-    text-align: justify;
+    text-align: start;
     margin-top: .5rem;
     margin-bottom: .5rem;
     font-family: "Noto Sans JP", sans-serif;
@@ -541,7 +542,7 @@ html {
 }
 
 .clases-canto {
-    color:rgb(54, 26, 54);
+    color: rgb(54, 26, 54);
     font-size: 2rem;
     font-weight: 400;
     margin-top: 1rem;
@@ -570,12 +571,26 @@ html {
 .link-nota {
     color: rgb(54, 26, 54);
     margin-left: .2rem;
+    /* font-weight: 600; */
+    margin-top: 1rem;
+    background-color: #c3adad;
+    display: inline-block;
+    padding: .3rem .6rem;
+    padding-top: .2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #c3adad;
+    transition: color .3s, background-color .3s, transform .3s;
+    cursor: pointer;
 }
 
 .link-nota:hover {
-    text-decoration: underline;
-
+    transform: scale(1.02);
+    background-color: transparent;
+    color: rgb(54, 26, 54);
+    border: 1px solid rgb(54, 26, 54);
 }
+
 
 /* slider */
 
@@ -708,17 +723,23 @@ html {
 }
 
 .btn-clases,
-.btn-clases3 {
+.btn-clases3,
+.btn-clases0 {
     padding: .5rem;
     background-color: rgb(54, 26, 54);
     border: 1px solid rgb(54, 26, 54);
     border-radius: .5rem;
-    color:whitesmoke;
-    margin-left: .5rem;
+    color: whitesmoke;
+    margin-left: .2rem;
     font-size: 20px;
     margin-top: .5rem;
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer
+}
+
+.btn-clases0 {
+    margin-left: .42rem;
+
 }
 
 .btn-clases3 {
@@ -732,7 +753,8 @@ html {
     transform: scale(1.1);
 }
 
-.btn-clases:hover {
+.btn-clases:hover,
+.btn-clases0:hover {
     color: rgb(54, 26, 54);
     background-color: transparent;
     transform: scale(1.1);
@@ -1073,7 +1095,7 @@ html {
 
     .bio-parrafo {
         display: flex;
-        text-align: justify;
+        text-align: start;
         padding: .5rem;
         padding-top: 0;
         justify-content: center;
@@ -1085,7 +1107,7 @@ html {
 
     .bio-parrafo1 {
         display: flex;
-        text-align: justify;
+        text-align: start;
         padding: .5rem;
         padding-top: 0;
         justify-content: center;
@@ -1100,15 +1122,16 @@ html {
         padding-top: .5rem;
     }
 
-    .intro-span{
+    .intro-span {
         font-size: 2rem;
     }
+
     .wrapp-intro {
         padding: .5rem;
-        padding-left:0 ;
+        padding-left: 0;
         padding-bottom: 1rem;
         border-radius: 5px;
-       /*  margin-left: .5rem; */
+        /*  margin-left: .5rem; */
         margin-right: .5rem;
         margin-bottom: .5rem;
     }
@@ -1205,7 +1228,7 @@ html {
     .grilla-clases1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.3rem;
+        gap: 1.7rem;
         padding-top: 1rem;
     }
 
@@ -1339,6 +1362,18 @@ html {
     margin-left: .5rem;
     margin-right: .5rem;
     margin-bottom: .5rem;
+
+}
+
+.wrapp-cursos {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.wrapp-cursos p {
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .video-clases video {
@@ -1413,7 +1448,7 @@ html {
 
 .audio-parrafo,
 .clases-parrafo1 {
-    color:rgb(54, 26, 54)
+    color: rgb(54, 26, 54)
 }
 
 .img-audio {
@@ -1442,6 +1477,10 @@ html {
     padding: 1rem;
 }
 
+.wrapp-canto p {
+    padding-left: .2rem;
+}
+
 .wrapp-canto video,
 .wrapp-canto2 video,
 .wrapp-audio video {
@@ -1460,11 +1499,20 @@ html {
     gap: 1rem;
 }
 
+.wrapp-audio p {
+    padding-left: .2rem;
+}
+
 .wrapp-audio {
     margin-bottom: 0;
     background-color: #33404f;
     margin-top: 0;
     padding: 1rem;
+}
+
+.wrapp-audio p,
+.wrapp-canto2 p {
+    padding-left: .2rem;
 }
 
 .wrapp-audio-fotos {
@@ -1474,18 +1522,12 @@ html {
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    font-display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* font-display: grid;
+    grid-template-columns: 2fr 1fr 1fr; */
     gap: 1rem;
     padding: 10px;
 }
 
-.wrapp-audio-fotos img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
 
 
 .wrapp-canto2 {
@@ -1497,7 +1539,7 @@ html {
 .grilla-clases {
     margin-top: 0;
     margin-bottom: 0;
-  
+
 }
 
 .audio-fotos1 {
@@ -1661,8 +1703,9 @@ html {
     }
 
     .wrapp-canto video {
-        margin-top: 2rem;
+        margin-top: 3rem;
         border-radius: 10px;
+        display: grid;
     }
 
     .wrapp-canto2 {
@@ -1699,14 +1742,63 @@ html {
     }
 
     .wrapp-audio-fotos {
-        margin-bottom: 0;
+        display: grid;
+        width: 90vw;
+        justify-content: center;
+        align-self: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "vertical horizontal1"
+            "vertical horizontal2";
+        gap: 1rem;
         background-color: #c3adad;
-        margin-top: 0;
-        padding-bottom: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: 0;
+        margin-top: 2rem;
+        border-radius: 10px;
+        padding: 1rem;
+        padding-right: 0;
     }
+
+    .audio-fotos {
+        grid-area: vertical;  
+    }
+
+    .audio-fotos1 img:first-child {
+        grid-area: horizontal1;    
+    }
+
+    .audio-fotos1 img:last-child {
+        grid-area: horizontal2;
+    }
+
+    .audio-fotos img {
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        /*   display: block; */
+        border-radius: 8px;
+        display: flex;
+        justify-self: start;
+        align-self: flex-start;
+    }
+
+    .audio-fotos1 {
+        width: 535px;
+    }
+
+    .audio-fotos1 img {
+        width: 600px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        border-radius: 8px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
 
     .wrapp-audio2 {
         margin-bottom: 0;
@@ -1730,7 +1822,7 @@ html {
     .audio-parrafo2 {
         display: grid;
         grid-column: span 2;
-        text-align: justify;
+        text-align: start;
         padding: 1.2rem;
         justify-content: center;
         align-items: center;
@@ -1753,7 +1845,7 @@ html {
         border: 1px solid whitesmoke;
         border-radius: .5rem;
         color: #33404f;
-        margin-left: .5rem;
+        margin-left: .2rem;
         font-size: 20px;
         margin-top: 1rem;
         transition: color .3s, background-color .3s, transform .3s;
@@ -1796,7 +1888,7 @@ html {
 
     .btn-clases-cursos {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 2fr;
         gap: 2rem;
         margin-top: 0;
         margin-left: 0;
@@ -1804,16 +1896,7 @@ html {
         width: 100%;
     }
 
-.wrapp-grilla{
-    display: grid;
-    grid-column: span 2;
 
-}
-.wrapp-grilla p{
-    display: flex;
-    justify-content: start;
-    padding-left: .5rem;
-}
     .video-clases {
         display: grid;
         align-self: center;
