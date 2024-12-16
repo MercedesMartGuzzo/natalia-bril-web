@@ -422,10 +422,21 @@ html {
     margin-top: 1rem;
     padding: .5rem;
     margin-bottom: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
 }
 
 .discos-grilla img {
     border-radius: 10px;
+}
+
+.hoy,
+.otra,
+.escuadron,
+.cuchi,
+.delfi {
+    border-bottom: 1px solid rgb(178, 153, 178);
 }
 
 .hoy-titulo h4,
@@ -569,26 +580,26 @@ html {
 }
 
 .link-nota {
-    color: rgb(54, 26, 54);
+    color: whitesmoke;
     margin-left: .2rem;
     /* font-weight: 600; */
     margin-top: 1rem;
-    background-color: #c3adad;
+    background-color: rgb(54, 26, 54);
     display: inline-block;
     padding: .3rem .6rem;
     padding-top: .2rem;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #c3adad;
+    border: 1px solid rgb(54, 26, 54);
     transition: color .3s, background-color .3s, transform .3s;
     cursor: pointer;
 }
 
 .link-nota:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     background-color: transparent;
     color: rgb(54, 26, 54);
-    border: 1px solid rgb(54, 26, 54);
+
 }
 
 
@@ -698,10 +709,10 @@ html {
 .videos-btn,
 .prensa-btn {
     padding: .5rem;
-    background-color: transparent;
+    background-color: rgb(54, 26, 54);
     border: 1px solid rgb(54, 26, 54);
     border-radius: .5rem;
-    color: rgb(54, 26, 54);
+    color: whitesmoke;
     margin-left: .5rem;
     font-size: 20px;
     margin-top: .5rem;
@@ -715,10 +726,10 @@ html {
 
 .videos-btn:hover,
 .prensa-btn:hover {
-    color: #ececec;
-    background-color: rgb(54, 26, 54);
+    color: rgb(54, 26, 54);
+    background-color: transparent;
     border: 1px solid rgb(54, 26, 54);
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -1137,6 +1148,10 @@ html {
     }
 
     /* DISCOGRAFIA */
+    .discos-grilla {
+        gap: 1rem;
+    }
+
     .hoy,
     .otra,
     .escuadron,
@@ -1149,6 +1164,7 @@ html {
         background-color: rgba(240, 233, 233, 0.932);
         padding: .7rem;
         border-radius: 10px;
+        border-bottom: none;
     }
 
     .hoy {
@@ -1162,7 +1178,11 @@ html {
     .cuchi-titulo h4,
     .delfi-titulo h4 {
         font-size: 1.5rem;
-        margin-top: 0;
+        margin-top: .3rem;
+    }
+
+    .escuadron-titulo h4 {
+        text-wrap: nowrap;
     }
 
     .canto-contenido h3,
@@ -1213,7 +1233,7 @@ html {
     }
 
     .videos-wrapp {
-        padding-bottom: .5rem;
+        padding-bottom: 1rem;
     }
 
     .grilla-videos {
@@ -1244,7 +1264,7 @@ html {
 
     .videos-titulo {
         padding-top: 1rem;
-
+        margin-bottom: 0;
     }
 
     .videos-sub {
@@ -1743,62 +1763,41 @@ html {
 
     .wrapp-audio-fotos {
         display: grid;
-        width: 90vw;
-        justify-content: center;
-        align-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "vertical horizontal1"
-            "vertical horizontal2";
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         background-color: #c3adad;
         margin: 0;
-        margin-top: 2rem;
-        border-radius: 10px;
-        padding: 1rem;
-        padding-right: 0;
-    }
-
-    .audio-fotos {
-        grid-area: vertical;  
-    }
-
-    .audio-fotos1 img:first-child {
-        grid-area: horizontal1;    
-    }
-
-    .audio-fotos1 img:last-child {
-        grid-area: horizontal2;
+        /*    padding-left: 1rem;
+        padding-right: 1rem; */
     }
 
     .audio-fotos img {
-        width: 100%;
-        height: 540px;
+        height: 350px;
+        width: 500px;
         object-fit: cover;
-        /*   display: block; */
-        border-radius: 8px;
+        object-position: inherit;
+    }
+
+    .audio-fotos {
+        width: 400px;
+        height: 350px;
         display: flex;
-        justify-self: start;
-        align-self: flex-start;
+        object-fit: contain;
+        object-position: top;
+        filter: opacity(80%);
     }
 
     .audio-fotos1 {
-        width: 535px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .audio-fotos1 img {
-        width: 600px;
-        height: 250px;
+        height: auto;
         object-fit: cover;
-        object-position: top;
-        display: block;
-        border-radius: 8px;
-        display: flex;
-        align-self: center;
-        justify-self: center;
     }
-
 
     .wrapp-audio2 {
         margin-bottom: 0;
@@ -1955,10 +1954,10 @@ html {
         object-fit: cover;
     } */
 
-    .audio-fotos1 {
+    /*   .audio-fotos1 {
         display: grid;
         margin-top: .4rem;
-    }
+    } */
 
     .audio-fotos img,
     .audio-fotos1 img {
