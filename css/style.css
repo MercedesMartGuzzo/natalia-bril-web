@@ -305,8 +305,111 @@ html {
     /* Las imágenes horizontales ocupan dos columnas */
 }
 
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
 
 
+}
+
+.modal.active {
+    display: flex;
+}
+
+.slider1 .swiper-wrapper {
+    display: flex;
+  }
+.slider1 .swiper {
+    width: 100%;
+    max-width: 800px; 
+}
+
+.slider1 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+}
+
+
+
+
+.slider1 .swiper-slide img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+.modal .close-button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color:rgb(178, 153, 178);
+    font-size: 40px;
+    font-weight:bold;
+     font-family: "swiper-icons"; 
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.modal .close-button:hover {
+    font-family: 35px;
+    transition: 0.3s;
+}
+
+
+.slider1 .swiper-button-next,
+.slider1 .swiper-button-prev {
+    color: rgb(178, 153, 178);
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+ 
+}
+
+.slider1 .swiper-button-next:hover,
+.slider1 .swiper-button-prev:hover {
+    transform: scale(1.1);
+}
+
+
+.slider1 .swiper-pagination-bullet {
+    background-color:whitesmoke;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.slider1 .swiper-pagination-bullet-active {
+    background-color:rgb(178, 153, 178);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+.slider1 .swiper-button-next::after,
+.slider1 .swiper-button-prev::after {
+    font-size: 30px;
+}
+
+
+/* Íconos de navegación */
+/* .swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 30px;
+
+} */
 
 /* seccion bio */
 .bio,
@@ -648,7 +751,7 @@ html {
 
 
 /* slider */
-
+/* 
 .slider-container {
     position: relative;
     width: 100%;
@@ -707,7 +810,7 @@ html {
 .slider-container:hover .prev,
 .slider-container:hover .next {
     opacity: 1;
-}
+} */
 
 /* SECCION VIDEOS */
 .videos {
@@ -1128,7 +1231,7 @@ html {
         align-content: start;
 
     }
- 
+
     .bio-titulo,
     .discografia-titulo,
     .videos-titulo,
@@ -1172,10 +1275,10 @@ html {
         /*    border-bottom: 1px solid rgb(54, 26, 54); */
     }
 
-    .slider-container {
+  /*   .slider-container {
         width: 350px;
         padding-top: .5rem;
-    }
+    } */
 
     .intro-span {
         font-size: 2rem;
@@ -1191,218 +1294,236 @@ html {
         margin-bottom: .5rem;
     }
 
-   .photo-grid{
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    margin-top: 0;
-   } 
-
-    /* DISCOGRAFIA */
-    .discos-grilla {
-        gap: 1rem;
-    }
-
-    .hoy,
-    .otra,
-    .escuadron,
-    .cuchi,
-    .delfi {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 3rem;
-        margin-bottom: 3rem;
-        background-color: rgba(240, 233, 233, 0.932);
-        padding: .7rem;
-        border-radius: 10px;
-        border-bottom: none;
-    }
-
-    .hoy {
-        margin-bottom: 5rem;
-        margin-top: 1rem;
-    }
-
-    .hoy-titulo h4,
-    .otra-titulo h4,
-    .escuadron-titulo h4,
-    .cuchi-titulo h4,
-    .delfi-titulo h4 {
-        font-size: 1.5rem;
-        margin-top: .3rem;
-    }
-
-    .escuadron-titulo h4 {
-        text-wrap: nowrap;
-    }
-
-    .canto-contenido h3,
-    .audio-contenido h3 {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         margin-top: 0;
-        font-size: 2.5rem;
     }
 
-    .participaciones-titulo {
-        display: flex;
-        font-size: 3rem;
-        justify-self: start;
-        align-self: start;
-    }
-
-    .hoy-parrafo,
-    .otra-parrafo,
-    .escuadron-parrafo,
-    .cuchi-parrafo,
-    .delfi-parrafo {
-        font-size: .9rem;
-        padding-inline: .3rem;
-        padding-right: .5rem;
-    }
-
-    .otra-parrafo {
-        margin-bottom: .5rem;
-    }
-
-    .escuadron-titulo {
-        text-wrap: balance;
-    }
-
-    .escuadron img,
-    .escuadron iframe {
-        display: grid;
-        align-self: center;
-        margin-bottom: 1rem;
-    }
-
-    /* SECCION VIDEOS */
-    .videos {
-        display: grid;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-
-    .videos-wrapp {
-        padding-bottom: 1rem;
-    }
-
-    .grilla-videos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        padding: 2rem;
-        padding-bottom: .5rem;
-        margin-bottom: .5rem;
-    }
-
-    .grilla-clases1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.7rem;
-        padding-top: 1rem;
-    }
-
-    .videos-btn {
-        display: grid;
-        justify-self: start;
-        margin-left: 2.2vw;
-    }
-
-    .videos-wrapp {
-        background-color: rgba(240, 233, 233, 0.932);
-    }
-
-    .videos-titulo {
-        padding-top: 1rem;
-        margin-bottom: 0;
-    }
-
-    .videos-sub {
-        color: rgb(54, 26, 54);
-    }
-
-    /* SECCION PRENSA */
-
-    .diarios h4,
-    .radios h4 {
-        color: rgb(54, 26, 54);
-        font-weight: 400;
-        font-family: "Josefin sans", sans-serif;
-        font-size: 3rem;
-        justify-content: start;
-        align-self: start;
-
-    }
-
-    .prensa {
-        width: 90vw;
-        border-top: 2px solid rosybrown;
-        display: grid;
-        padding-top: 1rem;
-    }
-
-    .grilla-prensa {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5rem;
-    }
-
-    .prensa-sub {
-        font-size: 1.5rem;
-    }
-
-    /* SECCION CONTACTO */
-    .img-wrapper {
-        width: 100%;
-        height: 600px;
+  .slider1 .swiper-container {
+        width: 50%;
+        margin: 0 auto;
         overflow: hidden;
     }
 
-    .img-wrapper img {
-        max-width: 100%;
+   .slider1 .swiper-wrapper {
+        width: 100%;
     }
 
-    .contacto-titulo {
-        font-size: 5rem;
-        font-weight: 300;
-        color: rgb(54, 26, 54);
-        margin-bottom: 1rem;
-        font-family: "Josefin Sans", sans-serif;
-        letter-spacing: .3rem;
-        top: 54%;
-        position: absolute;
-    }
 
-    .redes2 {
-        font-size: 1.5rem;
-        gap: 1.6rem;
-        top: 71%;
-        right: 11%;
 
-    }
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .contacto-parrafo {
-        font-size: 1.5rem;
-        right: 6.5%;
-        bottom: 8.5%;
+/* DISCOGRAFIA */
+.discos-grilla {
+    gap: 1rem;
+}
 
-    }
+.hoy,
+.otra,
+.escuadron,
+.cuchi,
+.delfi {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    background-color: rgba(240, 233, 233, 0.932);
+    padding: .7rem;
+    border-radius: 10px;
+    border-bottom: none;
+}
 
-    /* FOOTER */
-    .logo-footer {
-        width: 10rem;
-    }
+.hoy {
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
 
-    .footer-parrafo {
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
+.hoy-titulo h4,
+.otra-titulo h4,
+.escuadron-titulo h4,
+.cuchi-titulo h4,
+.delfi-titulo h4 {
+    font-size: 1.5rem;
+    margin-top: .3rem;
+}
 
-    .copi {
-        font-size: 1rem;
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-    }
+.escuadron-titulo h4 {
+    text-wrap: nowrap;
+}
+
+.canto-contenido h3,
+.audio-contenido h3 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.participaciones-titulo {
+    display: flex;
+    font-size: 3rem;
+    justify-self: start;
+    align-self: start;
+}
+
+.hoy-parrafo,
+.otra-parrafo,
+.escuadron-parrafo,
+.cuchi-parrafo,
+.delfi-parrafo {
+    font-size: .9rem;
+    padding-inline: .3rem;
+    padding-right: .5rem;
+}
+
+.otra-parrafo {
+    margin-bottom: .5rem;
+}
+
+.escuadron-titulo {
+    text-wrap: balance;
+}
+
+.escuadron img,
+.escuadron iframe {
+    display: grid;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+/* SECCION VIDEOS */
+.videos {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.videos-wrapp {
+    padding-bottom: 1rem;
+}
+
+.grilla-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.grilla-clases1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.7rem;
+    padding-top: 1rem;
+}
+
+.videos-btn {
+    display: grid;
+    justify-self: start;
+    margin-left: 2.2vw;
+}
+
+.videos-wrapp {
+    background-color: rgba(240, 233, 233, 0.932);
+}
+
+.videos-titulo {
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+.videos-sub {
+    color: rgb(54, 26, 54);
+}
+
+/* SECCION PRENSA */
+
+.diarios h4,
+.radios h4 {
+    color: rgb(54, 26, 54);
+    font-weight: 400;
+    font-family: "Josefin sans", sans-serif;
+    font-size: 3rem;
+    justify-content: start;
+    align-self: start;
+
+}
+
+.prensa {
+    width: 90vw;
+    border-top: 2px solid rosybrown;
+    display: grid;
+    padding-top: 1rem;
+}
+
+.grilla-prensa {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.prensa-sub {
+    font-size: 1.5rem;
+}
+
+/* SECCION CONTACTO */
+.img-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+}
+
+.contacto-titulo {
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgb(54, 26, 54);
+    margin-bottom: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: .3rem;
+    top: 54%;
+    position: absolute;
+}
+
+.redes2 {
+    font-size: 1.5rem;
+    gap: 1.6rem;
+    top: 71%;
+    right: 11%;
+
+}
+
+.contacto-parrafo {
+    font-size: 1.5rem;
+    right: 6.5%;
+    bottom: 8.5%;
+
+}
+
+/* FOOTER */
+.logo-footer {
+    width: 10rem;
+}
+
+.footer-parrafo {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.copi {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
 }
 
 /* SECCION DOCENCIA INDEX MOBLE */
@@ -1624,50 +1745,51 @@ html {
 }
 
 /* SWIPPER */
-.swiper {
+.slider2 .swiper {
     width: 80vw;
     z-index: 0;
     padding-bottom: 2.5rem;
     margin-top: 2rem;
-
+ overflow: hidden;
 }
 
-.swiper-slide {
+.slider2 .swiper-slide {
     background-color: rgba(240, 233, 233, 0.932);
     padding: 1.5rem 2rem 2rem 2.4rem;
     border-radius: .5rem;
     border: 1px solid rgba(228, 205, 205, 0.932);
     transition: .2s;
-    height: auto;
+    height: auto; 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    overflow: hidden;
 }
 
 @media (hover: hover) {
-    .swiper-slide:hover {
+  .slider2 .swiper-slide:hover {
         border-color: rgb(54, 26, 54);
     }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.slider2 .swiper-button-next,
+.slider2 .swiper-button-prev {
     top: 45%;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.slider2 .swiper-button-next::after,
+.slider2 .swiper-button-prev::after {
     /*   font-size: 1rem;
     color: rgb(54, 26, 54);  */
     display: none;
 }
 
-.swiper-pagination-bullet {
+.slider2 .swiper-pagination-bullet {
     background-color: rgb(54, 26, 54);
     opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+.slider2 .swiper-pagination-bullet-active {
     background-color: rgba(240, 233, 233, 0.932);
 }
 
@@ -1909,6 +2031,7 @@ html {
     .alumnos {
         margin-top: 2rem;
         width: 90vw;
+       
     }
 
     .nati-cursos-desktop {
@@ -2075,14 +2198,14 @@ html {
     }
 
     /* testimonios swiper */
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
+    .slider2 .swiper-button-next::after,
+   .slider2 .swiper-button-prev::after {
         font-size: 1rem;
         color: rgb(54, 26, 54);
         display: inherit;
     }
 
-    .swiper {
+   .slider2 .swiper {
         width: 100%;
     }
 

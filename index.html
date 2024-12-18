@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -351,6 +352,7 @@
             Bares Notables en 2018.
           </p>
         </div>
+
         <div class="photo-grid">
           <img src="./img/nati-frente.jpg" alt="Foto 1" class="vertical" data-index="0">
           <img src="./img/portada.docencia.jpg" alt="Foto 2" class="horizontal" data-index="1">
@@ -368,32 +370,59 @@
           <!--  <img src="./img/swiper6.jpg" alt="Foto 13" class="horizontal" data-index="12">
           <img src="./img/vivo.jpg" alt="Foto 14" class="horizontal" data-index="13"> -->
           <!-- Modal con slider -->
-        </div>
+        
+          <div class="modal" id="photo-modal">
+            <span class="close-button" id="close-modal">&times;</span>
+            <div class="swiper mySwiper slider1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/nati-frente.jpg" alt="Foto 1"></div>
+                <div class="swiper-slide"><img src="./img/portada.docencia.jpg" alt="Foto 2"> </div>
+                <div class="swiper-slide"><img src="./img/nati.tiradorres.jpg" alt="Foto 3"></div>
+                <div class="swiper-slide"><img src="./img/nati-perfil.jpg" alt="Foto 4"></div>
+                <div class="swiper-slide"><img src="./img/nati-deperfil.jpg" alt="Foto 5"></div>
+                <div class="swiper-slide"><img src="./img/audio2.jpg" alt="Foto 6"></div>
+                <div class="swiper-slide"><img src="./img/nati-leo.jpg" alt="Foto 7"></div>
+                <div class="swiper-slide"><img src="./img/audio1.jpg" alt="Foto 8"></div>
+                <div class="swiper-slide"><img src="./img/nati-sonriendo.jpg" alt="Foto 9"></div>
+                <!--  <div class="swiper-slide"><img src="./img/crischus-swipper.jpg" alt="Foto 9"></div>
+                      <div class="swiper-slide"><img src="./img/crischusswipper2.jpg" alt="Foto 10"></div>
+                      <div class="swiper-slide"><img src="./img/crischusswipper3.jpg" alt="Foto 11"></div>  -->
+                <!--    <div class="swiper-slide"><img src="./img/swipper5.jpg" alt="Foto 13"></div> -->
+                <!--    <div class="swiper-slide"><img src="./img/swiper6.jpg" alt="Foto 12"></div>
+                      <div class="swiper-slide"><img src="./img/vivo.jpg" alt="Foto 13"></div> -->
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>  
       </div>
     </section>
-    <section class="contacto fade-in" id="contacto">
-      <div class="contacto-wrapp">
-        <h2 class="contacto-titulo fade-in">CONTACTO</h2>
-        <div class="img-wrapper fade-in">
-          <img src="./img/nati-mirando.jpg" alt="">
-        </div>
-        <div class="redes2 fade-in">
-          <a class="nav-link1 s" href="https://open.spotify.com/artist/4BSpt92sc9lO2AxozKY0oP?si=70B5lR-fSHCl84edMQyBcQ"
-            target="_blank"><i class="bi bi-spotify"></i></a>
-          <a class="nav-link1 y" href="https://youtube.com/@nbril?si=eFZ7NsQiIUKq11iM" target="_blank"><i
-              class="bi bi-youtube"></i></a>
-          <a class="nav-link1 ig" href="https://www.instagram.com/bril_natalia" target="_blank"><i
-              class="bi bi-instagram"></i></a>
-          <a class="nav-link1 f" href="https://www.facebook.com/natybril" target="_blank"><i
-              class="bi bi-facebook"></i></a>
-          <a class="nav-link1 w" href="https://wa.me/5491124539740" target="_blank"><i class="bi bi-whatsapp"></i></a>
-          <a class="nav-link1 m" href="mailto:nataliabril@gmail.com?subject=Consulta&body=Hola%20Natalia,"
-            target="_blank"><i class="bi bi-envelope-paper-heart"></i></a>
-        </div>
-        <p class="contacto-parrafo fade-in">Para comunicarte con Natalia Bril,<br> escribí a <span
-            class="resalta">nataliabril@gmail.com</span></p>
-      </div>
-    </section>
+          <section class="contacto fade-in" id="contacto">
+            <div class="contacto-wrapp">
+              <h2 class="contacto-titulo fade-in">CONTACTO</h2>
+              <div class="img-wrapper fade-in">
+                <img src="./img/nati-mirando.jpg" alt="">
+              </div>
+              <div class="redes2 fade-in">
+                <a class="nav-link1 s"
+                  href="https://open.spotify.com/artist/4BSpt92sc9lO2AxozKY0oP?si=70B5lR-fSHCl84edMQyBcQ"
+                  target="_blank"><i class="bi bi-spotify"></i></a>
+                <a class="nav-link1 y" href="https://youtube.com/@nbril?si=eFZ7NsQiIUKq11iM" target="_blank"><i
+                    class="bi bi-youtube"></i></a>
+                <a class="nav-link1 ig" href="https://www.instagram.com/bril_natalia" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+                <a class="nav-link1 f" href="https://www.facebook.com/natybril" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+                <a class="nav-link1 w" href="https://wa.me/5491124539740" target="_blank"><i
+                    class="bi bi-whatsapp"></i></a>
+                <a class="nav-link1 m" href="mailto:nataliabril@gmail.com?subject=Consulta&body=Hola%20Natalia,"
+                  target="_blank"><i class="bi bi-envelope-paper-heart"></i></a>
+              </div>
+              <p class="contacto-parrafo fade-in">Para comunicarte con Natalia Bril,<br> escribí a <span
+                  class="resalta">nataliabril@gmail.com</span></p>
+            </div>
+          </section>
   </main>
   <footer class="footer fade-in">
     <div>
@@ -409,7 +438,8 @@
     </div>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <script src="./js/swiper2.js"></script>
 
   <script src="./js/index.js"></script>
   <script src="./js/language.js"></script>

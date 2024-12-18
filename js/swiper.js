@@ -1,4 +1,4 @@
-const swiper = new Swiper(".mySwiper", {
+const swiper2 = new Swiper(".slider2", {
 
     breakpoints: {
         // when window width is >= 320px
@@ -20,13 +20,13 @@ const swiper = new Swiper(".mySwiper", {
     grabCursor: true,
 
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slider2 .swiper-pagination",
         clickable: true,
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.slider2 .swiper-button-next',
+        prevEl: '.slider2 .swiper-button-prev',
     }
 
 });
