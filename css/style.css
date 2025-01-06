@@ -460,7 +460,6 @@ html {
 
 .bio-parrafo,
 .audio-parrafo,
-.audio-parrafo1,
 .clases-parrafo1 {
     display: flex;
     text-align: start;
@@ -469,7 +468,7 @@ html {
     padding-bottom: 0;
     padding-top: 0;
 }
-.clases-parrafo {
+.clases-parrafo, .audio-parrafo1{
     display: inline; 
     text-align: start;
     font-family: "Noto Sans JP", sans-serif;
@@ -478,13 +477,40 @@ html {
     color: whitesmoke;
     margin-bottom: 4rem;
 }
-
-.clases-parrafo span {
-    font-weight: bold; /* Destaca el span */
-    margin-right: 0.5rem; /* Espacio entre el span y el texto restante */
-    display: inline; /* Asegura que se comporte como texto en línea */
+.audio-parrafo1{
+margin-top:.5rem;
+margin-bottom: 1rem;
 }
+.clases-parrafo span{
+    font-weight: bold; 
+    margin-right: 0.5rem; 
+    display: inline; 
+  
+}
+.wrapp-audio span {
+font-weight: bold; 
+margin-right: 0.5rem; 
+display: inline; 
+color: whitesmoke;
+font-size: 1.1rem;
+color: whitesmoke;
 
+}
+.span-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.bi-plus-lg{
+    margin-left: .5rem;
+    cursor: pointer;
+    color:whitesmoke;
+    transition: color .3s, transform .3s;
+}
+.bi-plus-lg:hover{
+    color: rgb(178, 153, 178);
+    transform: scale(1);
+}
 .audio-parrafo1 {
     color: whitesmoke;
 }

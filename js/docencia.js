@@ -71,3 +71,16 @@ document.addEventListener('DOMContentLoaded', function () {
       observer.observe(element);
    });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+   const toggleIcon = document.getElementById('toggle-icon');
+   const toggleParagraph = document.getElementById('toggle-paragraph');
+
+   toggleIcon.addEventListener('click', () => {
+      if (toggleParagraph.style.display === 'none') {
+         toggleParagraph.style.display = 'block';
+      } else {
+         toggleParagraph.style.display = 'none';
+      }
+   });
+});
