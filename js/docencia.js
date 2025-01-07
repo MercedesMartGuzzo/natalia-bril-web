@@ -72,15 +72,24 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 });
 
+/* boton desplegable */
 document.addEventListener('DOMContentLoaded', () => {
    const toggleIcon = document.getElementById('toggle-icon');
    const toggleParagraph = document.getElementById('toggle-paragraph');
 
    toggleIcon.addEventListener('click', () => {
-      if (toggleParagraph.style.display === 'none') {
-         toggleParagraph.style.display = 'block';
+      if (toggleParagraph.classList.contains('show')) {
+         toggleParagraph.classList.remove('show');
+         setTimeout(() => {
+            toggleParagraph.style.display = 'none';
+            toggleIcon.textContent = 'Ver más'; // Cambia el texto a "Ver más"
+         }, 500); // Tiempo de la transición en milisegundos
       } else {
-         toggleParagraph.style.display = 'none';
+         toggleParagraph.style.display = 'block';
+         setTimeout(() => {
+            toggleParagraph.classList.add('show');
+            toggleIcon.textContent = 'Ver menos'; // Cambia el texto a "Ver menos"
+         }, 10); // Pequeño retraso para permitir que el display: block; se aplique
       }
    });
 });
