@@ -1,24 +1,44 @@
+// Detecta el idioma del usuario y redirige si es necesario
 const userLang = navigator.language || navigator.userLanguage;
 
-// determines if the user has a set theme
 function detectLanguage() {
-    // local storage is used to override OS theme settings
-    if (localStorage.getItem("language")) {
-        if (localStorage.getItem("language") == "es") {
-            return
+    const savedLanguage = localStorage.getItem("language");
+
+    if (savedLanguage) {
+        if (savedLanguage === "es") {
+            return;
         } else {
-            document.location.href = "./en";
+            document.location.href = "./en/index.html";
         }
     } else {
         if (!userLang.startsWith("es")) {
-            document.location.href = "./en";
+            document.location.href = "./en/index.html";
         }
     }
 }
 detectLanguage();
 
-const buttonLanguage = document.querySelector("#button-language");
+// Configura los botones de cambio de idioma
+document.addEventListener("DOMContentLoaded", () => {
+    const buttonLanguageES = document.querySelector("#button-language-es");
+    const buttonLanguageEN = document.querySelector("#button-language-en");
+    const languageButtons = document.querySelector("#language-buttons");
 
-buttonLanguage.addEventListener("click", () => {
-    localStorage.setItem('language', 'en');
-})  
+    buttonLanguageES.addEventListener("click", () => {
+        localStorage.setItem("language", "es");
+        document.location.href = "./index.html";
+    });
+
+    buttonLanguageEN.addEventListener("click", () => {
+        localStorage.setItem("language", "en");
+        document.location.href = "./en/index.html";
+    });
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > window.innerHeight) { // 100vh
+            languageButtons.classList.remove("show");
+        } else {
+            languageButtons.classList.add("show");
+        }
+    });
+});

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,12 +21,16 @@
 
 <body>
     <header>
+        <div class="btn-eng"id="language-buttons">
+            <a class="nav-link" href="./index.html" id="button-language-en">EN</a>
+            <a class="nav-link" href="../index.html" id="button-language-es">ES</a>
+        </div>
         <!-- a href="./index.html"><img class="logo" src="./img/logo-nati.png" alt="logo"></a>   -->
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
-                <li><a href="../pages/docencia.html">CLASSES & COURSES</a></li>
+                <li><a href="../en/docencia.html">CLASSES & COURSES</a></li>
                 <li><a href="#discografia">DISCOGRAPHY</a></li>
                 <li><a href="#videos">VIDEOS</a></li>
                 <li><a href="#prensa">PRESS</a></li>
@@ -45,12 +50,6 @@
                 <a class="nav-link f" href="https://www.facebook.com/natybril" target="_blank"><i
                         class="bi bi-facebook"></i></a>
             </div>
-            <div class="btn-eng">
-                <a class="nav-link" href="../" data-tooltip="Cambiar a Español" data-tooltip-bottom
-                    aria-label="Cambiar a Español" id="button-language"><i class="bi bi-translate"></i></a>
-            </div>
-
-
         </nav>
     </header>
     <main>
@@ -62,31 +61,43 @@
         </div>
 
         <section class="clasesycursos container">
-            <div>
-                <h2 class="clases-cursos fade-in">CLASSES & COURSES</h2>
-            </div>
-            <div class="grilla-clases container">
-                <img class="nati-cursos-desktop fade-in1" src="./img/portada.docencia.jpg" alt="">
-                <div class="btn-clases-cursos fade-in2">
 
-                    <!--  <div> -->
-                    <h4 class="clases-canto fade-in">SINGING</h4>
-                    <p class="clases-parrafo1 fade-in">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Blanditiis a totam
-                        autem
-                        ratione minus consequuntur, aliquam in quas officiis error laudantium deserunt quis nemo. Eaque
-                        nisi
-                        adipisci deleniti quaerat minus?</p>
-                    <a href="../pages/docencia.html#canto"> <button class="btn-clases fade-in">See more</button></a>
-                    <!--    </div> -->
-                    <h4 class="clases-audio1 fade-in">EAR TRAINNING</h4>
-                    <p class="audio-parrafo fade-in">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-                        ducimus,
-                        quaerat
-                        tempora, hic nemo earum libero necessitatibus error quo amet voluptatibus maiores corrupti
-                        architecto
-                        adipisci facilis nihil, non eius! Aspernatur.</p>
-                    <a href="../pages/docencia.html#audio"> <button class="btn-clases fade-in">See more</button></a>
+            <h2 class="clases-cursos fade-in">CLASSES & COURSES</h2>
+            <div class="wrapp-intro">
+                <p class="introduccion fade-in2"><span class="intro-span fade-in1">FACE TO FACE &
+                        ONLINE</span><br><br>
+                    Enter each of the following sections and find out what the classes are like</p>
+            </div>
+
+            <div class="grilla-clases">
+                <div class="btn-clases-cursos fade-in1">
+
+                    <div class="wrapp-cursos">
+                        <h4 class="clases-canto fade-in">SINGING</h4>
+                        <p class="clases-parrafo1 fade-in">Develop your vocal technique, your interpretive resources and
+                            enjoy your own voice.
+                        </p>
+                        <a href="./docencia.html#canto"> <button class="btn-clases0 fade-in">See
+                                more</button></a>
+                    </div>
+
+                    <div class="wrapp-cursos">
+                        <h4 class="clases-canto fade-in">TANGO SINGING</h4>
+                        <p class="clases-parrafo1 fade-in">Explore the stylistic resources of tango applied to the voice
+                            and find your style within the genre.
+                        </p>
+                        <a href="./docencia.html#tango"> <button class="btn-clases0 fade-in">See
+                                more</button></a>
+                    </div>
+                    <div class="wrapp-cursos">
+                        <h4 class="clases-audio1 fade-in">EAR TRAINING AND MUSIC THEORY
+                        </h4>
+                        <p class="audio-parrafo fade-in">Expand your musical skills by training your ear and learning
+                            harmony, musical language, analysis and morphology, among other content.
+                        </p>
+                        <a href="./docencia.html#audio"> <button class="btn-clases0 fade-in">See
+                                more</button></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -151,7 +162,6 @@
                 </div>
             </div>
             </div>
-            </div>
 
 
             <h3 class="participaciones-titulo fade-in">PARTICIPATIONS</h3>
@@ -211,35 +221,23 @@
                         <h4>EL RITUAL (2021)</h4>
                         <span class="delfi-span"> Genre: Tango.</span>
                         <p class="delfi-parrafo fade-in">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eveniet iste earum
-                            deserunt accusantium culpa vero esse vel, sequi laborum ratione voluptas nostrum architecto
-                            eius minus sint voluptatum libero! Minus.
+                            Choirs on the song El ritual from the album of the same name by Delfina Daverio
                         </p>
                     </div>
                 </div>
             </div>
-
-
         </section>
         <div class="videos-wrapp">
             <section class="videos fade-in" id="videos">
                 <h2 class="videos-titulo fade-in">VIDEOS</h2>
                 <div class="grilla-videos fade-in">
-                    <!--                   <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sW3IB60RI9c?si=b6lsCPn-oQCGEF_O"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p class="videos-sub">Hoy</p>
-          </div>  -->
-                    <div class="fade-in">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/NMsYaNcTNZI?si=XEmUMVOz8x00J0KG"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p class="videos-sub">Otra Mirada</p>
-                    </div>
+                    <!--  <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sW3IB60RI9c?si=b6lsCPn-oQCGEF_O"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="videos-sub">Hoy</p>
+                </div> -->
                     <div class="fade-in">
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/PmtTI-qWq0A?si=qRDRbkJGBvc49X5l"
@@ -247,6 +245,22 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <p class="videos-sub">El Gordo Triste</p>
+                    </div>
+                    <div class="fade-in">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_ca0skXNGMc?si=KGFCMMS3KuQd-Ry6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="videos-sub">María</p>
+                    </div>
+                    <div class="fade-in">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/Jc_wesub24I?si=VJdGYdDQOpke_qXO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="videos-sub">Claudinette</p>
                     </div>
                     <div class="fade-in">
                         <iframe width="560" height="315"
@@ -258,15 +272,6 @@
                     </div>
                     <div class="fade-in">
                         <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/_ca0skXNGMc?si=KGFCMMS3KuQd-Ry6"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p class="videos-sub">María</p>
-                    </div>
-
-                    <div class="fade-in">
-                        <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/Q7ph_Ke2sUA?si=BxALblwOyuRdpMy0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -275,52 +280,22 @@
                     </div>
                     <div class="fade-in">
                         <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/Jc_wesub24I?si=VJdGYdDQOpke_qXO"
+                            src="https://www.youtube.com/embed/NMsYaNcTNZI?si=XEmUMVOz8x00J0KG"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p class="videos-sub">Claudinette</p>
+                        <p class="videos-sub">Otra Mirada</p>
                     </div>
                 </div>
-                <a href="https://youtube.com/@nbril?si=eFZ7NsQiIUKq11iM" target="_blank"><button class="videos-btn">Ver
-                        más</button></a>
+                <a href="https://youtube.com/@nbril?si=eFZ7NsQiIUKq11iM" target="_blank"><button class="videos-btn">See
+                        more</button></a>
+            </section>
         </div>
-        <div>
-            <h2 class="clases-cursos fade-in">CLASSES | COURSES</h2>
-        </div>
-        <div class="grilla-clases container">
-            <img class="nati-cursos-desktop fade-in1" src="../img/portada.docencia.jpg" alt="">
-            <div class="btn-clases-cursos fade-in2">
-
-                <!--  <div> -->
-                <h4 class="clases-canto fade-in">SINGING</h4>
-                <p class="clases-parrafo fade-in">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis a
-                    totam
-                    autem
-                    ratione minus consequuntur, aliquam in quas officiis error laudantium deserunt quis nemo. Eaque nisi
-                    adipisci deleniti quaerat minus?</p>
-                <button class="prensa-btn fade-in">See more</button>
-                <!--    </div> -->
-                <h4 class="clases-audio1 fade-in">EAR TRAINING</h4>
-                <p class="audio-parrafo fade-in">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-                    ducimus,
-                    quaerat
-                    tempora, hic nemo earum libero necessitatibus error quo amet voluptatibus maiores corrupti
-                    architecto
-                    adipisci facilis nihil, non eius! Aspernatur.</p>
-                <button class="prensa-btn fade-in">See more</button>
-            </div>
-        </div>
-        </section>
-
 
 
         <section class="prensa container fade-in" id="prensa">
 
             <h2 class="prensa-titulo fade-in">PRESS</h2>
-            <div class="diarios fade-in">
-                <h4>GRAPHIC MEDIA</h4>
-            </div>
 
             <div class="grilla-prensa fade-in">
                 <div class="nota fade-in">
@@ -329,15 +304,28 @@
                     <a href="https://www.pagina12.com.ar/434980-natalia-bril-hay-que-dejar-atras-la-nostalgia-nociva-del-tan"
                         target="_blank"><button class="prensa-btn">Full article</button></a>
                 </div>
+                <div class="nota fade-in">
+                    <p class="prensa-sub fade-in"> La Mañana-Victor Hugo Morlaes</p>
+                    <img src="../img/victor-hugo.-radio.png" alt="">
+                    <a href="https://www.instagram.com/tv/CfZxmy8lm8E/?utm_source=ig_web_copy_link"
+                        target="_blank"><button class="prensa-btn">Full article</button></a>
+                </div>
                 <div class="fade-in">
                     <p class="prensa-sub fade-in">TiempoAr</p>
                     <img src="../img/prensa-otra.jpg" alt="">
-                    <a href="../img/prensa-otra.jpg" target="_blank"><button class="prensa-btn">Ir a nota</button></a>
+                    <a href="../img/prensa-otra.jpg" target="_blank"><button class="prensa-btn">Full
+                            article</button></a>
                 </div>
                 <div class="fade-in">
                     <p class="prensa-sub fade-in">Quinto Elemento</p>
                     <img src="../img/nota-quinto.png" alt="">
                     <a href="https://quintoelementoweb.com.ar/natalia-bril-el-presente-habla-de-un-nuevo-rumbo-del-tango-como-sucedio-en-todas-las-epocas-desde-sus-inicios.html"
+                        target="_blank"><button class="prensa-btn">Full article</button></a>
+                </div>
+                <div class="fade-in">
+                    <p class="prensa-sub fade-in">Verdades Afiladas-A Murano</p>
+                    <img src="../img/adrianmurano.png" alt="">
+                    <a href="https://ar.radiocut.fm/audiocut/natalia-bril-con-adrian-murano-adelantando-presentacion-su-disco-hoy-con-agustin-conejeros/"
                         target="_blank"><button class="prensa-btn">Full article</button></a>
                 </div>
                 <div class="fade-in">
@@ -357,23 +345,6 @@
                     <img src="../img/entrevista.png" alt="">
                     <a href="../img/entrevista-entera.jpg" target="_blank"><button class="prensa-btn">Full
                             article</button></a>
-                </div>
-            </div>
-            <div class="radios fade-in">
-                <h4>RADIO MEDIA</h4>
-            </div>
-            <div class="grilla-prensa fade-in">
-                <div class="nota fade-in">
-                    <p class="prensa-sub fade-in"> La Mañana-Victor Hugo Morlaes</p>
-                    <img src="../img/victor-hugo.-radio.png" alt="">
-                    <a href="https://www.instagram.com/tv/CfZxmy8lm8E/?utm_source=ig_web_copy_link"
-                        target="_blank"><button class="prensa-btn">Full article</button></a>
-                </div>
-                <div class="fade-in">
-                    <p class="prensa-sub fade-in">Verdades Afiladas-A Murano</p>
-                    <img src="../img/adrianmurano.png" alt="">
-                    <a href="https://ar.radiocut.fm/audiocut/natalia-bril-con-adrian-murano-adelantando-presentacion-su-disco-hoy-con-agustin-conejeros/"
-                        target="_blank"><button class="prensa-btn">Full article</button></a>
                 </div>
             </div>
         </section>
@@ -431,24 +402,51 @@
 
                     </p>
                 </div>
-                <!--         <div class="img-container">
-          <img class="bio-foto" src="./img/nati-frente.jpg" alt="">
-        </div> -->
-                <div>
-                    <div class="slider-container fade-in">
-                        <div class="slider">
-                            <div class="slides">
-                                <div class="slide"><img src="../img/nati-frente.jpg" alt="Foto 1"></div>
-                                <div class="slide"><img src="../img/nati-perfil.jpg" alt="Foto 2"></div>
-                                <div class="slide"><img src="../img/nati-vertical.jpg" alt="Foto 3"></div>
+                <div class="photo-grid">
+                    <img src="../img/nati-frente.jpg" alt="Foto 1" class="vertical" data-index="0">
+                    <img src="../img/nati-swiper1.jpg" alt="Foto 2" class="horizontal" data-index="1">
+                    <img src="../img/nati-sonriendo.jpg" alt="Foto 3" class="horizontal" data-index="2">
+                    <img src="../img/nati-leo.jpg" alt="Foto 4" class="vertical" data-index="3">
+                    <img src="../img/swiper2.jpg" alt="Foto 5" class="horizontal" data-index="4">
+                    <img src="../img/swiper3.jpg" alt="Foto 6" class="horizontal" data-index="5">
+                    <img src="../img/audio2.jpg" alt="Foto 7" class="horizontal" data-index="6">
+                    <img src="../img/swiper4.jpg" alt="Foto 8" class="horizontal" data-index="7">
+                    <img src="../img/audio1.jpg" alt="Foto 9" class="horizontal" data-index="8">
+                    <img src="../img/nati-swiper.jpg" alt="Foto 10" class="horizontal" data-index="9">
+                    <!--  <img src="./img/crischusswipper2.jpg" alt="Foto 11" class="horizontal" data-index="10">
+                    <img src="./img/crischusswipper3.jpg" alt="Foto 12" class="horizontal" data-index="11">  -->
+                    <!--    <img src="./img/swipper5.jpg" alt="Foto 13" class="vertical" data-index="12"> -->
+                    <!--  <img src="./img/swiper6.jpg" alt="Foto 13" class="horizontal" data-index="12">
+                    <img src="./img/vivo.jpg" alt="Foto 14" class="horizontal" data-index="13"> -->
+                    <!-- Modal con slider -->
+
+                    <div class="modal" id="photo-modal">
+                        <span class="close-button" id="close-modal">&times;</span>
+                        <div class="swiper mySwiper slider1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../img/nati-frente.jpg" alt="Foto 1"></div>
+                                <div class="swiper-slide"><img src="../img/nati-swiper1.jpg" alt="Foto 2"> </div>
+                                <div class="swiper-slide"><img src="../img/nati-sonriendo.jpg" alt="Foto 3"></div>
+                                <div class="swiper-slide"><img src="../img/nati-leo.jpg" alt="Foto 4"></div>
+                                <div class="swiper-slide"><img src="../img/swiper2.jpg" alt="Foto 5"></div>
+                                <div class="swiper-slide"><img src="../img/swiper3.jpg" alt="Foto 6"></div>
+                                <div class="swiper-slide"><img src="../img/audio2.jpg" alt="Foto 7"></div>
+                                <div class="swiper-slide"><img src="../img/swiper4.jpg" alt="Foto 8"></div>
+                                <div class="swiper-slide"><img src="../img/audio1.jpg" alt="Foto 9"></div>
+                                <div class="swiper-slide"><img src="../img/nati-swiper.jpg" alt="Foto 10"></div>
+                                <!--      <div class="swiper-slide"><img src="./img/crischusswipper2.jpg" alt="Foto 10"></div>
+                                <div class="swiper-slide"><img src="./img/crischusswipper3.jpg" alt="Foto 11"></div>  -->
+                                <!--    <div class="swiper-slide"><img src="./img/swipper5.jpg" alt="Foto 13"></div> -->
+                                <!--    <div class="swiper-slide"><img src="./img/swiper6.jpg" alt="Foto 12"></div>
+                                <div class="swiper-slide"><img src="./img/vivo.jpg" alt="Foto 13"></div> -->
                             </div>
-                            <button class="prev">❮</button>
-                            <button class="next">❯</button>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+
         </section>
         <section class="contacto fade-in" id="contacto">
             <div class="contacto-wrapp">
@@ -485,17 +483,23 @@
             <p class="footer-parrafo encabezado">Singer | Teacher</p>
         </div>
         <div>
-            <div>
-                <p class="footer-parrafo copi"><i class="bi bi-c-circle"></i> mercedesguzzo </i></p>
-            </div>
+            <p class="footer-parrafo copi"><i class="bi bi-c-circle"></i>2024 |All rigths reserved |
+                <a href="mailto:mamercedesguzzo@gmail.com?subject=Consulta&body=Hola%20Mercedes,"
+                    target="_blank">mercedesguzzo</a>
+        </div>
 
     </footer>
 
     <!--  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/swiper2.js"></script>
+
     <script src="../js/index.js"></script>
-    <script src="../js/language-en.js"></script>
+    <script src="../js/languaje-en.js"></script>
+    
 </body>
 
 </html>

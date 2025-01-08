@@ -40,19 +40,13 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content:
-        /* space-between; */
-        end;
+    justify-content: end;
     padding: 1rem;
     padding-top: 1.5rem;
     background-color: transparent;
-    position:
-        /*   sticky;   */
-        fixed;
+    position:fixed;
     top: 0;
-    /* border-bottom: 1px solid rosybrown; */
-    z-index: 1000;
-    /*  backdrop-filter: blur(10px); */
+    z-index: 1000; 
     width: 100%;
 
 }
@@ -106,14 +100,20 @@ html {
 }
 
 .btn-eng {
-    margin-top: 1.7rem;
-
-}
-
-.bi-translate {
+    top: 31px;
     font-size: 1.4rem;
-}
-
+    right:50px;
+    margin-right: 0.3rem;
+    position: fixed;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+  }
+  .btn-eng.show {
+    opacity: 1;
+    pointer-events: auto; 
+  }
+  
 .redes {
     font-size: 1.4rem;
     display: flex;
@@ -789,7 +789,8 @@ color: whitesmoke;
     padding-right: 1rem;
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
-    text-wrap: balance;
+     text-wrap: balance;
+   display: flex;
 }
 
 .link-nota {
@@ -815,68 +816,6 @@ color: whitesmoke;
 
 }
 
-
-/* slider */
-/* 
-.slider-container {
-    position: relative;
-    width: 100%;
-
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    background-color: transparent;
-    border: 0;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-}
-
-.prev {
-    left: 12px;
-}
-
-.next {
-    right: 12px;
-}
-
-
-.slider-container:hover .prev,
-.slider-container:hover .next {
-    opacity: 1;
-} */
 
 /* SECCION VIDEOS */
 .videos {
@@ -1163,58 +1102,6 @@ color: whitesmoke;
         padding-right: 2.5rem;
     }
 
-    [data-tooltip] {
-        position: relative;
-    }
-
-    [data-tooltip]::after {
-        content: attr(data-tooltip);
-        background-color: #33404f;
-        color: var(--clr-text);
-        font-size: .8rem;
-        padding: .3rem .7rem;
-        border: 1px solid var(--clr-gray);
-        border-radius: .3rem;
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%) translateY(2rem);
-        opacity: 0;
-        visibility: hidden;
-        transition: .1s;
-        width: max-content;
-        margin-top: .3rem;
-    }
-
-    [data-tooltip][data-tooltip-bottom]::after {
-        transform: translateX(-50%) translateY(-2rem);
-        bottom: unset;
-        top: 100%;
-    }
-
-    @media (hover: hover) {
-        [data-tooltip]:hover::after {
-            transform: translateX(-90%);
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-
-    [data-tooltip][data-tooltip-left]::after {
-        bottom: unset;
-        left: unset;
-        transform: translateX(-2rem);
-        right: 100%;
-    }
-
-    @media (hover: hover) {
-        [data-tooltip][data-tooltip-left]:hover::after {
-            bottom: unset;
-            left: unset;
-            transform: translateX(0);
-            right: 100%;
-        }
-    }
 
     .portada-titulo {
         bottom: 2%;
@@ -1252,21 +1139,19 @@ color: whitesmoke;
         margin-top: 1.3rem;
     }
 
-    .btn-eng {
-        margin-top: .3rem;
+    .btn-eng  {
+       top: 31px;
+       right: 70px;
     }
 
-    .bi-translate {
-        font-size: 1.3rem;
-        margin-right: 0;
-    }
+
 
     .nav {
         padding-right: 2.5rem;
     }
 
     .nav-list {
-        gap: 2.3rem;
+        gap: 2rem;
     }
 
 
@@ -1686,8 +1571,9 @@ color: whitesmoke;
     position: absolute;
     z-index: 1000;
     bottom: 8%;
-    right: 2%;
-    text-wrap: nowrap;
+    right: 0%;
+     text-wrap: nowrap; 
+    max-width:100%;
 
 }
 
