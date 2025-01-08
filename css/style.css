@@ -98,9 +98,13 @@ html {
     z-index: 1000;
     right: 7%;
 }
+.btn-eng img{
+    width: 30px;
+    height: 30px;
+}
 
 .btn-eng {
-    top: 31px;
+    top: 25px;
     font-size: 1.4rem;
     right:50px;
     margin-right: 0.3rem;
@@ -1140,7 +1144,7 @@ color: whitesmoke;
     }
 
     .btn-eng  {
-       top: 31px;
+       top: 26px;
        right: 70px;
     }
 
