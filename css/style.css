@@ -98,13 +98,10 @@ html {
     z-index: 1000;
     right: 7%;
 }
-.btn-eng img{
-    width: 30px;
-    height: 30px;
-}
+
 
 .btn-eng {
-    top: 25px;
+    top: 31px;
     font-size: 1.4rem;
     right:50px;
     margin-right: 0.3rem;
@@ -965,7 +962,7 @@ color: whitesmoke;
     background-color: rgb(54, 26, 54);
 }
 
-.contacto-titulo {
+.contacto-titulo,.contacto-titulo-en {
     position: absolute;
     top: 47%;
     /*   top:2vw; */
@@ -980,7 +977,9 @@ color: whitesmoke;
     font-family: "Josefin Sans", sans-serif;
 
 }
-
+.contacto-titulo-en{
+    right: 7%;
+}
 .contacto-parrafo {
     position: absolute;
     bottom: 6%;
@@ -1144,7 +1143,7 @@ color: whitesmoke;
     }
 
     .btn-eng  {
-       top: 26px;
+       top: 31px;
        right: 70px;
     }
 
@@ -1438,7 +1437,7 @@ color: whitesmoke;
         max-width: 100%;
     }
 
-    .contacto-titulo {
+    .contacto-titulo,.contacto-titulo-en {
         font-size: 5rem;
         font-weight: 300;
         color: rgb(54, 26, 54);
@@ -1448,7 +1447,9 @@ color: whitesmoke;
         top: 54%;
         position: absolute;
     }
-
+.contacto-titulo-en{
+right: 5%;
+}
     .redes2 {
         font-size: 1.5rem;
         gap: 1.6rem;
