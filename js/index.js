@@ -18,7 +18,7 @@ cerrar.addEventListener("click", () => {
         abrir.style.display = "block";
     }, 1000);
 });
-
+/* Cada vez q hago click en un iten la nav cierra */
 menuItems.forEach(item => {
     item.addEventListener("click", () => {
         nav.classList.remove("visible");

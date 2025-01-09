@@ -1,11 +1,9 @@
+/* EFECTO PARALLAX PORTADA */
 const dImg = document.querySelector("#d-img");
-/*  const portadaDocencia = document.querySelector("#portada-docencia"); */
 
 window.addEventListener("scroll", () => {
    let move = window.scrollY;
-
    dImg.style.top = move * .3 + "px";
-   /*  portadaDocencia.style.bottom =scroll * .3 + "px" ;   */
 })
 
 
@@ -72,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 });
 
-/* boton desplegable */
+/* boton desplegable  audio-objetivos*/
 document.addEventListener('DOMContentLoaded', () => {
    const toggleIcon = document.getElementById('toggle-icon');
    const toggleParagraph = document.getElementById('toggle-paragraph');

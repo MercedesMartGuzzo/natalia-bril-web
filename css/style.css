@@ -44,9 +44,9 @@ header {
     padding: 1rem;
     padding-top: 1.5rem;
     background-color: transparent;
-    position:fixed;
+    position: fixed;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
     width: 100%;
 
 }
@@ -103,18 +103,19 @@ html {
 .btn-eng {
     top: 31px;
     font-size: 1.4rem;
-    right:50px;
+    right: 50px;
     margin-right: 0.3rem;
     position: fixed;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    pointer-events: none; 
-  }
-  .btn-eng.show {
+    pointer-events: none;
+}
+
+.btn-eng.show {
     opacity: 1;
-    pointer-events: auto; 
-  }
-  
+    pointer-events: auto;
+}
+
 .redes {
     font-size: 1.4rem;
     display: flex;
@@ -457,6 +458,7 @@ html {
     font-size: 2.2rem;
     text-wrap: nowrap;
     justify-content: start;
+   
 }
 
 .bio-parrafo,
@@ -469,8 +471,10 @@ html {
     padding-bottom: 0;
     padding-top: 0;
 }
-.clases-parrafo, .audio-parrafo1{
-    display: inline; 
+
+.clases-parrafo,
+.audio-parrafo1 {
+    display: inline;
     text-align: start;
     font-family: "Noto Sans JP", sans-serif;
     padding-bottom: 0;
@@ -478,52 +482,68 @@ html {
     color: whitesmoke;
     margin-bottom: 4rem;
 }
-.audio-parrafo1{
-margin-top:.0;
-margin-bottom: 1rem;
+
+.audio-parrafo1 {
+    margin-top: .0;
+    margin-bottom: 1rem;
 }
-.clases-parrafo span{
-    font-weight: bold; 
-    margin-right: 0.5rem; 
-    display: inline; 
-  
-}
-.wrapp-audio span, .wrapp-canto span, .wrapp-canto2 span {
-font-weight: bold; 
-margin-right: 0.5rem; 
-display: inline; 
-color: whitesmoke;
-font-size: 1.1rem;
-color: whitesmoke;
+
+.clases-parrafo span {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    display: inline;
 
 }
-.wrapp-canto span, .wrapp-canto2 span{
+
+.wrapp-audio span,
+.wrapp-canto span,
+.wrapp-canto2 span {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    display: inline;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    color: whitesmoke;
+
+}
+
+.wrapp-canto span,
+.wrapp-canto2 span {
     color: rgb(54, 26, 54);
 }
-.wrapp-canto .toggle-icon,.wrapp-canto2 .toggle-icon{
+
+.wrapp-canto .toggle-icon,
+.wrapp-canto2 .toggle-icon {
     color: rgb(54, 26, 54);
 }
-.wrapp-canto .toggle-icon:hover,.wrapp-canto2 .toggle-icon{
+
+.wrapp-canto .toggle-icon:hover,
+.wrapp-canto2 .toggle-icon {
     color: rgb(54, 26, 54);
 }
-.span-wrapper{
+
+.span-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.objetivos{
+
+.objetivos {
     padding-left: .2rem;
 }
-.bi-plus-lg{
+
+.bi-plus-lg {
     margin-left: .5rem;
     cursor: pointer;
-    color:whitesmoke;
+    color: whitesmoke;
     transition: color .3s, transform .3s;
 }
-.bi-plus-lg:hover{
+
+.bi-plus-lg:hover {
     color: rgb(178, 153, 178);
     transform: scale(1);
 }
+
 #toggle-paragraph {
     display: none;
     opacity: 0;
@@ -534,6 +554,7 @@ color: whitesmoke;
     display: block;
     opacity: 1;
 }
+
 .audio-parrafo1 {
     color: whitesmoke;
 }
@@ -556,7 +577,8 @@ color: whitesmoke;
     font-size: 1.1rem;
 }
 
-.btn-clases2,.btn-clases-wrapp {
+.btn-clases2,
+.btn-clases-wrapp {
     padding: .5rem;
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
@@ -569,10 +591,12 @@ color: whitesmoke;
     cursor: pointer;
 }
 
-.btn-clases-wrapp{
-    font-size:16px ;
+.btn-clases-wrapp {
+    font-size: 16px;
 }
-.btn-clases2:hover,.btn-clases-wrapp:hover {
+
+.btn-clases2:hover,
+.btn-clases-wrapp:hover {
     color: whitesmoke;
     background-color: transparent;
     transform: scale(1.1);
@@ -790,8 +814,8 @@ color: whitesmoke;
     padding-right: 1rem;
     font-family: "Josefin sans", sans-serif;
     margin-left: .5rem;
-     text-wrap: balance;
-   display: flex;
+    text-wrap: balance;
+    display: flex;
 }
 
 .link-nota {
@@ -962,7 +986,8 @@ color: whitesmoke;
     background-color: rgb(54, 26, 54);
 }
 
-.contacto-titulo,.contacto-titulo-en {
+.contacto-titulo,
+.contacto-titulo-en {
     position: absolute;
     top: 47%;
     /*   top:2vw; */
@@ -977,9 +1002,11 @@ color: whitesmoke;
     font-family: "Josefin Sans", sans-serif;
 
 }
-.contacto-titulo-en{
+
+.contacto-titulo-en {
     right: 7%;
 }
+
 .contacto-parrafo {
     position: absolute;
     bottom: 6%;
@@ -1095,6 +1122,48 @@ color: whitesmoke;
 
 }
 
+@media screen and (min-width: 768px) {
+    /* DISCOGRAFIA */
+    .discos-grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discos-grilla img {
+        width: 100%;
+    }
+
+    .otra img {
+        width: 100%;
+    }
+/* VIDEOS */
+    .grilla-videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 2rem;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+    }
+/* PRENSA */
+
+    .grilla-prensa {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.7rem;
+    }
+/* titulo clases y cursos */
+    .d-img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        bottom: 0;
+        margin-bottom: 0;
+        object-position: bottom;
+    }
+}
 @media screen and (min-width: 1200px) {
 
     section {
@@ -1142,9 +1211,9 @@ color: whitesmoke;
         margin-top: 1.3rem;
     }
 
-    .btn-eng  {
-       top: 31px;
-       right: 70px;
+    .btn-eng {
+        top: 31px;
+        right: 70px;
     }
 
 
@@ -1229,10 +1298,7 @@ color: whitesmoke;
         /*    border-bottom: 1px solid rgb(54, 26, 54); */
     }
 
-    /*   .slider-container {
-        width: 350px;
-        padding-top: .5rem;
-    } */
+
 
     .intro-span {
         font-size: 2rem;
@@ -1269,6 +1335,14 @@ color: whitesmoke;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .discos-grilla {
+        margin-top: 1rem;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     /* DISCOGRAFIA */
@@ -1437,7 +1511,8 @@ color: whitesmoke;
         max-width: 100%;
     }
 
-    .contacto-titulo,.contacto-titulo-en {
+    .contacto-titulo,
+    .contacto-titulo-en {
         font-size: 5rem;
         font-weight: 300;
         color: rgb(54, 26, 54);
@@ -1447,9 +1522,11 @@ color: whitesmoke;
         top: 54%;
         position: absolute;
     }
-.contacto-titulo-en{
-right: 5%;
-}
+
+    .contacto-titulo-en {
+        right: 5%;
+    }
+
     .redes2 {
         font-size: 1.5rem;
         gap: 1.6rem;
@@ -1533,7 +1610,6 @@ right: 5%;
     margin-bottom: 2rem;
     border-radius: 10px;
     border: 1px solid rgb(54, 26, 54);
-    /*  background-color: rosybrown; */
     width: 90vw;
     margin-top: 2rem;
 }
@@ -1544,7 +1620,6 @@ right: 5%;
     height: 100vh;
     overflow: hidden;
     object-fit: cover;
-
 }
 
 .clases-canto {
@@ -1553,22 +1628,17 @@ right: 5%;
 }
 
 .d-img {
-    /*   position: absolute;
-    height: 100vh;
-    object-fit: cover; */
     position: absolute;
     height: 100vh;
     object-fit: cover;
-    /* bottom: 0; */
     margin-bottom: 0;
     object-position: bottom;
 }
 
 .portada-docencia {
     color: whitesmoke;
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: flex;
-    /*  flex-direction: column;  */
     justify-content: start;
     align-self: start;
     font-weight: 400;
@@ -1576,17 +1646,14 @@ right: 5%;
     position: absolute;
     z-index: 1000;
     bottom: 8%;
-    right: 0%;
-     text-wrap: nowrap; 
-    max-width:100%;
-
+    right: 2%;
+    text-wrap: nowrap;
+    max-width: 100%;
 }
 
 .audio-parrafo,
 .clases-parrafo {
     margin-bottom: 1rem;
-
-
 }
 
 .clases-parrafo {
@@ -1611,7 +1678,6 @@ right: 5%;
 
 
 .canto-contenido {
-    /*    padding-left: .5rem; */
     margin-bottom: 1rem;
     margin-top: 2rem;
 
@@ -1662,20 +1728,6 @@ right: 5%;
     padding-left: .2rem;
 }
 
-.wrapp-audio-fotos {
-    margin-bottom: 0;
-    background-color: #c3adad;
-    margin-top: 0;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /* font-display: grid;
-    grid-template-columns: 2fr 1fr 1fr; */
-    gap: 1rem;
-    padding: 10px;
-}
-
-
 
 .wrapp-canto2 {
     padding: 1rem;
@@ -1686,19 +1738,6 @@ right: 5%;
 .grilla-clases {
     margin-top: 0;
     margin-bottom: 0;
-
-}
-
-.audio-fotos1 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
-
-.audio-fotos {
-    border-radius: 5px;
-    margin-top: 1rem;
 }
 
 /* SWIPPER */
@@ -1795,19 +1834,6 @@ right: 5%;
 
 
 /* FOOTER DOCENCIA MOBILE */
-
-/* .footer2 {
-    background-color: rgb(54, 26, 54);
-    color: #ececec;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-} */
-
 .redes-footer {
     font-size: 1rem;
     display: flex;
@@ -1819,7 +1845,11 @@ right: 5%;
     margin-bottom: 1rem;
 
 }
-
+@media screen and (min-width: 768px){
+    .portada-docencia{
+        font-size: 3rem;
+    }
+}
 @media screen and (min-width: 1200px) {
 
     .portada-docencia {
@@ -1875,9 +1905,7 @@ right: 5%;
 
     .wrapp-audio {
         margin-bottom: 0;
-        background-color:
-            /* rgb(178, 153, 178) */
-            #33404f;
+        background-color:#33404f;
         margin-top: 0;
         padding-bottom: 2rem;
         padding-left: 2rem;
@@ -1887,44 +1915,6 @@ right: 5%;
     .wrapp-audio video {
         margin-top: 1rem;
         border-radius: 10px;
-    }
-
-    .wrapp-audio-fotos {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        background-color: #c3adad;
-        margin: 0;
-        /*    padding-left: 1rem;
-        padding-right: 1rem; */
-    }
-
-    .audio-fotos img {
-        height: 350px;
-        width: 500px;
-        object-fit: cover;
-        object-position: inherit;
-    }
-
-    .audio-fotos {
-        width: 400px;
-        height: 350px;
-        display: flex;
-        object-fit: contain;
-        object-position: top;
-        filter: opacity(80%);
-    }
-
-    .audio-fotos1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .audio-fotos1 img {
-        height: auto;
-        object-fit: cover;
     }
 
     .wrapp-audio2 {
@@ -1943,7 +1933,6 @@ right: 5%;
         padding-top: 1.5rem;
         display: grid;
         grid-column: span 2;
-
     }
 
     .audio-parrafo2 {
@@ -1997,7 +1986,6 @@ right: 5%;
     }
 
     .portada-d {
-
         height: 100vh;
         width: 100%;
         object-fit: cover;
@@ -2009,9 +1997,6 @@ right: 5%;
         height: 100vh;
         object-fit: cover;
         object-position: top;
-        /*    top: 0;
-        left: 0;
-        bottom: 0; */
     }
 
     .btn-clases-cursos {
@@ -2028,8 +2013,7 @@ right: 5%;
     .video-clases {
         display: grid;
         align-self: center;
-        width: 100%;
-        /*    background-color: #33404f; */
+        width: 100%;   
     }
 
     .video-tango {
@@ -2042,58 +2026,6 @@ right: 5%;
     .video-clases iframe {
         border-radius: 5px;
     }
-
-    .tango-foto {
-        display: grid;
-        border-radius: 5px;
-        align-self: end;
-        justify-self: center;
-        width: 35vw;
-        height: 30vw;
-        object-fit: cover;
-        object-position: top;
-    }
-
-    /*   .img-audio {
-        display: grid;
-        border-radius: 5px;
-        align-self: end;
-        justify-self: center;
-        width: 35vw;
-        height: 25vw;
-
-    } */
-    /*   .audio-fotos {
-        display: grid;
-        width: 35vw;
-        height: 35vw;
-        object-fit: cover;
-        margin-top: 0;
-        align-self: center;
-        justify-self: center;
-        background-color: #c3adad;
-    } */
-
-    /*  .audio-fotos img {
-        height: 70vh;
-    }
-
-    .audio-fotos1 img {
-        height: 68vh;
-        object-fit: cover;
-    } */
-
-    /*   .audio-fotos1 {
-        display: grid;
-        margin-top: .4rem;
-    } */
-
-    .audio-fotos img,
-    .audio-fotos1 img {
-        border-radius: 5px;
-    }
-
-
 
     .canto-contenido,
     .audio-contenido {
@@ -2111,9 +2043,7 @@ right: 5%;
     .clases-audio,
     .testimonios,
     .canto-tango {
-        color:
-            /* rgb(54, 26, 54) */
-            whitesmoke;
+        color:whitesmoke;
         font-size: 2.5rem;
         font-weight: 300;
         margin-top: 1rem;
@@ -2155,6 +2085,7 @@ right: 5%;
     }
 
     /* testimonios swiper */
+
     .slider2 .swiper-button-next::after,
     .slider2 .swiper-button-prev::after {
         font-size: 1rem;
