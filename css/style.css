@@ -1033,8 +1033,6 @@ html {
     justify-content: end;
     align-items: end;
     gap: 1rem;
-    /* margin-bottom: .3rem; */
-    /* margin-right: 1rem; */
     margin-top: .5rem;
 
 }
@@ -1123,6 +1121,12 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+    /* PORTADA */
+    .logo{
+        width: 320px;
+      
+    }
+
     /* DISCOGRAFIA */
     .discos-grilla {
         display: grid;
@@ -1145,6 +1149,7 @@ html {
         padding-bottom: .5rem;
         margin-bottom: .5rem;
     }
+    
 /* PRENSA */
 
     .grilla-prensa {
@@ -1153,6 +1158,34 @@ html {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 1.7rem;
     }
+    /* CONTACTO */
+    .contacto-titulo,
+    .contacto-titulo-en {
+        font-size: 5rem;
+        font-weight: 300;
+        color: rgb(54, 26, 54);
+        margin-bottom: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        letter-spacing: .3rem;
+        top: 54%;
+        position: absolute;
+    }
+
+    .contacto-titulo-en {
+        right: 5%;
+    }
+    .redes2{
+        margin-top: 2.3rem;
+        gap: 1.5rem;
+        right: 12%;
+    }
+    .contacto-parrafo {
+        font-size: 1.5rem;
+        right: 8%;
+        bottom: 9%;
+
+    }
+
 /* titulo clases y cursos */
     .d-img {
         position: absolute;
@@ -1164,6 +1197,7 @@ html {
         object-position: bottom;
     }
 }
+
 @media screen and (min-width: 1200px) {
 
     section {
@@ -1532,7 +1566,7 @@ html {
         gap: 1.6rem;
         top: 71%;
         right: 11%;
-
+        margin-top: .5rem;
     }
 
     .contacto-parrafo {
