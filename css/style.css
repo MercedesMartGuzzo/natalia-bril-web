@@ -440,7 +440,7 @@ html {
 .discografia-titulo,
 .videos-titulo,
 .prensa-titulo,
-.clases-cursos {
+.clases-cursos,.clases-cursos-en {
     color: rgb(54, 26, 54);
     font-size: 2.5rem;
     display: flex;
@@ -459,6 +459,11 @@ html {
     text-wrap: nowrap;
     justify-content: start;
    
+}
+.clases-cursos-en{
+    font-size: 2rem;
+    text-wrap: nowrap;
+    justify-content: start;
 }
 
 .bio-parrafo,
@@ -1293,7 +1298,7 @@ html {
     .discografia-titulo,
     .videos-titulo,
     .prensa-titulo,
-    .clases-cursos {
+    .clases-cursos,.clases-cursos-en {
         font-size: 5rem;
         font-weight: 300;
         color: rgb(54, 26, 54);
