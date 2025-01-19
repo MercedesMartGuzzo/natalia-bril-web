@@ -88,8 +88,8 @@ html {
     position: absolute;
     height: 100vh;
     object-fit: cover;
-    bottom: 0;
-
+  /*   bottom: 0; */
+    object-position:left;
 }
 
 .portada-titulo {
@@ -1241,7 +1241,7 @@ html {
     .portada-img {
         position: absolute;
         width: 100%;
-        object-position: center;
+        object-position: top;
     }
 
     .portada {
@@ -2012,7 +2012,7 @@ html {
 
     .audio-parrafo2 {
         display: grid;
-        text-align: start;
+        text-align: center;
         padding: 1.2rem;
          justify-content: center;
         align-items: center;
