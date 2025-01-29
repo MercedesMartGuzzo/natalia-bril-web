@@ -103,3 +103,30 @@ window.addEventListener("scroll", () => {
     portadaImg.style.top = scroll * .3 + "px";   
 })
 
+/* boton footer */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnFooter = document.querySelector("#arriba");
+    const footer = document.querySelector("#footer");
+
+    // Evento de clic para scroll hacia arriba
+    btnFooter.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Evento de scroll para mostrar/ocultar el botón del footer
+    window.addEventListener("scroll", () => {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (footerRect.top <= windowHeight && footerRect.bottom >= 0) {
+            btnFooter.classList.add("show");
+        } else {
+            btnFooter.classList.remove("show");
+        }
+    });
+});
+
