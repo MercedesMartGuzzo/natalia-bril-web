@@ -612,25 +612,12 @@ html {
 
 .wrapp-intro {
     margin-top: 1rem;
-    /* 
-    padding: .5rem;
-    padding-bottom: 1rem;
-    border-radius: 5px;
-    
-    margin-left: .5rem;
-    margin-right: .5rem;
-    margin-bottom: .5rem; */
-
 }
 
 .intro-span {
     color: rgb(54, 26, 54);
-    /*  padding-right: .3rem; */
 }
 
-/* .bi-check-all{
-    padding-right: .3rem;
-} */
 .introduccion {
     color: black;
     text-align: start;
@@ -672,14 +659,16 @@ html {
     border-radius: 10px;
 }
 
-.hoy,
+.hoy,.hoy1,
 .otra,
 .escuadron,
 .cuchi,
 .delfi {
     border-bottom: 1px solid rgb(178, 153, 178);
 }
-
+.hoy,.otra,.hoy1{
+padding-bottom:  1rem;
+}
 .hoy-titulo h4,
 .otra-titulo h4,
 .escuadron-titulo h4,
@@ -1151,6 +1140,11 @@ html {
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
 }
+#arriba:hover{
+    color: rgb(178, 153, 178);
+    background-color: transparent;
+    border: 1px solid rgb(178, 153, 178);
+}
 #arriba.show{
     opacity: 1;
     pointer-events: auto;
@@ -1428,7 +1422,7 @@ html {
         gap: 1rem;
     }
 
-    .hoy,
+    .hoy,.hoy1,
     .otra,
     .escuadron,
     .cuchi,
@@ -1443,11 +1437,19 @@ html {
         border-bottom: none;
     }
 
-    .hoy {
+    .hoy,.hoy1 {
         margin-bottom: 5rem;
         margin-top: 1rem;
     }
-
+.hoy img, .hoy iframe{
+    align-self:  center;
+}
+.hoy1 img,.hoy1 iframe{
+    height: 500px;
+    object-fit:cover;
+    object-position: center;
+    max-width: 100%;
+}
     .hoy-titulo h4,
     .otra-titulo h4,
     .escuadron-titulo h4,

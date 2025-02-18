@@ -94,19 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Selecciona el párrafo
+
 const parrafo = document.querySelector('.audio-parrafo2');
 
 // Aplica la animación con GSAP para cambiar los colores
 gsap.to(parrafo, {
-   backgroundColor: "#33404f", // Cambia el color de fondo a rojo
-   borderColor: "ff5f5f5", // Cambia el color del borde
-   borderWidth: "1px", // Ancho del borde
-   borderStyle: "solid", 
-   color: "#ffffff", // Cambia el color del texto a blanco
-   duration: 3, // Duración de la animación en segundos
-   repeat: -1, // Repite la animación indefinidamente
-   yoyo: true, // Hace que la animación vuelva al estado original
-   ease: "power1.inOut" // Efecto de suavizado
+   backgroundColor: "#33404f",
+   color: "#ffffff", 
+   duration: 3, 
+   repeat: -1, 
+   yoyo: true, 
+   ease: "power1.inOut",
+  x:5,
 });
 
 
